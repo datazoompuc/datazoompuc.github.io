@@ -108,12 +108,12 @@ header{
     border-radius: 5px;
     display: inline-block;
     transition: background 0.3s;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono'; !important
     line-height: normal;
 }
 
 .menu-item:hover {
-     background: #ecf1f5;
+     background: #ecf1f5; !important
      transform: translateY(-2px);
      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
