@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.content p{
+	margin-bottom:10px;
+}
+
+.mg-top{
+	margin-top: 10px;
+}
+
+h3{
+	margin-bottom:20px;
+}
+
+em {
+	font-style:normal;
+	font-weight:300;
+	color:#555;
+	padding-bottom:15px;
+}
+
+.team{
+	margin-bottom:80px;
+}
+
+.team-name{
+	margin-bottom:0;
+}
+
+.gap{
+	margin-bottom:20px;
+}
+
+.linha{
+display: flex;
+flex-flow: row wrap;
+}
+
+.coluna-25 {
+	width: 25%;
+}
+
+.coluna-20 {
+   width: 20%;
+}
+
+.coluna-10 {
+		width: 10%;
+}
+
+.coluna-5 {
+		width: 5%;
+}
+
+.round-container {
+		width: 18rem;
+		height: 18rem;
+		align-self: center;
+		border-radius: 100%;
+		margin: 2.3rem auto 2.5rem auto;
+		overflow: hidden;
+		position: relative;
+}
+.round-container img {
+		width: initial;
+		height: inherit;
+		max-width: none;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+}

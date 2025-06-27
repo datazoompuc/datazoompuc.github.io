@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.panel-group .panel+.panel{
+	margin-top:15px;
+}
+
+.panel-default>.panel-heading, .well{
+	background-color:#fff;
+}
+
+.panel-title{
+	color:#000;
+}
+
+.panel-title a:hover, .panel-title a:focus{
+	color:#369;
+}
+
+#accordion{
+	margin-top:40px;
+}
+
+h4{
+	padding-bottom:10px;
+}
+
+.panel-default p{
+	margin-top:10px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.panel-default .comandos{
+	font-size:14px;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body{
+	border: none;
+}
+
+

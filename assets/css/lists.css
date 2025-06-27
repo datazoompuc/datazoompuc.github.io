@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+/*************** LIST-GROUP ***************/
+
+.list-group-item{
+	border:1px solid #fff;
+	background-color:#369;
+}
+
+a.list-group-item{
+	color: #fff;
+}
+
+
+
+
+
+
