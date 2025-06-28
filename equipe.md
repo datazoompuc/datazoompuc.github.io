@@ -9,13 +9,11 @@ p {
   margin-bottom: 0.5rem !important;
 }
 
-h3 {
-  font-weight: 700 !important;
-}
-
 a {
   color: #369;
+  font-family: inherit;
   text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
@@ -90,7 +88,6 @@ a:visited {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    font-weight: 700 !important;
 }
 
 .team-card.team-name{
