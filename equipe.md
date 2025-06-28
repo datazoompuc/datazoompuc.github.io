@@ -13,7 +13,11 @@ a {
   color: #369;
   font-family: inherit;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 a:hover {
