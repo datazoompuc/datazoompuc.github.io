@@ -5,6 +5,10 @@ title: Nossa equipe
 
 <style>
 
+p {
+  margin-bottom: 0.5rem;
+}
+
 a {
   color: #369;
   text-decoration: none;
@@ -86,12 +90,22 @@ a:visited {
     text-align: center;
 }
 
+.team-card.team-name{
+     margin-bottom: 2rem;
+}
+
 .team-role {
     color: #3498db;
     font-weight: 600;
-    margin-bottom: 0;
     font-size: 1.5rem;
 }
+
+.team-year {
+    color: #3498db;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 </style>
 
 # Nossa equipe
@@ -124,7 +138,7 @@ a:visited {
       <h3 class="team-name">{{ member.nome }}</h3>
     {% endif %}
     <p class="team-role">{{ member.formacao }}</p>
-    <p class="team-role">{{ member.periodo }}</p>
+    <p class="team-year">{{ member.periodo }}</p>
   </div>
 {% endfor %}
 </div>
@@ -139,7 +153,7 @@ a:visited {
     {% else %}
       <h3 class="team-name">{{ member.nome }}</h3>
     {% endif %}
-    <p class="team-role">{{ member.periodo }}</p>
+    <p class="team-year">{{ member.periodo }}</p>
   </div>
 {% endfor %}
 </div>
