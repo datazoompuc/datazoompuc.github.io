@@ -48,6 +48,11 @@ title: Nossa equipe
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
+.ex-team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 .team-photo {
     width: 150px;
     height: 150px;
