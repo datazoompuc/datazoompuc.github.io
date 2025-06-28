@@ -91,6 +91,7 @@ a:visited {
     font-size: 2rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .team-card.team-name{
