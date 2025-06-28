@@ -6,11 +6,11 @@ title: Nossa equipe
 <style>
 
 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
 }
 
 h3 {
-  font-family: auto;
+  font-family: inherit;
 }
 
 a {
