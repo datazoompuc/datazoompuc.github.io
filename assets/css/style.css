@@ -113,7 +113,7 @@ header{
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url("/assets/fonts/JetBrainsMono-Regular.ttf") format('truetype');
+  src: local('JetBrains Mono'), url("./fonts/JetBrainsMono-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
