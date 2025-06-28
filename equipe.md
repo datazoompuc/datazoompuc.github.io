@@ -99,7 +99,7 @@ a:visited {
 
 .team-role {
     color: #3498db;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5rem;
 }
 
@@ -163,7 +163,7 @@ a:visited {
 
 # Colaboradores
 
-### Agradecemos a todos e todas que contribuíram com seu tempo e conhecimento ao longo da construção deste projeto. Suas sugestões foram essenciais para o aprimoramento desta iniciativa.
+Agradecemos a todos e todas que contribuíram com seu tempo e conhecimento ao longo da construção deste projeto. Suas sugestões foram essenciais para o aprimoramento desta iniciativa.
 
 <div class="ex-team-grid">
 {% for member in site.data.agradecimentos %}
