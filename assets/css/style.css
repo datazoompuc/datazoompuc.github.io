@@ -150,6 +150,35 @@ header{
 
 /*************** TOGGLE MENU ***************/
 
+@media (max-width: 767px) {
+    .navbar-nav > li {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    
+    .navbar-nav > li > a {
+        display: block;
+        width: 90%;
+        padding: 15px 20px; /* 15px top/bottom, 20px left/right */
+	margin: auto;
+    }
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-toggle {
+    float: none;
+    display: inline-block;
+}
+
+    .nav.navbar-nav.menu-right > li {
+        margin-left: auto;
+        margin-right: 0; /* optional spacing from edge */
+	width: 50%;
+    }
+}
+
 .navbar-default .navbar-toggle{
 	border-color:#fff;
 }
