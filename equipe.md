@@ -10,13 +10,12 @@ p {
 }
 
 h3 {
-  font-family: inherit;
+  font-weight: 700 !important;
 }
 
 a {
   color: #369;
   text-decoration: none;
-  text-align: center;
 }
 
 a:hover {
