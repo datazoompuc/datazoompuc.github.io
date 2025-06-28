@@ -9,6 +9,10 @@ p {
   margin-bottom: 0.5rem;
 }
 
+h3 {
+  font-family: auto;
+}
+
 a {
   color: #369;
   text-decoration: none;
