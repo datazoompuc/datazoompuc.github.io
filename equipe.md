@@ -89,7 +89,6 @@ a:visited {
 .team-name {
     color: #369;
     font-size: 2rem;
-    font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -100,7 +99,7 @@ a:visited {
 
 .team-role {
     color: #3498db;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5rem;
 }
 
