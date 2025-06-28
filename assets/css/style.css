@@ -10,17 +10,34 @@ p{
 	font-weight:300;
 }
 
-h1{
-	font-size:20px;
-	margin-top:0px;
-	margin-bottom:30px;
-	font-weight:400;
+h1 {
+  font-size: 2.5rem;
+  font-family: 'JetBrains Mono';
+  font-weight: 700;
+  color: #369;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block; /* Changed from inline-block to block for full centering */
+  padding-bottom: 0.3rem;
+  width: 100%; /* Ensures full width for centering */
 }
 
-h2{
-	font-size:18px;
-	font-weight:400;
-	color:#000;
+h2 {
+  font-size: 2rem;
+  font-family: 'JetBrains Mono';
+  font-weight: 700;
+  color: #369;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  padding-bottom: 0.3rem;
+  width: 100%;
 }
 
 h3{
@@ -103,19 +120,19 @@ header{
 
 .menu-item {
     background: #fff;
-    color: #369; !important
+    color: #369 !important;  /* Fixed syntax */
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     transition: background 0.3s;
-    font-family: 'JetBrains Mono'; !important
+    font-family: 'JetBrains Mono' !important;  /* Fixed syntax */
     line-height: normal;
 }
 
 .menu-item:hover {
-     background: #ecf1f5; !important
-     transform: translateY(-2px);
-     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background: #ecf1f5 !important;  /* Fixed syntax */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
         
 .menu-item.active {
@@ -124,11 +141,11 @@ header{
      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-        /* Push menu to the right */
-        .menu-right {
-            margin-left: auto;
-	    padding-left: 40px;
-        }
+/* Push menu to the right */
+.menu-right {
+    margin-left: auto;
+    padding-left: 40px;
+}
 
 
 /*************** TOGGLE MENU ***************/
@@ -154,7 +171,7 @@ header{
 
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{
 	color: #fff;
-	background-color: #a7b8c8;
+	background-color: #ecf1f5;
 }
 
 .dropdown-menu{
@@ -303,8 +320,7 @@ a.list-group-item:hover, a.list-group-item:focus{
 /*************** CONTENT ***************/
 
 .content{
-	margin-top:50px;
-	padding:0 15px;
+	margin: 20px 10px 0px 10px;
 }
 
 .content p{

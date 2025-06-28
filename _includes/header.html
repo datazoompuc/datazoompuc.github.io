@@ -1,5 +1,21 @@
 <header class="row">
   <img id="logo" height = 100px alt="datazoom" src="assets/img/logo_branco_horizontal.png" class = "center-img">
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get current page filename
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    // Remove active class from all menu items
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => item.classList.remove('active'));
+    
+    // Add active class to current page link
+    const currentLink = document.querySelector(`a[href="${currentPage}"]`);
+    if (currentLink) {
+        currentLink.classList.add('active');
+    }
+});
+  </script>
 </header>
 <div class="row">
   <nav class="navbar" role="navigation">

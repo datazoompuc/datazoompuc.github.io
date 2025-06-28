@@ -3,8 +3,6 @@ layout: default
 title: Data Zoom Social R
 ---
 
-![Logo DataZoom Amazonia](https://raw.githubusercontent.com/datazoompuc/datazoom.amazonia/master/logo.png?token=AU72KNQCGY4ZR6XLARTNSXLBXCPNG)
-
 # Quais são nossos produtos disponíveis em R?
 
 O pacote *datazoom.amazonia*, disponível apenas em *R*, busca facilitar o acesso a microdados da Amazônia Legal e, para isso, reúne dados confiáveis de diversas instituições em um só lugar. Através do pacote, você terá acesso aos dados do INPE, IBGE, COMEX, IPS, SEEG, IBAMA, SIGMINE, MAPBIOMAS, Climatology Lab e CIPÓ.
