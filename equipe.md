@@ -106,6 +106,7 @@ title: Nossa equipe
       <h3 class="team-name">{{ member.nome }}</h3>
     {% endif %}
     <p class="team-role">{{ member.cargo }}</p>
+    <p class="team-role">{{ member.formacao }}</p>
   </div>
 {% endfor %}
 </div>
