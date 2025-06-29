@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Nossa equipe
+lang: pt
 ---
+
+{% assign current_lang = page.lang | default: 'en' %}
 
 <style>
 
@@ -115,7 +118,7 @@ a:visited {
 # Nossa equipe
 
 <div class="team-grid">
-{% for member in site.data.equipe %}
+{% for member in site.data.equipe[current_lang] %}
   <div class="team-card">
     <img src="{{ member.photo | relative_url }}" alt="{{ member.nome }}" class="team-photo">
     {% if member.site %}
@@ -134,7 +137,7 @@ a:visited {
 ## Gerentes operacionais
 
 <div class="ex-team-grid">
-{% for member in site.data.gerentes %}
+{% for member in site.data.gerentes[current_lang] %}
   <div class="ex-team-card">
     {% if member.site %}
       <h3 class="team-name"><a href="{{ member.site }}" target="_blank">{{ member.nome }}</a></h3>
@@ -162,7 +165,7 @@ a:visited {
 {% endfor %}
 </div>
 
-# Colaboradores
+# Agradecimentos
 
 Agradecemos a todos e todas que contribuíram com seu tempo e conhecimento ao longo da construção deste projeto. Suas sugestões foram essenciais para o aprimoramento desta iniciativa.
 

@@ -513,3 +513,61 @@ a.tel-link{
     display: inline-block;
 	text-align: left;
 }
+
+/***************** BOXES WITH IMAGES ******************/
+
+        .logo-container {
+            border-radius: 10px;
+            background-color: #ecf1f5;
+            text-align: center;
+            padding: 20px;
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        
+        .logo-container-small {
+            border-radius: 10px;
+            background-color: #ecf1f5;
+            text-align: center;
+            padding: 10px;
+            display: block;
+            margin: 10px auto;
+            width: fit-content;
+        }
+        
+        .logo-container-small h2 {
+            margin: 0 0 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo-container a {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .logo-container-small a {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .logo-container img {
+            height: 200px;
+            margin: 0 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .logo-container-small img {
+            height: 50px;
+            margin: 0;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .logo-container img:hover {
+            transform: translateY(-20px);
+        }
+        
+        .logo-container-small img:hover {
+            transform: translateY(-5px);
+        }
