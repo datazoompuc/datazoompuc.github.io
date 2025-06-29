@@ -15,6 +15,6 @@ O [pacote `datazoom.amazonia`](https://github.com/datazoompuc/datazoom.amazonia)
 <div class="logo-container-small">
     <h2> Explore as visualizações</h2>
     <a href="https://datazoomamazonia.com.br/">
-        <img src="/assets/img/banner_dzam.png" alt="GitHub" style="height: 100px;">
+        <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="GitHub" style="height: 100px;">
     </a>
 </div>

@@ -13,6 +13,6 @@ O [pacote `datazoom_social`](https://github.com/datazoompuc/datazoom_social_Stat
 <div class="logo-container-small">
     <h2> Acesse o pacote no GitHub </h2>
     <a href="https://github.com/datazoompuc/datazoom_social_Stata">
-        <img src="/assets/img/github-mark.png" alt="GitHub">
+        <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
     </a>
 </div>
