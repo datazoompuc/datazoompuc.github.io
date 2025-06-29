@@ -6,19 +6,19 @@ lang: pt
 
 # Contato
 
-## <img src="/assets/img/github-mark.png" height=25px style="vertical-align: text-top;"> GitHub
+## <img src="{{ site.baseurl }}/assets/img/github-mark.png" height=25px style="vertical-align: text-top;"> GitHub
 
 Para requisitar alguma alteração ou tirar qualquer dúvida sobre os produtos do Data Zoom, clique em um dos links abaixo para abrir uma **Issue** no GitHub.
 
 <div class="logo-container-small">
     <a href="https://github.com/datazoompuc/datazoom.amazonia/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;">
-        <img src="/assets/img/hex_dzam.png" alt="DZAM Logo"> Data Zoom Amazônia
+        <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo"> Data Zoom Amazônia
     </a>
     <a href="https://github.com/datazoompuc/datazoom_social_Stata/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;">
-        <img src="/assets/img/hex_dzstata.png" alt="DZSTATA Logo"> Data Zoom Social Stata
+        <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo"> Data Zoom Social Stata
     </a>
     <a href="https://github.com/datazoompuc/datazoom.social/issues" style="font-family:JetBrains Mono; font-weight:bold;">
-        <img src="/assets/img/hex_dz.png" alt="DZ Logo"> Data Zoom Social R
+        <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo"> Data Zoom Social R
     </a>
 </div>
 
