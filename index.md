@@ -3,6 +3,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/pt/" />
+    <meta http-equiv="refresh" content="0; url=/pt/" />
   </head>
 </html>
