@@ -4,6 +4,11 @@ title: Citação
 lang: pt
 ---
 
+<style>
+#output pre { display: none; }
+#output pre#bibtex { display: block; }
+</style>
+
 # Cite o Data Zoom em sua pesquisa
     
 
@@ -15,7 +20,7 @@ lang: pt
     <option value="mla">MLA</option>
   </select></font>
 
-<div id="output" class="logo-container">
+<div id="output" class="scroll-box">
     <pre id="bibtex" style="display: block;">@Unpublished{DataZoom{2023}, 
     author = {Data Zoom},
     title = {Data Zoom: Simplifying Access To Brazilian Microdata},
@@ -41,7 +46,7 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
       <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
         <em>{{ paper.title }}</em>
       </a>.
-    {{ paper.remainder | markdownify }}
+    {{ paper.remainder }}
     </p>
   {% endfor %}
 </div>
