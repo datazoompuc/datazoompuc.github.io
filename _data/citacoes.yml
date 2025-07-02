@@ -1,0 +1,62 @@
+published:
+  - author_date: "Muniz, J., Queiroz, B. L., & Saperstein, A. (2024)."
+    link: "https://www.demographic-research.org/articles/volume/50/17"
+    title: "Racial classification as a multistate process"
+    remainder: "<em>Demographic Research, 50</em>(17), 457–472. https://doi.org/10.4054/DemRes.2024.50.17"
+    
+  - author_date: "Van Doornik, B., Schoenherr, D., & Skrastins, J. (2023)."
+    link: "https://www.aeaweb.org/articles?id=10.1257/app.20200787"
+    title: "Strategic formal layoffs: Unemployment insurance and informal labor markets"
+    remainder: "American Economic Journal: Applied Economics, 15</em>(1), 292–318. https://doi.org/10.1257/app.20200787"
+    
+  - author_date: "Engbom, N., & Moser, C. (2022)."
+    link: "https://www.aeaweb.org/articles?id=10.1257/aer.20181506"
+    title: "Earnings inequality and the minimum wage: Evidence from Brazil"
+    remainder: "<em>American Economic Review, 112</em>(12), 3803–3847. https://doi.org/10.1257/aer.20181506"
+    
+  - author_date: "Engbom, N., Gonzaga, G., Moser, C., & Olivieri, R. (2022)."
+    link: "https://onlinelibrary.wiley.com/doi/full/10.3982/QE1855"
+    title: "Earnings inequality and dynamics in the presence of informality: The case of Brazil"
+    remainder: "<em>Quantitative Economics, 13</em>(4), 1405–1446. https://doi.org/10.3982/QE1855"
+    
+  - author_date: "Muniz, J., & Bailey, S. R. (2022)."
+    link: "https://www.demographic-research.org/articles/volume/47/30"
+    title: "Does race response shift impact racial inequality?"
+    remainder: "<em>Demographic Research, 47</em>(30), 935–966. https://doi.org/10.4054/DemRes.2022.47.30"
+    
+  - author_date: "Dix-Carneiro, R., & Kovak, B. K. (2015)."
+    link: "https://www.nber.org/papers/w20908"
+    title: "Trade reform and regional dynamics: Evidence from 25 years of Brazilian matched employer-employee data"
+    remainder: "(No. w20908). National Bureau of Economic Research."
+  
+unpublished:   
+  - author_date: "Ruhe, A. P. (2025)."
+    link: "https://anapaularuhe.github.io/LatestVersions/Draft%20-%20Labor%20markets%20dynamics%20with%20an%20informal%20sector.pdf"
+    title: "Labor market dynamics with an informal sector"
+    remainder: "Unpublished manuscript."
+    
+  - author_date: "Corbellini, N. (2024)."
+    link: "https://nicolacorbellini.github.io/assets/Job_Market_Paper.pdf"
+    title: "The effects of tax enforcement on the firm size distribution and aggregate productivity"
+    remainder: "Unpublished manuscript."
+    
+  - author_date: "Oviedo, A. F. P., & Araújo, V. S. (2022)."
+    link: "https://www.socioambiental.org/sites/default/files/noticias-e-posts/2022-10/Garimpo_final_IPS_2021.pdf"
+    title: "O garimpo em terras indígenas não traz progresso social"
+    remainder: "(Nota técnica). São Paulo: Instituto Socioambiental."
+    
+  - author_date: "Carneiro, F. L. (2021)."
+    link: "https://repositorio.ipea.gov.br/handle/11058/11055"
+    title: "Cenários para a redução dos custos de comércio no Mercosul: efeitos sobre o comércio regional e mercado de trabalho brasileiro"
+    remainder: "(Texto para Discussão No. 2709)."
+
+theses:
+  - author_date: "Regadas, L. T. (2025)."
+    link: "https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/Mono_24.2_Laura_Tavares_Regadas.pdf"
+    title: "Gender wage gap in Brazil: Wage commute trade-off with heterogeneity by sexual orientation"
+    remainder: "(Undergraduate monograph, Pontifical Catholic University of Rio de Janeiro). Maxwell. https://doi.org/10.17771/PUCRio.acad.69854"
+    
+  - author_date: "Bamba, S. (2024)."
+    link: "https://dukespace.lib.duke.edu/items/4fa72dc3-f554-4e0e-99b6-13e212df7cab"
+    title: "Resource-extractive concessionary activity and malaria incidence in the Peruvian, Ecuadorian, and Brazilian Amazons: A spatiotemporal analysis"
+    remainder: "(Master’s project, Duke University). Retrieved from https://hdl.handle.net/10161/30524"
