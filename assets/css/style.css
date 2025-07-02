@@ -597,13 +597,9 @@ a.tel-link{
         }
         
         .logo-item{
-            max-height: 200px;
+            max-width: 200px;
             width: 40%;
-            transition: transform 0.2s ease-in-out;
+            height: auto;
             float: left;
             margin: 15px 30px 15px 15px;
-        }
-        
-        .logo-item img:hover {
-            transform: translateY(-20px);
         }
