@@ -549,6 +549,11 @@ a.tel-link{
             max-width: 60%;
         }
         
+        .scroll-box p {
+            margin-bottom: 0.5em;
+            line-height: 1.4;
+        }
+        
         .logo-container-small h2 {
             margin: 0 0 10px 0;
             width: 100%;
