@@ -159,7 +159,7 @@ header{
 /* Push menu to the right */
 .menu-right {
     margin-left: auto;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 
