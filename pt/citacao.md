@@ -15,7 +15,7 @@ lang: pt
     <option value="mla">MLA</option>
   </select></font>
 
-  <div id="output">
+<div id="output" class="logo-container">
     <pre id="bibtex" style="display: block;">@Unpublished{DataZoom{{YEAR}}, 
     author = {Data Zoom},
     title = {Data Zoom: Simplifying Access To Brazilian Microdata},
@@ -29,6 +29,18 @@ lang: pt
 
 <pre id="mla">Data Zoom. Data Zoom: Simplifying Access to Brazilian Microdata. {{YEAR}}, https://www.econ.puc-rio.br/datazoom/english/index.html.</pre>
   </div>
+
+Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie uma cópia do seu trabalho para <a href="mailto:datazoom@econ.puc-rio.br">datazoom@econ.puc-rio.br</a>. Nós vamos adorar saber mais sobre os estudos que ajudamos a gerar.
+
+## Exemplos de trabalhos que utilizaram o Data Zoom
+
+<div class="scroll-box">
+{% for paper in site.data.citacoes.published %}
+    <p> 
+      {{ paper.author_year }} <em><a href = {{ paper.link }} target="_blank" rel="noopener noreferrer"> {{ paper.title }} </a></em>. {{ paper.remainder }}
+    </p>
+{% endfor %}
+</div>
 
   <script>
     const currentYear = new Date().getFullYear();
@@ -53,19 +65,5 @@ lang: pt
         document.getElementById(selected).style.display = "block";
       }
     });
-  </script><br><br>
-  
-  
-    
-Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie uma cópia do seu trabalho para <a href="mailto:datazoom@econ.puc-rio.br">datazoom@econ.puc-rio.br</a>. Nós vamos adorar saber mais sobre os estudos que ajudamos a gerar.
-
-## Exemplos de trabalhos que utilizaram o Data Zoom
-
-<div class="scroll-box">
-{% for paper in site.data.citacoes[published] %}
-    <p> 
-      {{ paper.author_year }} <em><a href = {{ paper.link }} target="_blank" rel="noopener noreferrer"> {{ paper.title }} </a></em>. {{ paper.remainder }}
-    </p>
-{% endfor %}
-</div>
+  </script>
           
