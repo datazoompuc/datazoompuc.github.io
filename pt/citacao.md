@@ -40,6 +40,7 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
 ## Exemplos de trabalhos que utilizaram o Data Zoom
 
 <div class="scroll-box">
+  <h2> Artigos publicados </h2>
   {% for paper in site.data.citacoes.published %}
     <p>
       {{ paper.author_date }}
@@ -49,21 +50,43 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
     {{ paper.remainder }}
     </p>
   {% endfor %}
+  <h2> Artigos não publicados </h2>
+  {% for paper in site.data.citacoes.unpublished %}
+    <p>
+      {{ paper.author_date }}
+      <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
+        <em>{{ paper.title }}</em>
+      </a>.
+    {{ paper.remainder }}
+    </p>
+  {% endfor %}
+  <h2> Teses e dissertações </h2>
+  {% for paper in site.data.citacoes.theses %}
+    <p>
+      {{ paper.author_date }}
+      <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
+        <em>{{ paper.title }}</em>
+      </a>.
+    {{ paper.remainder }}
+    </p>
+  {% endfor %}  
 </div>
 
-  <script>
-
+<script>
+document.addEventListener("DOMContentLoaded", function () {
   const citationSelect = document.getElementById("citation");
   const formats = ["bibtex", "abnt", "apa", "mla"];
 
   citationSelect.addEventListener("change", () => {
-      const selected = citationSelect.value;
-      formats.forEach(id => {
-        document.getElementById(id).style.display = "none";
-      });
-      if (selected) {
-        document.getElementById(selected).style.display = "block";
-      }
+    const selected = citationSelect.value;
+    formats.forEach(id => {
+      document.getElementById(id).style.display = "none";
     });
-  </script>
+    if (selected) {
+      document.getElementById(selected).style.display = "block";
+    }
+  });
+});
+</script>
+
           

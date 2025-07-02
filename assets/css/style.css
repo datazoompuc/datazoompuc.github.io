@@ -545,6 +545,8 @@ a.tel-link{
             margin: 20px auto;
             width: fit-content;
             overflow-y: auto;
+            max-height: 400px;
+            max-width: 60%;
         }
         
         .logo-container-small h2 {
