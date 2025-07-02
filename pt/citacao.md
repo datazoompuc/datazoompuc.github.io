@@ -48,7 +48,7 @@ pre {
 <pre id="mla">Data Zoom. Data Zoom: Simplifying Access to Brazilian Microdata. 2023, https://www.econ.puc-rio.br/datazoom/english/index.html.</pre>
   </div>
 
-Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie uma cópia do seu trabalho para <a href="mailto:datazoom@econ.puc-rio.br">datazoom@econ.puc-rio.br</a>. Nós vamos adorar saber mais sobre os estudos que ajudamos a gerar.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, pedimos que envie uma cópia para [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br). Nós vamos adorar saber mais sobre os estudos que ajudamos a gerar.
 
 ## Exemplos de trabalhos que utilizaram o Data Zoom
 

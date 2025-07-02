@@ -1,32 +1,88 @@
-- nome: Juliano Assunção
-  site: https://www.econ.puc-rio.br/juliano/
+pt:
+  - nome: Juliano Assunção
+    formacao: Doutor, PUC-Rio
+    site: https://www.econ.puc-rio.br/juliano/
   
-- nome: Rodrigo Reis Soares
-  site: https://www.linkedin.com/in/rodrigo-r-soares-bb16a72a2/
+  - nome: Rodrigo Reis Soares
+    formacao: Ph.D, University of Chicago
+    site: https://www.linkedin.com/in/rodrigo-r-soares-bb16a72a2/
+
+  - nome: Claudio Ferraz
+    formacao: Ph.D, University of California, Berkeley
+    site: https://sites.google.com/site/claudferraz/
+
+  - nome: Flávia Chein
+    formacao: Doutora, Universidade Federal de Minas Gerais
+    site: https://www.linkedin.com/in/fl%C3%A1via-chein-b3544ab4/
+
+  - nome: François Gerard
+    formacao: Ph.D, University of California, Berkeley
+    site: https://sites.google.com/site/fransgerard/home
+
+  - nome: Roland Rathelot
+    formacao: Ph.D, Paris School of Economics
+    site: http://rolandrathelot.com/
+
+  - nome: Ilan Tojerow
+    formacao: Ph.D, Université Libre de Bruxelles
+    site: https://www.linkedin.com/in/ilan-tojerow-7736a84/
+
+  - nome: Rudi Rocha
+    formacao: Doutor, PUC-Rio
+    site: https://www.rudirocha.org/
+
+  - nome: Flávia Alfenas
+    formacao: Doutora, Universidade Federal de Minas Gerais
+    site: https://www.linkedin.com/in/flaviaalfenas/
+
+  - nome: Rafael Dix-Carneiro
+    formacao: Ph.D, Princeton University
+    site: https://sites.google.com/site/rafaeldixcarneiro/
+
+  - nome: Ricardo Dahis
+    formacao: Ph.D, Northwestern University
+    site: https://www.ricardodahis.com/
+en:
+  - nome: Juliano Assunção
+    formacao: Ph.D, PUC-Rio
+    site: https://www.econ.puc-rio.br/juliano/
   
-- nome: Claudio Ferraz
-  site: https://sites.google.com/site/claudferraz/
-  
-- nome: Flávia Chein
-  site: https://www.linkedin.com/in/fl%C3%A1via-chein-b3544ab4/
-  
-- nome: François Gerard
-  site: https://sites.google.com/site/fransgerard/home
-  
-- nome: Roland Rathelot
-  site: http://rolandrathelot.com/
-  
-- nome: Ilan Tojerow
-  site: https://www.linkedin.com/in/ilan-tojerow-7736a84/
-  
-- nome: Rudi Rocha
-  site: https://www.rudirocha.org/
-  
-- nome: Flávia Alfenas
-  site: https://www.linkedin.com/in/flaviaalfenas/
-  
-- nome: Rafael Dix-Carneiro
-  site: https://sites.google.com/site/rafaeldixcarneiro/
-  
-- nome: Ricardo Dahis
-  site: https://www.ricardodahis.com/
+  - nome: Rodrigo Reis Soares
+    formacao: Ph.D, University of Chicago
+    site: https://www.linkedin.com/in/rodrigo-r-soares-bb16a72a2/
+
+  - nome: Claudio Ferraz
+    formacao: Ph.D, University of California, Berkeley
+    site: https://sites.google.com/site/claudferraz/
+
+  - nome: Flávia Chein
+    formacao: Ph.D, Federal University of Minas Gerais
+    site: https://www.linkedin.com/in/fl%C3%A1via-chein-b3544ab4/
+
+  - nome: François Gerard
+    formacao: Ph.D, University of California, Berkeley
+    site: https://sites.google.com/site/fransgerard/home
+
+  - nome: Roland Rathelot
+    formacao: Ph.D, Paris School of Economics
+    site: http://rolandrathelot.com/
+
+  - nome: Ilan Tojerow
+    formacao: Ph.D, Université Libre de Bruxelles
+    site: https://www.linkedin.com/in/ilan-tojerow-7736a84/
+
+  - nome: Rudi Rocha
+    formacao: Ph.D, PUC-Rio
+    site: https://www.rudirocha.org/
+
+  - nome: Flávia Alfenas
+    formacao: Ph.D, Federal University of Minas Gerais
+    site: https://www.linkedin.com/in/flaviaalfenas/
+
+  - nome: Rafael Dix-Carneiro
+    formacao: Ph.D, Princeton University
+    site: https://sites.google.com/site/rafaeldixcarneiro/
+
+  - nome: Ricardo Dahis
+    formacao: Ph.D, Northwestern University
+    site: https://www.ricardodahis.com/     

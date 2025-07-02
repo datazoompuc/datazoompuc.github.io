@@ -20,7 +20,7 @@ lang: en
     </a>
 </div>
 
-Our products include statistical packages in *Stata* and *R* which ease the extraction, manipulation, visualization and analysis of brazilian data.
+We build include statistical packages in *Stata* and *R* which ease the extraction, manipulation, visualization and analysis of brazilian data.
 
 <div class="logo-container-small">
     <h2> Visit our GitHub project </h2>
@@ -29,4 +29,4 @@ Our products include statistical packages in *Stata* and *R* which ease the extr
     </a>
 </div>
 
-In case you have used one of our products, please cite us and send a copy of your work to [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br). We are interested in learning more about the studies where our work proved to be useful.
+In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> cite us </a>.

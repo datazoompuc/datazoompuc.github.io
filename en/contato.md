@@ -56,4 +56,10 @@ Rua Marquês de São Vicente, 225, sala 210F
 Gávea, Rio de Janeiro-RJ  
 CEP: 22451-900
 
-<iframe class="map" width="50%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Pontif%C3%ADcia%20Universidade%20Cat%C3%B3lica%20do%20Rio%20de%20Janeiro%2C%20G%C3%A1vea%2C%20Rio%20de%20Janeiro%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&amp;key=AIzaSyCcfqN0brn2C09a4cgGF5rFnYQ7NqwX8xg"></iframe>
+<iframe class="map" 
+        width="100%" 
+        height="400px" 
+        style="max-width: 600px; border: 0;" 
+        frameborder="0" 
+        src="https://www.google.com/maps/embed/v1/place?q=Pontif%C3%ADcia%20Universidade%20Cat%C3%B3lica%20do%20Rio%20de%20Janeiro%2C%20G%C3%A1vea%2C%20Rio%20de%20Janeiro%20-%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil&amp;key=AIzaSyCcfqN0brn2C09a4cgGF5rFnYQ7NqwX8xg">
+</iframe>

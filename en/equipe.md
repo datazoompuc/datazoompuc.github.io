@@ -170,14 +170,14 @@ a:visited {
 We would like to thank everyone who contributed their time and knowledge throughout the development of this project. Your suggestions were essential for the improvement of this initiative.
 
 <div class="ex-team-grid">
-{% for member in site.data.agradecimentos %}
+{% for member in site.data.agradecimentos[current_lang] %}
   <div class="ex-team-card">
     {% if member.site %}
       <h3 class="team-name"><a href="{{ member.site }}" target="_blank">{{ member.nome }}</a></h3>
     {% else %}
       <h3 class="team-name">{{ member.nome }}</h3>
     {% endif %}
-    <p class="team-role">{{ member.periodo }}</p>
+    <p class="team-role">{{ member.formacao }}</p>
   </div>
 {% endfor %}
 </div>

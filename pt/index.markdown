@@ -29,4 +29,4 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
     </a>
 </div>
 
-Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie uma cópia do seu trabalho para [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br). Nós vamos adorar saber mais sobre os estudos que ajudamos a gerar.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> nos cite </a>.
