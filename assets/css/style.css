@@ -536,6 +536,17 @@ a.tel-link{
             width: fit-content;
         }
         
+        .scroll-box {
+            border-radius: 10px;
+            background-color: #ecf1f5;
+            text-align: left;
+            padding: 20px;
+            display: block;
+            margin: 20px auto;
+            width: fit-content;
+            overflow-y: auto;
+        }
+        
         .logo-container-small h2 {
             margin: 0 0 10px 0;
             width: 100%;
