@@ -4,6 +4,22 @@ title: Contact
 lang: en
 ---
 
+<style>
+
+  @media (max-width: 768px) {
+    .logo-container-small a {
+        display: block; /* Stack vertically on mobile */
+        margin-right: 0 !important; /* Remove right margins */
+        margin-bottom: 15px; /* Add space between stacked items */
+    }
+    
+  .logo-container-small a:last-child {
+    margin-bottom: 0; /* Remove bottom margin from last item */
+  }
+}
+
+</style>
+
 # Contact us
 
 ## <img src="{{ site.baseurl }}/assets/img/github-mark.png" height=25px style="vertical-align: text-top;"> GitHub

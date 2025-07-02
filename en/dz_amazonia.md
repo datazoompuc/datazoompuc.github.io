@@ -6,7 +6,7 @@ lang: en
 
 # Data Zoom Amazônia
 
-<img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="Data Zoom Amazônia" style="float: left; margin: 15px 30px 15px 15px; height: 200px;">
+<img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="Data Zoom Amazônia" class="logo-item">
 
 [Data Zoom Amazônia](https://datazoomamazonia.com.br/) is a thematic layer of the Data Zoom project and is part of the [Amazônia 2030](https://amazonia2030.org.br/o-projeto/) initiative. It aims to democratize access to all sources of social, economic, and environmental microdata of the Legal Amazon region and to develop an open, accessible, interactive and parameterized data visualization platform. The project has enormous potential to impact informed policymaking in the region and to train a new generation of researchers and students.
 

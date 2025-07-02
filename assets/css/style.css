@@ -544,10 +544,10 @@ a.tel-link{
             padding: 20px;
             display: block;
             margin: 20px auto;
-            width: fit-content;
             overflow-y: auto;
             max-height: 400px;
-            max-width: 60%;
+            width: 800px;
+            max-width: 90%;
         }
         
         .scroll-box p {
@@ -579,10 +579,12 @@ a.tel-link{
         }
         
         .logo-container-small img {
-            height: 50px;
+            max-height: 50px;
+            max-width: 100%;
             margin: 0;
             transition: transform 0.2s ease-in-out;
             width: auto;
+            object-fit: contain;
         }
         
         .logo-container img:hover {
@@ -591,4 +593,17 @@ a.tel-link{
         
         .logo-container-small img:hover {
             transform: translateY(-5px);
+        }
+        
+        .logo-item{
+            max-height: 200px;
+            width: 40%;
+            margin: 0 5px;
+            transition: transform 0.2s ease-in-out;
+            float: left;
+            margin: 15px 30px 15px 15px;
+        }
+        
+        .logo-item img:hover {
+            transform: translateY(-20px);
         }

@@ -6,7 +6,7 @@ lang: pt
 
 # Data Zoom Amazônia
 
-<img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="Data Zoom Amazônia" style="float: left; margin: 15px 30px 15px 15px; height: 200px;">
+<img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="Data Zoom Amazônia" class="logo-item">
 
 O [Data Zoom Amazônia](https://datazoomamazonia.com.br/) é uma das camadas do projeto Data Zoom e está inserido na iniciativa [Amazônia 2030](https://amazonia2030.org.br/o-projeto/). Seu objetivo é democratizar o acesso a todas as fontes de microdados sociais, econômicos e ambientais da região da Amazônia Legal, além fornecer ao público uma plataforma com visualizações acessíveis, interativas e parametrizadas. O projeto tem um potencial de impacto sobre o processo de decisão de políticas públicas na região, além de formar e treinar uma nova geração de pesquisadores e estudantes.
 
