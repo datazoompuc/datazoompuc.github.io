@@ -89,7 +89,6 @@ In case you've used one of our products, please cite us and send us a copy of yo
 document.addEventListener("DOMContentLoaded", function () {
   const citationSelect = document.getElementById("citation");
   const formats = ["bibtex", "abnt", "apa", "mla"];
-
   citationSelect.addEventListener("change", () => {
     const selected = citationSelect.value;
     formats.forEach(id => {
@@ -106,8 +105,9 @@ document.addEventListener('click', function(e) {
     if (e.target.tagName === 'PRE') {
         selectText(e.target);
     }
+}); // <- This closing brace was missing
 
-// Helper function to select text
+// Helper function to select text (moved outside the event listener)
 function selectText(element) {
     if (window.getSelection) {
         const range = document.createRange();
