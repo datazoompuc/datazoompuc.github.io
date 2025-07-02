@@ -9,7 +9,7 @@ lang: pt
 #output pre#bibtex { display: block; }
 
 pre {
-  border: 2px solid #4A90E2; /* Blue border, change color as you like */
+  border: 2px solid #369; /* Blue border, change color as you like */
   border-radius: 6px;         /* Rounded corners */
   padding: 1em;               /* Space inside the border */
   background-color: #ecf1f5; /* Light blue background */
@@ -98,6 +98,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Click to select all text
+document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'PRE') {
+        selectText(e.target);
+    }
+
+// Helper function to select text
+function selectText(element) {
+    if (window.getSelection) {
+        const range = document.createRange();
+        range.selectNodeContents(element);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
 </script>
 
           
