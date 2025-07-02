@@ -15,6 +15,6 @@ The [`datazoom.amazonia` R package](https://github.com/datazoompuc/datazoom.amaz
 <div class="logo-container-small">
     <h2> Explore the visualizations</h2>
     <a href="https://datazoomamazonia.com.br/eng/">
-        <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="GitHub" style="height: 100px;">
+        <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="GitHub" style="max-height: 100px;">
     </a>
 </div>

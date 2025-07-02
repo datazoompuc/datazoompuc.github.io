@@ -572,8 +572,9 @@ a.tel-link{
         }
         
         .logo-container img {
-            max-height: 200px;
+            max-width: 200px;
             width: 30vw;
+            height: auto;
             margin: 0 5px;
             transition: transform 0.2s ease-in-out;
         }
@@ -598,7 +599,6 @@ a.tel-link{
         .logo-item{
             max-height: 200px;
             width: 40%;
-            margin: 0 5px;
             transition: transform 0.2s ease-in-out;
             float: left;
             margin: 15px 30px 15px 15px;
