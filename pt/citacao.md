@@ -35,10 +35,16 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
 ## Exemplos de trabalhos que utilizaram o Data Zoom
 
 <div class="scroll-box">
-{% for paper in site.data.citacoes.published %}
-    <p> 
-      {{ paper.author_year }} <em><a href = {{ paper.link }} target="_blank" rel="noopener noreferrer"> {{ paper.title }} </a></em>. {{ paper.remainder }}
-    </p>
+  {% for paper in site.data.citacoes.published %}
+    <p>
+      {{ paper.author_date }}
+      <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
+        <em>{{ paper.title }}</em>
+      </a>.
+    {{ paper.remainder | markdownify }}
+  {% endfor %}  
+</p>
+
 {% endfor %}
 </div>
 
