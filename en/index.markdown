@@ -29,4 +29,4 @@ We build include statistical packages in *Stata* and *R* which ease the extracti
     </a>
 </div>
 
-In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> cite us </a>.
+In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> cite us</a>.

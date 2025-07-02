@@ -29,4 +29,4 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
     </a>
 </div>
 
-Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> nos cite </a>.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> nos cite</a>.
