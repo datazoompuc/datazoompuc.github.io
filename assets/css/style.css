@@ -534,6 +534,7 @@ a.tel-link{
             display: block;
             margin: 10px auto;
             width: fit-content;
+            max-width: 90vw;
         }
         
         .scroll-box {
@@ -571,7 +572,8 @@ a.tel-link{
         }
         
         .logo-container img {
-            height: 200px;
+            max-height: 200px;
+            width: 30vw;
             margin: 0 5px;
             transition: transform 0.2s ease-in-out;
         }
@@ -580,6 +582,7 @@ a.tel-link{
             height: 50px;
             margin: 0;
             transition: transform 0.2s ease-in-out;
+            width: auto;
         }
         
         .logo-container img:hover {

@@ -6,7 +6,7 @@ lang: pt
 
 # Data Zoom Social Stata
 
-<img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="Data Zoom Social Stata" style="float: left; margin: 15px 30px 15px 15px; height: 200px;">
+<img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="Data Zoom Social Stata" style="float: left; margin: 15px 30px 15px 15px; width: 50%;">
 
 O [pacote `datazoom_social`](https://github.com/datazoompuc/datazoom_social_Stata), diponível em **Stata**, facilita a leitura dos microdados das pesquisar domiciliares do IBGE. O pacote possui funções específicas para a leitura dos dados da PNS, Censo Demográfico, PNAD Contínua (anual e trimestral), PNAD, PNAD Covid, PME, ECINF e POF.
 
