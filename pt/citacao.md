@@ -7,26 +7,37 @@ lang: pt
 <style>
 #output pre { display: none; }
 #output pre#bibtex { display: block; }
+
+pre {
+  border: 2px solid #4A90E2; /* Blue border, change color as you like */
+  border-radius: 6px;         /* Rounded corners */
+  padding: 1em;               /* Space inside the border */
+  background-color: #ecf1f5; /* Light blue background */
+  font-family: monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap;  /* wraps long lines */
+  word-wrap: break-word;  /* breaks long words if needed */  
+}
 </style>
 
 # Cite o Data Zoom em sua pesquisa
-    
 
-<font size="4"> <label for="citation">Escolha um formato de citação:</label>
+<div id="output" class="scroll-box">
+
+  <label for="citation">Escolha um formato de citação:</label>
   <select id="citation">
     <option value="bibtex" selected>BibTeX</option>
     <option value="abnt">ABNT (NBR6023)</option>
     <option value="apa">APA</option>
     <option value="mla">MLA</option>
-  </select></font>
-
-<div id="output" class="scroll-box">
-    <pre id="bibtex" style="display: block;">@Unpublished{DataZoom{2023}, 
+  </select>
+  
+<pre id="bibtex" style="display: block;">@Unpublished{DataZoom{2023}, 
     author = {Data Zoom},
     title = {Data Zoom: Simplifying Access To Brazilian Microdata},
     url = {https://www.econ.puc-rio.br/datazoom/english/index.html},
     year = {2023}
-    }</pre>
+}</pre>
 
 <pre id="abnt">Data Zoom (2023). Data Zoom: Simplifying Access To Brazilian Microdata. https://www.econ.puc-rio.br/datazoom/index.html</pre>
 
@@ -40,7 +51,7 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
 ## Exemplos de trabalhos que utilizaram o Data Zoom
 
 <div class="scroll-box">
-  <h2> Artigos publicados </h2>
+  <h3> Artigos publicados </h3>
   {% for paper in site.data.citacoes.published %}
     <p>
       {{ paper.author_date }}
@@ -50,7 +61,7 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
     {{ paper.remainder }}
     </p>
   {% endfor %}
-  <h2> Artigos não publicados </h2>
+  <h3> Working papers e outros textos </h3>
   {% for paper in site.data.citacoes.unpublished %}
     <p>
       {{ paper.author_date }}
@@ -60,7 +71,7 @@ Caso você tenha usado um dos nossos produtos, pedimos que nos cite e que envie 
     {{ paper.remainder }}
     </p>
   {% endfor %}
-  <h2> Teses e dissertações </h2>
+  <h3> Teses e dissertações </h3>
   {% for paper in site.data.citacoes.theses %}
     <p>
       {{ paper.author_date }}
