@@ -16,7 +16,9 @@ pre {
   font-family: monospace;
   font-size: 0.9em;
   white-space: pre-wrap;  /* wraps long lines */
-  word-wrap: break-word;  /* breaks long words if needed */  
+  word-wrap: break-word;  /* breaks long words if needed */
+  cursor: pointer; /* Shows it's clickable */
+  user-select: all;
 }
 </style>
 
