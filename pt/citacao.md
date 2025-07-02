@@ -20,7 +20,7 @@ lang: pt
     author = {Data Zoom},
     title = {Data Zoom: Simplifying Access To Brazilian Microdata},
     url = {https://www.econ.puc-rio.br/datazoom/english/index.html},
-    year = {{{YEAR}}}}
+    year = {{YEAR}}}
     }</pre>
 
 <pre id="abnt">Data Zoom ({{YEAR}}). Data Zoom: Simplifying Access To Brazilian Microdata. https://www.econ.puc-rio.br/datazoom/index.html</pre>
