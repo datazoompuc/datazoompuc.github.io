@@ -10,19 +10,19 @@ lang: en
 
 <div class="logo-container">
     <div>
-        <h3>Data Zoom Amazônia</h2>
+        <h3>Data Zoom Amazônia</h3>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo">
         </a>
     </div>
     <div>
-        <h3>Data Zoom Social Stata</h2>
+        <h3>Data Zoom Social Stata</h3>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo">
         </a>
     </div>
     <div>
-        <h3>Data Zoom Social R</h2>
+        <h3>Data Zoom Social R</h3>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo">
         </a>
