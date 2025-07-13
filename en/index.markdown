@@ -10,19 +10,19 @@ lang: en
 
 <div class="logo-container">
     <div>
-        <h2>Data Zoom Amazônia</h2>
+        <h3>Data Zoom Amazônia</h2>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo">
         </a>
     </div>
     <div>
-        <h2>Data Zoom Social Stata</h2>
+        <h3>Data Zoom Social Stata</h2>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo">
         </a>
     </div>
     <div>
-        <h2>Data Zoom Social R</h2>
+        <h3>Data Zoom Social R</h2>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html">
             <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo">
         </a>
@@ -31,11 +31,10 @@ lang: en
 
 We build include statistical packages in *Stata* and *R* which ease the extraction, manipulation, visualization and analysis of brazilian data.
 
-<a href="https://github.com/datazoompuc">
-    <div class="logo-container-small">
-        <h2> Visit our GitHub project </h2>
-        <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
-    </div>
-</a>
+<div class="logo-container-small" style="position: relative;">
+    <h2> Visit our GitHub project </h2>
+    <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
+    <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+</div>
 
 In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> cite us</a>.
