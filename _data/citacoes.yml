@@ -7,7 +7,7 @@ published:
   - author_date: "Van Doornik, B., Schoenherr, D., & Skrastins, J. (2023)."
     link: "https://www.aeaweb.org/articles?id=10.1257/app.20200787"
     title: "Strategic formal layoffs: Unemployment insurance and informal labor markets"
-    remainder: "American Economic Journal: Applied Economics, 15</em>(1), 292–318. https://doi.org/10.1257/app.20200787"
+    remainder: "<em>American Economic Journal: Applied Economics, 15</em>(1), 292–318. https://doi.org/10.1257/app.20200787"
 
   - author_date: "Engbom, N., & Moser, C. (2022)."
     link: "https://www.aeaweb.org/articles?id=10.1257/aer.20181506"
@@ -24,10 +24,10 @@ published:
     title: "Does race response shift impact racial inequality?"
     remainder: "<em>Demographic Research, 47</em>(30), 935–966. https://doi.org/10.4054/DemRes.2022.47.30"
 
-  - author_date: "Dix-Carneiro, R., & Kovak, B. K. (2015)."
-    link: "https://www.nber.org/papers/w20908"
-    title: "Trade reform and regional dynamics: Evidence from 25 years of Brazilian matched employer-employee data"
-    remainder: "(No. w20908). National Bureau of Economic Research."
+  - author_date: "Dix-Carneiro, R., Soares, R. R., & Ulyssea, G. (2018)."
+    link: "https://www.aeaweb.org/articles?id=10.1257/app.20170080"
+    title: "Economic shocks and crime: Evidence from the Brazilian trade liberalization"
+    remainder: "<em>American Economic Journal: Applied Economics, 10</em>(4), 158–195. https://doi.org/10.1257/app.20170080"
 unpublished:   
   - author_date: "Ruhe, A. P. (2025)."
     link: "https://anapaularuhe.github.io/LatestVersions/Draft%20-%20Labor%20markets%20dynamics%20with%20an%20informal%20sector.pdf"

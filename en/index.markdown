@@ -29,7 +29,7 @@ lang: en
     </div>
 </div>
 
-We build include statistical packages in *Stata* and *R* which ease the extraction, manipulation, visualization and analysis of brazilian data.
+Our project includes statistical packages in *Stata* and *R* which ease the extraction, manipulation, visualization, and analysis of Brazilian data.
 
 <div class="logo-container-small" style="position: relative;">
     <h2> Visit our GitHub project </h2>

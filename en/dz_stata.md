@@ -8,7 +8,7 @@ lang: en
 
 <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="Data Zoom Social Stata" class="logo-item">
 
-The [`datazoom_social` R package](https://github.com/datazoompuc/datazoom_social_Stata) eases the access to microdata from IBGE's household surveys. The package has specific funtions to read data from PNS, Censo Demográfico, PNAD Contínua (annual and quarterly), PNAD, PNAD Covid, PME, ECINF e POF.
+The [`datazoom_social_Stata` Stata package](https://github.com/datazoompuc/datazoom_social_Stata) eases the access to microdata from IBGE's household surveys. The package has specific funtions to read data from PNS, Censo Demográfico, PNAD Contínua (annual and quarterly), PNAD, PNAD Covid, PME, ECINF e POF.
 
 <div class="logo-container-small" style="position: relative;">
     <h2> Access our package on GitHub </h2>
