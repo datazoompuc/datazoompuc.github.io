@@ -592,14 +592,15 @@ a.tel-link{
             transform: translateY(-20px);
         }
         
-        .logo-container-small img:hover {
-            transform: translateY(-5px);
-        }
-        
-        a .logo-container-small:hover {
-          cursor: pointer;
-          transform: translateY(-5px);
-        }
+.logo-container-small:hover img {
+    transform: translateY(-5px);
+}
+
+.logo-container-small:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
         
         .logo-container > div {
           display: inline-block;
@@ -608,9 +609,10 @@ a.tel-link{
           text-align: center;
         }
 
-.logo-container h2 {
+.logo-container h3 {
     margin-bottom: 15px;
     text-align: center;
+    font-family: 'JetBrains Mono';
 }
         
         .logo-item{
