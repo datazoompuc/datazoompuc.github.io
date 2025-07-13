@@ -12,9 +12,8 @@ lang: en
 
 The [`datazoom.amazonia` R package](https://github.com/datazoompuc/datazoom.amazonia) allows for the access of a myriad of treated data sets related to the Brazilian Amazon. Data extracted using the package fuels our interactive data visualizations.
 
-<div class="logo-container-small">
-    <h2> Explore the visualizations</h2>
-    <a href="https://datazoomamazonia.com.br/eng/">
-        <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="GitHub" style="max-height: 100px;">
-    </a>
+<div class="logo-container-small" style="position: relative;">
+    <h2> Explore the visualizations </h2>
+    <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="GitHub" style="max-height: 100px;">
+    <a href="https://datazoomamazonia.com.br/eng/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
 </div>

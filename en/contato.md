@@ -6,6 +6,12 @@ lang: en
 
 <style>
 
+.logo-container-small:hover {
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
   @media (max-width: 768px) {
     .logo-container-small a {
         display: block; /* Stack vertically on mobile */
