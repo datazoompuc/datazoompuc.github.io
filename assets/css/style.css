@@ -82,7 +82,7 @@ a:hover, a:focus{
 }
 
 em{
-	font-style:normal;
+	font-style:italic;
 	font-weight:500;
 }
 
@@ -595,6 +595,23 @@ a.tel-link{
         .logo-container-small img:hover {
             transform: translateY(-5px);
         }
+        
+        a .logo-container-small:hover {
+          cursor: pointer;
+          transform: translateY(-5px);
+        }
+        
+        .logo-container > div {
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 15px;
+          text-align: center;
+        }
+
+.logo-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
         
         .logo-item{
             max-width: 200px;
