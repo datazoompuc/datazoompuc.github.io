@@ -15,5 +15,5 @@ O [pacote `datazoom.amazonia`](https://github.com/datazoompuc/datazoom.amazonia)
 <div class="logo-container-small" style="position: relative;">
     <h2> Explore as visualizações </h2>
     <img src="{{ site.baseurl }}/assets/img/banner_dzam.png" alt="Data Zoom Amazônia" style="max-height: 100px;">
-    <a href="https://datazoomamazonia.com.br/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+    <a href="https://datazoomamazonia.com.br/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>

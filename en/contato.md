@@ -33,13 +33,13 @@ lang: en
 To request changes or ask questions about any Data Zoom products, click one of the links below to open a GitHub **Issue**.
 
 <div class="logo-container-small">
-    <a href="https://github.com/datazoompuc/datazoom.amazonia/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;">
+    <a href="https://github.com/datazoompuc/datazoom.amazonia/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo"> Data Zoom Amazônia
     </a>
-    <a href="https://github.com/datazoompuc/datazoom_social_Stata/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;">
+    <a href="https://github.com/datazoompuc/datazoom_social_Stata/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo"> Data Zoom Social Stata
     </a>
-    <a href="https://github.com/datazoompuc/datazoom.social/issues" style="font-family:JetBrains Mono; font-weight:bold;">
+    <a href="https://github.com/datazoompuc/datazoom.social/issues" style="font-family:JetBrains Mono; font-weight:bold;" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo"> Data Zoom Social R
     </a>
 </div>

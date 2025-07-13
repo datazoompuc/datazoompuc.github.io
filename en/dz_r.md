@@ -13,5 +13,5 @@ The [`datazoom.social` R package](https://github.com/datazoompuc/datazoom.social
 <div class="logo-container-small" style="position: relative;">
     <h2> Access our package on GitHub </h2>
     <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
-    <a href="https://github.com/datazoompuc/datazoom.social" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+    <a href="https://github.com/datazoompuc/datazoom.social" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>

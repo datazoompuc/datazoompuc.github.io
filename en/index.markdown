@@ -34,7 +34,7 @@ We build include statistical packages in *Stata* and *R* which ease the extracti
 <div class="logo-container-small" style="position: relative;">
     <h2> Visit our GitHub project </h2>
     <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
-    <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+    <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>
 
 In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> cite us</a>.

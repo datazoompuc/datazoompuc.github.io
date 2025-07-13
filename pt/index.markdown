@@ -34,7 +34,7 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
 <div class="logo-container-small" style="position: relative;">
     <h2> Visite nosso projeto no GitHub </h2>
     <img src="{{ site.baseurl }}/assets/img/github-mark.png" alt="GitHub">
-    <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></a>
+    <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>
 
 Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> nos cite</a>.
