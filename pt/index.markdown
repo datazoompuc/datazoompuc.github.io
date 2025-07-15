@@ -24,7 +24,7 @@ O **Data Zoom** é um projeto desenvolvido pelo [Departamento de Economia da PUC
     <div>
         <h3>Data Zoom Social R</h3>
         <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html">
-            <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo">
+            <img src="{{ site.baseurl }}/assets/img/hex_dz_outline.png" alt="DZ Logo">
         </a>
     </div>
 </div>
