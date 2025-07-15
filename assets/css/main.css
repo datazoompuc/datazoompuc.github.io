@@ -162,7 +162,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 1170px;
+  width: 100vw;
   height: auto;
 }
 
