@@ -193,6 +193,14 @@ header{
         margin-right: 0; /* optional spacing from edge */
 	width: 50%;
     }
+    
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
 }
 
 .navbar-default .navbar-toggle{
