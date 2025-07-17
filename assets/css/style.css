@@ -541,7 +541,7 @@ a.tel-link{
             text-align: center;
             padding: 10px;
             display: block;
-            margin: 10px auto;
+            margin: 10px 10px 10px 10px;
             width: fit-content;
             max-width: 90vw;
         }
