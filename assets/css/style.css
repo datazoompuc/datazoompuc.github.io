@@ -168,30 +168,30 @@ header{
 
 @media (max-width: 1199px) {
     .navbar-nav > li {
-        float: none;
-        width: 100%;
-        display: block;
+        float: none !important;
+        width: 100% !important;
+        display: block !important;
     }
     
     .navbar-nav > li > a {
-        display: block;
-        width: 90%;
-        padding: 15px 20px; /* 15px top/bottom, 20px left/right */
-	margin: auto;
+        display: block !important;
+        width: 90% !important;
+        padding: 15px 20px !important; /* 15px top/bottom, 20px left/right */
+	margin: auto !important;
     }
 .navbar-header {
-    text-align: center;
+    text-align: center !important;
 }
 
 .navbar-toggle {
-    float: none;
-    display: inline-block;
+    float: none !important;
+    display: inline-block !important;
 }
 
     .nav.navbar-nav.menu-right > li {
-        margin-left: auto;
-        margin-right: 0; /* optional spacing from edge */
-	width: 50%;
+        margin-left: auto !important;
+        margin-right: 0 !important; /* optional spacing from edge */
+	width: 50% !important;
     }
     
     .navbar-collapse.collapse {
