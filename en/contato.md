@@ -12,7 +12,7 @@ lang: en
     box-shadow: none;
 }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .logo-container-small a {
         display: block; /* Stack vertically on mobile */
         margin-right: 0 !important; /* Remove right margins */
