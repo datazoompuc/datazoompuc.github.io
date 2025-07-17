@@ -166,7 +166,7 @@ header{
 
 /*************** TOGGLE MENU ***************/
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .navbar-nav > li {
         float: none;
         width: 100%;
