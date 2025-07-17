@@ -125,6 +125,8 @@ header{
         color: #369;
 	background-color: #ecf1f5;
 	display: flex;
+	justify-content: center;
+	flex: 0 0 80%;
 }
 
 @font-face {
@@ -159,8 +161,8 @@ header{
 
 /* Push menu to the right */
 .menu-right {
-    margin-left: auto;
-    padding-left: 0px;
+    flex: 0 0 20%;
+    justify-content: flex-end;
 }
 
 
