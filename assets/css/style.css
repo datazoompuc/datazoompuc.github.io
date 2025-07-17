@@ -195,11 +195,11 @@ header{
     }
     
     /* Add these to make it actually collapse/hide: */
-    .navbar-collapse {
+    .navbar-collapse.collapse {
       display: none !important;
     }
 
-    .navbar-collapse.in {
+    .navbar-collapse.collapse.in {
         display: block !important;
     }
 }
