@@ -539,9 +539,9 @@ a.tel-link{
             border-radius: 10px;
             background-color: #ecf1f5;
             text-align: center;
-            padding: 10px;
+            padding: 10px 10px;
             display: block;
-            margin: 10px 10px 10px 10px;
+            margin: 10px auto;
             width: fit-content;
             max-width: 90vw;
         }
