@@ -193,15 +193,6 @@ header{
         margin-right: 0; /* optional spacing from edge */
 	width: 50%;
     }
-    
-    /* Add these to make it actually collapse/hide: */
-    .navbar-collapse.collapse {
-      display: none !important;
-    }
-
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
 }
 
 .navbar-default .navbar-toggle{
