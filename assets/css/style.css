@@ -544,6 +544,7 @@ a.tel-link{
             margin: 10px auto;
             width: fit-content;
             max-width: 90vw;
+            overflow: hidden;
         }
         
         .scroll-box {
@@ -629,5 +630,5 @@ a.tel-link{
             width: 40%;
             height: auto;
             float: left;
-            margin: 15px 30px 50px 15px;
+            margin: 15px 30px 15px 15px;
         }
