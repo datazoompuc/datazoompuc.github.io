@@ -109,7 +109,7 @@ a:visited {
 
 .ex-team-grid .team-role {
     max-width: 200px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .team-year {
