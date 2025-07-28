@@ -105,7 +105,10 @@ a:visited {
     color: #3498db;
     font-weight: 600;
     font-size: 1.5rem;
-    max-width: 400px;
+}
+
+.ex-team-grid.team-role {
+    max-width: 200px;
 }
 
 .team-year {
