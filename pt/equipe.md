@@ -107,7 +107,7 @@ a:visited {
     font-size: 1.5rem;
 }
 
-.ex-team-grid.team-role {
+.ex-team-grid .team-role {
     max-width: 200px;
 }
 
