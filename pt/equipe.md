@@ -105,6 +105,7 @@ a:visited {
     color: #3498db;
     font-weight: 600;
     font-size: 1.5rem;
+    max-width: 200px;
 }
 
 .team-year {
