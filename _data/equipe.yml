@@ -19,13 +19,6 @@ pt:
     inicio: "2022"
     photo: "/assets/img/team/laura_regadas.jpg"
     site: "https://br.linkedin.com/in/laura-t-regadas"
-  
-  - nome: "Igor Rigolon"
-    cargo: "Assistente de Pesquisa"
-    formacao: "Mestre, PUC-Rio"
-    inicio: "2021"
-    photo: "/assets/img/team/igor.jpg"
-    site: "https://github.com/IgorRigolon"
     
   - nome: "Bernardo Sieira"
     cargo: "Assistente de Pesquisa"
