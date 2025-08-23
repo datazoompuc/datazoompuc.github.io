@@ -1,14 +1,10 @@
-- nome: Laura Regadas
-  periodo: 2022 - 2024
-  site: https://br.linkedin.com/in/laura-t-regadas/pt
+- nome: Igor Rigolon
+  periodo: 2021 - 2025
+  site: https://github.com/IgorRigolon
 
 - nome: Breno Avidos
   periodo: 2023 - 2024
   site: https://br.linkedin.com/in/breno-avidos-moura-703bb3278
-
-- nome: Arthur Vasconcellos
-  periodo: 2022 - 2024
-  site: https://br.linkedin.com/in/arthur-lins-de-vasconcellos-2257b0227
 
 - nome: Carolina Moura
   periodo: 2023 - 2024
@@ -19,20 +15,20 @@
   site: https://br.linkedin.com/in/mariana-nascimento-martins-212880234
 
 - nome: Maria Luísa Braun
-  periodo: 2023 -2024
+  periodo: 2023 - 2024
   site: https://www.linkedin.com/in/maria-lu%C3%ADsa-braun/
 
 - nome: Giulia Imbuzeiro
   periodo: 2023 - 2024
   site: https://br.linkedin.com/in/giulia-imbuzeiro
 
+- nome: Arthur Vasconcellos
+  periodo: 2022 - 2024
+  site: https://br.linkedin.com/in/arthur-lins-de-vasconcellos-2257b0227
+
 - nome: Marcelo Sessim
   periodo: 2023
   site: https://br.linkedin.com/in/marcelo-soares-sessim-912786200
-
-- nome: Fredie Didier
-  periodo: 2020 - 2023
-  site: https://www.linkedin.com/in/fredie-didier-7a5b90190/
 
 - nome: Guilherme Jardim
   periodo: 2021 - 2023
@@ -54,17 +50,13 @@
   periodo: 2022 - 2023
   site: https://github.com/titogbruni
 
-- nome: Pietro Lucchesi
-  periodo: 2019
-  site: https://www.linkedin.com/in/pietro-lucchesi-95b522232/
+- nome: Fredie Didier
+  periodo: 2020 - 2023
+  site: https://www.linkedin.com/in/fredie-didier-7a5b90190/
 
 - nome: Miriana Vignetti
   periodo: 2022
   site: https://www.linkedin.com/in/miriana-vignetti-3121151a2/
-
-- nome: Bruno Duarte
-  periodo: 2019 - 2022
-  site:
 
 - nome: Michelle Souza
   periodo: 2021 - 2022
@@ -78,10 +70,6 @@
   periodo: 2021 - 2022
   site: https://www.linkedin.com/in/luiz-guilherme-lopes-moussatche-219638211/
 
-- nome: Anna Saraiva
-  periodo: 2019 - 2021
-  site: https://www.linkedin.com/in/anna-saraiva/
-
 - nome: Victor da Matta
   periodo: 2020 - 2022
   site: https://www.linkedin.com/in/victor-matta/
@@ -93,6 +81,14 @@
 - nome: Arthur Carvalho
   periodo: 2020 - 2021
   site: https://github.com/arthurcbps
+
+- nome: Bruno Duarte
+  periodo: 2019 - 2022
+  site:
+
+- nome: Anna Saraiva
+  periodo: 2019 - 2021
+  site: https://www.linkedin.com/in/anna-saraiva/
 
 - nome: Maria Clara Mano
   periodo: 2021
@@ -109,6 +105,10 @@
 - nome: Helena Arruda
   periodo: 2019
   site: https://www.linkedin.com/in/helena-arruda/
+
+- nome: Pietro Lucchesi
+  periodo: 2019
+  site: https://www.linkedin.com/in/pietro-lucchesi-95b522232/
 
 - nome: Natália Trigo
   periodo: 2017 - 2019

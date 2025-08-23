@@ -53,14 +53,12 @@ Tel.: (21) 3527-1078
 
 [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br)
 
-## 📍 Endereço
+
 
 **Departamento de Economia**  
 **Pontifícia Universidade Católica do Rio de Janeiro**
 
-Rua Marquês de São Vicente, 225, sala 210F  
-Gávea, Rio de Janeiro-RJ  
-CEP: 22451-900
+
 
 <iframe class="map" 
         width="100%" 
