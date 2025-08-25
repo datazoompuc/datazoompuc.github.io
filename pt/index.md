@@ -6,8 +6,6 @@ lang: pt
 
 # Bem-vindo ao Data Zoom!
 
-imjijmmj
-
 O **Data Zoom** é um projeto desenvolvido pelo [Departamento de Economia da PUC-Rio](http://www.econ.puc-rio.br/). Seu objetivo é promover acesso, processamento e análise de microdados do Brasil para pesquisadores, estudantes, jornalistas, e todos aqueles que sejam interessados por questões econômicas, sociais e ambientais do país. O projeto também é um laboratório que forma capital humano, uma vez que estudantes do departamento são treinados para desenvolver produtos a partir da ideia de livre acesso aos dados.
 
 <div class="logo-container">
