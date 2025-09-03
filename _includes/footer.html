@@ -1,4 +1,5 @@
 <footer class="row">
+  <!-- Coluna esquerda -->
   <div class="col-sm-12 col-md-6">
     <div class="footer-left">
       <div class="txt">
@@ -18,29 +19,33 @@
       </div>
     </div>
   </div>
+
+  <!-- Coluna direita (Finep, CNPq e redes sociais) -->
   <div class="col-sm-12 col-md-6">
-    <div class="footer-right">
-      <div class="txt">
-        <a href="http://www.finep.gov.br" target="_blank"> <img alt="Finep" src="{{ site.baseurl }}/assets/img/logo-finep.png"> </a>
+    <div class="footer-right d-flex align-items-center justify-content-md-end">
+      <!-- Finep -->
+      <div class="txt me-3">
+        <a href="http://www.finep.gov.br" target="_blank">
+          <img alt="Finep" src="{{ site.baseurl }}/assets/img/logo-finep.png">
+        </a>
       </div>
-      <div class="txt">
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+      <!-- CNPq -->
+      <div class="txt me-3">
+        <a href="http://www.cnpq.br" target="_blank">
+          <img src="{{ site.baseurl }}/assets/img/cnpq.jpg" alt="CNPq">
+        </a>
       </div>
-      <div class="txt">
-        <a href="http://www.cnpq.br" target="_blank"> <img src="{{ site.baseurl }}/assets/img/cnpq.jpg"> </a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
-    <div class="footer-right">
-      <nav class="txt social-links" aria-label="Redes sociais">
-        <a href="https://www.linkedin.com/company/data-zoom/" target="_blank" rel="noopener">
+
+      <!-- Redes sociais -->
+      <nav class="txt social-links d-flex" aria-label="Redes sociais">
+        <a href="https://www.linkedin.com/company/data-zoom/" target="_blank" rel="noopener" class="me-2">
           <img
             alt="LinkedIn"
             src="{{ site.baseurl }}/assets/img/linkedin.png"
             class="social-icon"
-            width="60"
-            height="60"
+            width="40"
+            height="40"
           >
         </a>
         <a href="https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug" target="_blank" rel="noopener">
@@ -48,13 +53,11 @@
             alt="YouTube"
             src="{{ site.baseurl }}/assets/img/Youtube.png"
             class="social-icon"
-            width="60"
-            height="60"
+            width="40"
+            height="40"
           >
         </a>
       </nav>
     </div>
   </div>
 </footer>
-
- 
