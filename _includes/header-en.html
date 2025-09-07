@@ -1,22 +1,53 @@
 <header class="row">
-  <img id="logo" height = 100px alt="datazoom" src="{{ site.baseurl }}/assets/img/logo_branco_horizontal.png" class = "center-img">
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get current page filename
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    // Remove active class from all menu items
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => item.classList.remove('active'));
-    
-    // Add active class to current page link
-    const currentLink = document.querySelector(`a[href="${currentPage}"]`);
-    if (currentLink) {
-        currentLink.classList.add('active');
+  <img id="logo" height="100px" alt="datazoom" src="{{ site.baseurl }}/assets/img/logo_branco_horizontal.png" class="center-img">
+
+  <style>
+    .menu-item-english {
+      background-color: #003366;  
+      color: #ffffff !important; 
+      border-radius: 5px;
+      padding: 8px 15px;
+      font-weight: 500;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-});
+    .menu-item-english:hover {
+      background-color: #0055aa;
+      color: #ffffff !important;
+    }
+
+    /* Botão especial para "português" */
+    .menu-item-portugues {
+      background-color: #003366;  /* azul escuro */
+      color: #ffffff !important; /* texto branco */
+      border-radius: 5px;
+      padding: 8px 15px;
+      font-weight: 500;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .menu-item-portugues:hover {
+      background-color: #0055aa;
+      color: #ffffff !important;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get current page filename
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      
+      // Remove active class from all menu items
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => item.classList.remove('active'));
+      
+      // Add active class to current page link
+      const currentLink = document.querySelector(`a[href="${currentPage}"]`);
+      if (currentLink) {
+          currentLink.classList.add('active');
+      }
+    });
   </script>
 </header>
+
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
@@ -39,7 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contact</a></li>
         </ul>
         <ul class="nav navbar-nav menu-right">
-	  <li><a href="{{ site.baseurl }}/pt{{ page.url | remove_first: '/en' }}" class="menu-item"> português </a> </li>
+          <li>
+            <a href="{{ site.baseurl }}/pt{{ page.url | remove_first: '/en' }}" 
+               class="menu-item menu-item-portugues">
+              português
+            </a>
+          </li>
         </ul>
       </div>
     </div>
