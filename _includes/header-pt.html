@@ -1,26 +1,45 @@
 <header class="row">
-  <img id="logo" height = 100px alt="datazoom" src="{{ site.baseurl }}/assets/img/logo_branco_horizontal.png" class = "center-img">
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get current page filename
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    // Remove active class from all menu items
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => item.classList.remove('active'));
-    
-    // Add active class to current page link
-    const currentLink = document.querySelector(`a[href="${currentPage}"]`);
-    if (currentLink) {
-        currentLink.classList.add('active');
+  <img id="logo" height="100px" alt="datazoom" src="{{ site.baseurl }}/assets/img/logo_branco_horizontal.png" class="center-img">
+
+  <style>
+    /* Estilo especial para o botão "english" */
+    .menu-item-english {
+      background-color: #003366;  /* azul escuro */
+      color: #ffffff !important; /* texto branco */
+      border-radius: 5px;        /* cantos arredondados */
+      padding: 8px 15px;         /* espaçamento interno */
+      font-weight: 500;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-});
+
+    .menu-item-english:hover {
+      background-color: #0055aa; /* azul mais claro no hover */
+      color: #ffffff !important;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get current page filename
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      
+      // Remove active class from all menu items
+      const menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(item => item.classList.remove('active'));
+      
+      // Add active class to current page link
+      const currentLink = document.querySelector(`a[href="${currentPage}"]`);
+      if (currentLink) {
+          currentLink.classList.add('active');
+      }
+    });
   </script>
 </header>
+
 <div class="row">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
-      <div class=" row navbar-header">
+      <div class="row navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -30,16 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/index.html" class="menu-item active">início</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html" class="menu-item">DZ Amazônia</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html" class="menu-item">DZ Stata</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html" class="menu-item">DZ R</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/equipe.html" class="menu-item">equipe</a></li>
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html" class="menu-item">citação</a></li>          
-            <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contato</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/index.html" class="menu-item active">início</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html" class="menu-item">DZ Amazônia</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html" class="menu-item">DZ Stata</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html" class="menu-item">DZ R</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/equipe.html" class="menu-item">equipe</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html" class="menu-item">citação</a></li>          
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contato</a></li>
         </ul>
         <ul class="nav navbar-nav menu-right">
-	  <li><a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}" class="menu-item"> english </a> </li>
+          <li>
+            <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}" class="menu-item menu-item-english">
+              english
+            </a>
+          </li>
         </ul>
       </div>
     </div>
