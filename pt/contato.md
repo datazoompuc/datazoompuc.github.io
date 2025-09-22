@@ -55,11 +55,11 @@ Tel.: (21) 3527-1078
 
 ## Youtube
 
-[https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug]
+[https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug](https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug)
 
 ## Linkedin
 
-[https://www.linkedin.com/company/data-zoom/](maito:https://www.linkedin.com/company/data-zoom/)
+[https://www.linkedin.com/company/data-zoom/](https://www.linkedin.com/company/data-zoom/)
 
 **Departamento de Economia**  
 **Pontifícia Universidade Católica do Rio de Janeiro**
