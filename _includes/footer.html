@@ -1,61 +1,71 @@
-<footer class="row" style="padding: 10px 0;">
+<footer class="row">
   <!-- Coluna esquerda -->
-  <div class="col-sm-12 col-md-6 d-flex">
-    
-    <!-- Subcoluna: Brasão -->
-    <div class="brasao d-flex align-items-center justify-content-center" style="flex:1;">
-      <a href="http://www.puc-rio.br">
-        <img src="{{ '/assets/img/Brasao_PUC.png' | relative_url }}"
-             alt="PUC" height="140" style="display:block;">
-      </a>
-    </div>
-
-    <!-- Subcoluna: Texto + Redes -->
-    <div class="footer-txt" style="flex:2;">
-      <h4 class="footer-link" style="margin:0 0 4px 0;">
-        <a href="http://www.econ.puc-rio.br">Departamento de Economia</a>
-      </h4>
-      <h4 style="margin:0 0 8px 0;">Pontifícia Universidade Católica do Rio de Janeiro</h4>
-
-      <p style="margin:0 0 4px 0;">
-        Tel.: <a href="tel:+552135271078" class="tel-link">+552135271078</a> <br />
-        Rua Marquês de São Vicente, 225, sala 210F - Gávea<br />
-        22451-900 - Rio de Janeiro, RJ
-      </p>
-
-      <!-- Redes sociais -->
-      <nav class="txt d-flex" aria-label="Redes sociais"
-           style="margin-top:8px; display:inline-flex; gap:16px; align-items:center;">
-        <a href="https://www.linkedin.com/company/data-zoom/" target="_blank" rel="noopener">
-          <img alt="LinkedIn"
-               src="{{ '/assets/img/Linkedin3.png' | relative_url }}"
-               width="34" height="34" style="display:block;">
+  <div class="col-sm-12 col-md-6">
+    <div class="footer-left">
+      <div class="txt" style="display:flex; gap:12px; align-items:flex-start;">
+        <a href="http://www.puc-rio.br">
+          <img alt="PUC"
+               src="{{ '/assets/img/logo_puc.png' | relative_url }}"
+               width="229" height="140" style="display:block;">
+               width="65" height="140" style="display:block;">
         </a>
-        <a href="https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug" target="_blank" rel="noopener">
-          <img alt="YouTube"
-               src="{{ '/assets/img/Youtube.png' | relative_url }}"
-               width="43" height="34" style="display:block;">
-        </a>
-      </nav>
+
+        <div class="footer-txt">
+          <h4 class="footer-link" style="margin:0 0 4px 0;">
+            <a href="http://www.econ.puc-rio.br">Departamento de Economia</a>
+          </h4>
+          <h4 style="margin:0 0 8px 0;">Pontifícia Universidade Católica do Rio de Janeiro</h4>
+
+          <p style="margin:0 0 8px 0;">
+            Tel.: <a href="tel:+552135271078" class="tel-link">+552135271078</a> <br />
+            Rua Marquês de São Vicente, 225, sala 210F - Gávea<br />
+            22451-900 - Rio de Janeiro, RJ
+          </p>
+
+          <!-- Redes sociais embaixo do endereço -->
+          <nav class="txt d-flex" aria-label="Redes sociais"
+               style="margin-top:15px; display:inline-flex; gap:16px; align-items:center;">
+            <a href="https://www.linkedin.com/company/data-zoom/" target="_blank" rel="noopener">
+              <img
+                alt="LinkedIn"
+                src="{{ '/assets/img/Linkedin3.png' | relative_url }}"
+                width="43" height="43" style="display:block; object-fit: contain;">
+            </a>
+            <a href="https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug" target="_blank" rel="noopener">
+              <img
+                alt="YouTube"
+                src="{{ '/assets/img/Youtube.png' | relative_url }}"
+                width="30" height="43" style="display:block;">
+            </a>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Coluna direita (Finep e CNPq lado a lado) -->
+  <!-- Coluna direita (Finep e CNPq) -->
   <div class="col-sm-12 col-md-6">
-    <div class="footer-right d-flex align-items-center justify-content-md-end" style="gap:20px;">
-      
+    <div class="footer-right d-flex align-items-center justify-content-md-end">
       <!-- Finep -->
-      <a href="http://www.finep.gov.br" target="_blank" rel="noopener">
-        <img alt="Finep"
-             src="{{ '/assets/img/logo-finep3.png' | relative_url }}"
-             height="50" style="display:block;">
-      </a>
+      <div class="txt" style="margin-left:25px;">
+        <a href="http://www.finep.gov.br" target="_blank" rel="noopener">
+          <img 
+            alt="Finep"
+            src="{{ '/assets/img/logo-finep3.png' | relative_url }}"
+            width="108" height="50">
+        </a>
+      </div>
 
       <!-- CNPq -->
-      <a href="http://www.cnpq.br" target="_blank" rel="noopener">
-        <img src="{{ '/assets/img/cnpq2.png' | relative_url }}"
-             alt="CNPq" height="50" style="display:block;">
-      </a>
+      <div class="txt" style="margin-left:25px;">
+        <a href="http://www.cnpq.br" target="_blank" rel="noopener">
+          <img
+            src="{{ '/assets/img/cnpq2.png' | relative_url }}"
+            alt="CNPq"
+            width="163" height="50"
+            style="display:block;">
+        </a>
+      </div>
     </div>
   </div>
 </footer>
