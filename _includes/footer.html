@@ -4,7 +4,9 @@
     <div class="footer-left">
       <div class="txt" style="display:flex; gap:12px; align-items:flex-start;">
         <a href="http://www.puc-rio.br">
-          <img alt="PUC" src="{{ site.baseurl }}/assets/img/Brasao_PUC_2023.png" width="55" height="100" style="display:block;">
+          <img alt="PUC"
+               src="{{ site.baseurl }}/assets/img/Brasao_PUC_2023.png"
+               width="55" height="100" style="display:block;">
         </a>
 
         <div class="footer-txt">
@@ -19,26 +21,50 @@
             22451-900 - Rio de Janeiro, RJ
           </p>
 
-          <!-- Redes sociais embaixo do endereço -->
+          <!-- ===== Redes sociais (com TESTE embutido) ===== -->
+          <style>
+            /* Apenas para facilitar a visualização durante o teste */
+            .img-error { outline:2px solid #c00; outline-offset:2px; }
+          </style>
+
           <nav class="txt d-flex" aria-label="Redes sociais"
-            style="margin-top:15px; display:inline-flex; gap:16px; align-items:center;">
+               style="margin-top:15px; display:inline-flex; gap:16px; align-items:center;">
+            <!-- LinkedIn -->
             <a href="https://www.linkedin.com/company/data-zoom/" target="_blank" rel="noopener">
               <img
+                id="ico-linkedin"
                 alt="LinkedIn"
                 src="{{ site.baseurl }}/assets/img/Linkedin3.png"
-                width="20"
-                height="20">
+                width="20" height="20" style="display:block;"
+                onerror="
+                  console.warn('[ICON] LinkedIn falhou. Trocando por Finep para testar CSS/HTML...');
+                  this.classList.add('img-error');
+                  this.onerror=null;
+                  this.alt='LinkedIn (fallback Finep)';
+                  this.src='{{ site.baseurl }}/assets/img/logo-finep3.png';
+                "
+                onload="console.log('[ICON] LinkedIn carregado:', this.src, 'naturalWidth=', this.naturalWidth)">
             </a>
+
+            <!-- YouTube -->
             <a href="https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug" target="_blank" rel="noopener">
               <img
+                id="ico-youtube"
                 alt="YouTube"
                 src="{{ site.baseurl }}/assets/img/Youtube.png"
-                width="20"
-                height="20">
+                width="20" height="20" style="display:block;"
+                onerror="
+                  console.warn('[ICON] YouTube falhou. Trocando por Finep para testar CSS/HTML...');
+                  this.classList.add('img-error');
+                  this.onerror=null;
+                  this.alt='YouTube (fallback Finep)';
+                  this.src='{{ site.baseurl }}/assets/img/logo-finep3.png';
+                "
+                onload="console.log('[ICON] YouTube carregado:', this.src, 'naturalWidth=', this.naturalWidth)">
             </a>
           </nav>
-  
-          </div>
+          <!-- ===== Fim das redes sociais ===== -->
+        </div>
       </div>
     </div>
   </div>
@@ -52,8 +78,7 @@
           <img 
             alt="Finep"
             src="{{ site.baseurl }}/assets/img/logo-finep3.png" 
-            width="108"
-            height="50">
+            width="108" height="50">
         </a>
       </div>
 
@@ -63,11 +88,26 @@
           <img
             src="{{ site.baseurl }}/assets/img/cnpq2.png"
             alt="CNPq"
-            width="163"
-            height="50"
+            width="163" height="50"
             style="display:block;">
         </a>
       </div>
     </div>
   </div>
 </footer>
+
+<!-- Pequeno logger para ver os URLs resolvidos no console -->
+<script>
+  (function(){
+    var ids = ['ico-linkedin','ico-youtube'];
+    ids.forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el) return;
+      console.log('[ICON] tentando carregar:', id, '=>', el.src);
+      if (el.complete) {
+        console.log('[ICON] estado inicial:', id, 'complete=', el.complete, 'naturalWidth=', el.naturalWidth);
+        if (!el.naturalWidth) el.classList.add('img-error');
+      }
+    });
+  })();
+</script>
