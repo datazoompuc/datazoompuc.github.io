@@ -53,6 +53,14 @@ Tel.: +55 (21) 3527-1078
 
 [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br)
 
+## Youtube
+
+https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug
+
+## Linkedin
+
+https://www.linkedin.com/company/data-zoom/
+
 ## 📍 Address
 
 **Departamento de Economia**  
