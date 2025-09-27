@@ -53,11 +53,11 @@ Tel.: (21) 3527-1078
 
 [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br)
 
-## Youtube
+## <img src="{{ site.baseurl }}/assets/img/Linkedin1.webp.png" height=25px style="vertical-align: text-top;"> Youtube
 
 [https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug](https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug)
 
-## Linkedin
+## <img src="{{ site.baseurl }}/assets/img/github-mark.png" height=25px style="vertical-align: text-top;"> Linkedin
 
 [https://www.linkedin.com/company/data-zoom/](https://www.linkedin.com/company/data-zoom/)
 
