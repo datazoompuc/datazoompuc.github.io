@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Acesse dados brasileiros pelo Stata e pelo R.
   O projeto é um laboratório que forma capital humano.
   Seguimos a filosofia de códigos abertos.
-baseurl: nil # following jekyll/97 and jekyll/6137
+# baseurl: nil # following jekyll/97 and jekyll/6137
 url: 'https://datazoompuc.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
