@@ -47,17 +47,17 @@ Para requisitar alguma alteração ou tirar qualquer dúvida sobre os produtos d
 
 ## 📞 Telefone
 
-Tel.: +55(21) 3527-1078
+Tel.: +55 (21) 3527-1078
 
 ## ✉️ E-mail
 
 [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br)
 
-## <img src="{{ site.baseurl }}/assets/img/youtube_red.png" height=46px style="vertical-align: text-top;"> Youtube
+## <img src="{{ site.baseurl }}/assets/img/youtube_red.png" height=35px style="vertical-align: text-top;"> Youtube
 
 [https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug](https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug)
 
-## <img src="{{ site.baseurl }}/assets/img/Linkedin1.webp" height=46px style="vertical-align: text-top;"> Linkedin
+## <img src="{{ site.baseurl }}/assets/img/Linkedin1.webp" height=35px style="vertical-align: text-top;"> Linkedin
 
 [https://www.linkedin.com/company/data-zoom/](https://www.linkedin.com/company/data-zoom/)
 
