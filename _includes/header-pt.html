@@ -1,11 +1,11 @@
 <header class="row">
-
+  <!-- Logo -->
   <img id="logo" height="100px" alt="datazoom"
        src="{{ site.baseurl }}/assets/img/logo_branco_horizontal.png"
        class="center-img">
 
   <style>
-
+    /* Botão especial "english" */
     .menu-item-english {
       background-color: #336699;
       color: #ffffff !important;
@@ -20,55 +20,52 @@
     }
 
 
-    @media (min-width: 640px) {
-      .navbar-toggle {
-        display: none; 
-      }
-      .navbar-collapse.collapse {
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important;
-      }
+    /* Padrão: NÃO-TOUCH -> menu sempre aberto */
+    .navbar-toggle { display: none !important; }
+    .navbar-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
     }
 
-  
-    @media (max-width: 639.98px) {
-      .navbar-collapse.collapse {
-        display: none; 
-      }
-      .navbar-collapse.collapse.in {
-        display: block !important; 
-      }
+    /* Quando detectamos touch (classe no <html>) */
+    .is-touch .navbar-toggle { display: block !important; }
+    .is-touch .navbar-collapse.collapse { display: none; }
+    .is-touch .navbar-collapse.collapse.in { display: block !important; }
+
+    /* Fallback por media query (caso JS esteja off ou o UA reporte touch) */
+    @media (hover: none), (pointer: coarse) {
+      .navbar-toggle { display: block !important; }
+      .navbar-collapse.collapse { display: none; }
+      .navbar-collapse.collapse.in { display: block !important; }
     }
   </style>
 
-  
+  <!-- Detecta touch e marca no <html> (o mais cedo possível) -->
+  <script>
+    (function () {
+      var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints || navigator.msMaxTouchPoints);
+      document.documentElement.classList.add(isTouch ? 'is-touch' : 'is-non-touch');
+    })();
+  </script>
+
+  <!-- Marca o item ativo do menu -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       function norm(path) {
         if (!path) return '/';
-        
-        try {
-          
-          path = new URL(path, window.location.origin).pathname;
-        } catch (_) { /* ignora */ }
-        path = path.replace(/\/+$/, '/'); 
+        try { path = new URL(path, window.location.origin).pathname; } catch(_){}
+        path = path.replace(/\/+$/, '/');
         if (!path.startsWith('/')) path = '/' + path;
         return path;
       }
-
-      const current = norm(window.location.pathname);
-     
-      const candidates = [current, current + 'index.html'];
-
-      
+      var current = norm(window.location.pathname);
+      var candidates = [current, current + 'index.html'];
       document.querySelectorAll('a.menu-item').forEach(function (a) {
         a.classList.remove('active');
-        const path = norm(a.getAttribute('href'));
-        if (candidates.includes(path)) {
-          a.classList.add('active');
-        }
+        var path = norm(a.getAttribute('href'));
+        if (candidates.includes(path)) a.classList.add('active');
       });
     });
   </script>
@@ -78,7 +75,7 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="row navbar-header">
-        
+        <!-- O botão só aparece em touch (regras acima) -->
         <button type="button" class="navbar-toggle collapsed"
                 data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -90,7 +87,6 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/index.html" class="menu-item">início</a></li>
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html" class="menu-item">DZ Amazônia</a></li>
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html" class="menu-item">DZ Stata</a></li>
@@ -100,6 +96,7 @@
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contato</a></li>
         </ul>
 
+        <!-- Alinha à direita (Bootstrap 3) -->
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}"
