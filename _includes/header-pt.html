@@ -19,50 +19,57 @@
       color: #ffffff !important;
     }
 
-    /* Regras simples guiadas por classe no <html> (definida via JS) */
-    html.no-touch .navbar-toggle { display: none !important; }
-    html.no-touch .navbar-collapse { display: block !important; height: auto !important; }
+    /* Regras garantidas para NÃO-TOUCH (PC) */
+    html.no-touch #bs-example-navbar-collapse-1 {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+    html.no-touch .navbar-toggle {
+      display: none !important;
+    }
   </style>
 
-  <!-- 1) Marca <html> como touch/no-touch -->
+  <!-- Marca <html> com touch / no-touch o mais cedo possível -->
   <script>
     (function () {
-      var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+      var isTouch =
+        ('ontouchstart' in window) ||
+        (navigator.maxTouchPoints > 0) ||
+        (navigator.msMaxTouchPoints > 0);
       document.documentElement.classList.add(isTouch ? 'touch' : 'no-touch');
     })();
   </script>
 
-  <!-- 2) Abre o menu no desktop e mantém colapsável no touch -->
+  <!-- Lógica: remove hambúrguer e o colapso no PC -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var toggleBtn = document.querySelector('.navbar-toggle');
-      var collapse  = document.getElementById('bs-example-navbar-collapse-1');
       var isTouch = document.documentElement.classList.contains('touch');
+      var collapse = document.getElementById('bs-example-navbar-collapse-1');
+      var toggleBtn = document.querySelector('.navbar-toggle');
 
       if (!collapse) return;
 
-      if (isTouch) {
-        /* Touch: mantém comportamento padrão do Bootstrap */
-        collapse.classList.add('collapse');
+      if (!isTouch) {
+        /* PC / notebook: menu sempre aberto, sem hambúrguer */
+        if (toggleBtn && toggleBtn.parentNode) {
+          toggleBtn.parentNode.removeChild(toggleBtn);   // remove o botão
+        }
+        collapse.classList.remove('collapse');           // elimina comportamento colapsável
         collapse.classList.remove('in');
-        collapse.style.removeProperty('display');
+        collapse.style.removeProperty('display');        // deixa o CSS resolver
         collapse.style.removeProperty('height');
-        if (toggleBtn) toggleBtn.style.removeProperty('display');
       } else {
-        /* Desktop/Notebook: menu sempre aberto, sem hambúrguer */
-        if (toggleBtn) toggleBtn.style.display = 'none';
-        collapse.classList.add('in');                 // estado "aberto"
-        collapse.classList.add('navbar-collapse');    // garante classe base
-        collapse.classList.add('collapse');           // mantém estilos da navbar
-        collapse.style.display = 'block';
-        collapse.style.height = 'auto';
+        
+        collapse.classList.add('collapse');
+        if (toggleBtn) toggleBtn.style.removeProperty('display');
       }
 
-      /* Script de ativo robusto */
+      
       function norm(path) {
         if (!path) return '/';
         try { path = new URL(path, window.location.origin).pathname; } catch(_){}
-        path = path.replace(/\/+$/, '/');            // 1 barra no final
+        path = path.replace(/\/+$/, '/');
         if (!path.startsWith('/')) path = '/' + path;
         return path;
       }
@@ -81,7 +88,7 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="row navbar-header">
-        <!-- Botão só aparece em touch (controlado por JS/CSS acima) -->
+        
         <button type="button" class="navbar-toggle collapsed"
                 data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -102,7 +109,6 @@
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contato</a></li>
         </ul>
 
-        <!-- Direita -->
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}"
