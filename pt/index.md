@@ -11,19 +11,19 @@ O **Data Zoom** é um projeto desenvolvido pelo [Departamento de Economia da PUC
 <div class="logo-container">
     <div>
         <h3>Data Zoom Amazônia</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia.html">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia">
             <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo">
         </a>
     </div>
     <div>
         <h3>Data Zoom Social Stata</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata.html">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata">
             <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo">
         </a>
     </div>
     <div>
         <h3>Data Zoom Social R</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r.html">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r">
             <img src="{{ site.baseurl }}/assets/img/hex_dz_outline.png" alt="DZ Logo">
         </a>
     </div>
@@ -37,4 +37,4 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
     <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>
 
-Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao.html"> nos cite</a>.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao"> nos cite</a>.
