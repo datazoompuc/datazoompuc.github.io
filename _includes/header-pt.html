@@ -19,53 +19,77 @@
       color: #ffffff !important;
     }
 
-    /* Regras garantidas para NÃO-TOUCH (PC) */
+    /* ======= Forçar layout desktop quando houver mouse/hover ======= */
+    html.no-touch .navbar-toggle { display: none !important; }
     html.no-touch #bs-example-navbar-collapse-1 {
       display: block !important;
       height: auto !important;
       overflow: visible !important;
     }
-    html.no-touch .navbar-toggle {
-      display: none !important;
-    }
   </style>
 
-  <!-- Marca <html> com touch / no-touch o mais cedo possível -->
+  <!-- DETECÇÃO ROBUSTA: prioriza mouse/hover sobre touch -->
   <script>
     (function () {
-      var isTouch =
-        ('ontouchstart' in window) ||
-        (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0);
-      document.documentElement.classList.add(isTouch ? 'touch' : 'no-touch');
+      // Se há QUALQUER ponteiro fino (mouse/trackpad) ou hover verdadeiro => desktop
+      var hasFinePointer = window.matchMedia('(any-pointer: fine)').matches ||
+                           window.matchMedia('(pointer: fine)').matches;
+      var hasHover = window.matchMedia('(any-hover: hover)').matches ||
+                     window.matchMedia('(hover: hover)').matches;
+
+      // Há touch "físico" (alguns laptops reportam >0 mesmo sem usar)
+      var hasTouchPoints = (navigator.maxTouchPoints || navigator.msMaxTouchPoints || 0) > 0 ||
+                           ('ontouchstart' in window);
+
+      // "Touch-only" quando NÃO há ponteiro fino NEM hover, mas há touch
+      var isTouchOnly = !hasFinePointer && !hasHover && hasTouchPoints;
+
+      var root = document.documentElement;
+      root.classList.toggle('no-touch', !isTouchOnly);
+      root.classList.toggle('touch', isTouchOnly);
+
+      // Atualiza caso o usuário conecte um mouse depois (opcional)
+      window.addEventListener('resize', function () {
+        var fine = window.matchMedia('(any-pointer: fine)').matches ||
+                   window.matchMedia('(pointer: fine)').matches;
+        var hov = window.matchMedia('(any-hover: hover)').matches ||
+                  window.matchMedia('(hover: hover)').matches;
+        var touchPts = (navigator.maxTouchPoints || navigator.msMaxTouchPoints || 0) > 0 ||
+                       ('ontouchstart' in window);
+        var touchOnly = !fine && !hov && touchPts;
+        root.classList.toggle('no-touch', !touchOnly);
+        root.classList.toggle('touch', touchOnly);
+      });
     })();
   </script>
 
-  <!-- Lógica: remove hambúrguer e o colapso no PC -->
+  <!-- Ativa item do menu e fixa estado aberto/fechado conforme classe no <html> -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var isTouch = document.documentElement.classList.contains('touch');
-      var collapse = document.getElementById('bs-example-navbar-collapse-1');
+      var isDesktop = document.documentElement.classList.contains('no-touch');
+      var collapse  = document.getElementById('bs-example-navbar-collapse-1');
       var toggleBtn = document.querySelector('.navbar-toggle');
 
-      if (!collapse) return;
-
-      if (!isTouch) {
-        /* PC / notebook: menu sempre aberto, sem hambúrguer */
-        if (toggleBtn && toggleBtn.parentNode) {
-          toggleBtn.parentNode.removeChild(toggleBtn);   // remove o botão
+      if (collapse) {
+        if (isDesktop) {
+          // Desktop: menu sempre aberto, sem hambúrguer
+          if (toggleBtn) toggleBtn.style.display = 'none';
+          collapse.classList.add('in');
+          collapse.classList.add('navbar-collapse');
+          collapse.classList.add('collapse'); // mantém estilos base do Bootstrap
+          collapse.style.display = 'block';
+          collapse.style.height = 'auto';
+        } else {
+          // Touch-only: comportamento Bootstrap padrão
+          if (toggleBtn) toggleBtn.style.removeProperty('display');
+          collapse.classList.add('collapse');
+          collapse.classList.remove('in');
+          collapse.style.removeProperty('display');
+          collapse.style.removeProperty('height');
         }
-        collapse.classList.remove('collapse');           // elimina comportamento colapsável
-        collapse.classList.remove('in');
-        collapse.style.removeProperty('display');        // deixa o CSS resolver
-        collapse.style.removeProperty('height');
-      } else {
-        
-        collapse.classList.add('collapse');
-        if (toggleBtn) toggleBtn.style.removeProperty('display');
       }
 
-      
+      // Marcar link ativo de forma robusta
       function norm(path) {
         if (!path) return '/';
         try { path = new URL(path, window.location.origin).pathname; } catch(_){}
@@ -88,7 +112,7 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="row navbar-header">
-        
+        <!-- Em desktop (no-touch) o botão é oculto pelo CSS/JS acima -->
         <button type="button" class="navbar-toggle collapsed"
                 data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
