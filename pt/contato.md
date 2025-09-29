@@ -47,7 +47,7 @@ Para requisitar alguma alteração ou tirar qualquer dúvida sobre os produtos d
 
 ## 📞 Telefone
 
-Tel.: (21) 3527-1078
+Tel.: +55(21) 3527-1078
 
 ## ✉️ E-mail
 
