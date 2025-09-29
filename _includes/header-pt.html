@@ -19,44 +19,50 @@
       color: #ffffff !important;
     }
 
-
-    /* Padrão: NÃO-TOUCH -> menu sempre aberto */
-    .navbar-toggle { display: none !important; }
-    .navbar-collapse.collapse {
-      display: block !important;
-      height: auto !important;
-      padding-bottom: 0;
-      overflow: visible !important;
-    }
-
-    /* Quando detectamos touch (classe no <html>) */
-    .is-touch .navbar-toggle { display: block !important; }
-    .is-touch .navbar-collapse.collapse { display: none; }
-    .is-touch .navbar-collapse.collapse.in { display: block !important; }
-
-    /* Fallback por media query (caso JS esteja off ou o UA reporte touch) */
-    @media (hover: none), (pointer: coarse) {
-      .navbar-toggle { display: block !important; }
-      .navbar-collapse.collapse { display: none; }
-      .navbar-collapse.collapse.in { display: block !important; }
-    }
+    /* Regras simples guiadas por classe no <html> (definida via JS) */
+    html.no-touch .navbar-toggle { display: none !important; }
+    html.no-touch .navbar-collapse { display: block !important; height: auto !important; }
   </style>
 
-  <!-- Detecta touch e marca no <html> (o mais cedo possível) -->
+  <!-- 1) Marca <html> como touch/no-touch -->
   <script>
     (function () {
-      var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints || navigator.msMaxTouchPoints);
-      document.documentElement.classList.add(isTouch ? 'is-touch' : 'is-non-touch');
+      var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+      document.documentElement.classList.add(isTouch ? 'touch' : 'no-touch');
     })();
   </script>
 
-  <!-- Marca o item ativo do menu -->
+  <!-- 2) Abre o menu no desktop e mantém colapsável no touch -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      var toggleBtn = document.querySelector('.navbar-toggle');
+      var collapse  = document.getElementById('bs-example-navbar-collapse-1');
+      var isTouch = document.documentElement.classList.contains('touch');
+
+      if (!collapse) return;
+
+      if (isTouch) {
+        /* Touch: mantém comportamento padrão do Bootstrap */
+        collapse.classList.add('collapse');
+        collapse.classList.remove('in');
+        collapse.style.removeProperty('display');
+        collapse.style.removeProperty('height');
+        if (toggleBtn) toggleBtn.style.removeProperty('display');
+      } else {
+        /* Desktop/Notebook: menu sempre aberto, sem hambúrguer */
+        if (toggleBtn) toggleBtn.style.display = 'none';
+        collapse.classList.add('in');                 // estado "aberto"
+        collapse.classList.add('navbar-collapse');    // garante classe base
+        collapse.classList.add('collapse');           // mantém estilos da navbar
+        collapse.style.display = 'block';
+        collapse.style.height = 'auto';
+      }
+
+      /* Script de ativo robusto */
       function norm(path) {
         if (!path) return '/';
         try { path = new URL(path, window.location.origin).pathname; } catch(_){}
-        path = path.replace(/\/+$/, '/');
+        path = path.replace(/\/+$/, '/');            // 1 barra no final
         if (!path.startsWith('/')) path = '/' + path;
         return path;
       }
@@ -75,7 +81,7 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
       <div class="row navbar-header">
-        <!-- O botão só aparece em touch (regras acima) -->
+        <!-- Botão só aparece em touch (controlado por JS/CSS acima) -->
         <button type="button" class="navbar-toggle collapsed"
                 data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -96,13 +102,11 @@
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato.html" class="menu-item">contato</a></li>
         </ul>
 
-        <!-- Alinha à direita (Bootstrap 3) -->
+        <!-- Direita -->
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}"
-               class="menu-item menu-item-english">
-              english
-            </a>
+               class="menu-item menu-item-english">english</a>
           </li>
         </ul>
       </div>
