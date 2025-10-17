@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bem-vindo ao Data Zoom
+title: Início
 lang: pt
 ---
 
