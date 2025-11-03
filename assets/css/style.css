@@ -632,3 +632,90 @@ a.tel-link{
             float: left;
             margin: 15px 30px 15px 15px;
         }
+        
+/* ====== Data Zoom Stata – Arquivos de apoio (acordeões) ====== */
+
+/* Espaço entre o conteúdo anterior e o título "Arquivos de apoio" */
+#dz-support {
+  margin-top: 4rem; /* ajuste a gosto */
+}
+
+/* Container das caixas (mantém z-index para não sofrer com links absolutos acima) */
+.dz-accordions {
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem; /* espaço entre o título e as caixas */
+}
+
+/* Caixa (mesma “família” visual que a logo-container-small) */
+.dz-box {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fafafa;
+  margin-bottom: .95rem;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* Cabeçalho clicável */
+.dz-box__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.2rem; /* um pouquinho mais de corpo */
+  background: #f3f3f3;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Título das pesquisas */
+.dz-box__title {
+  font-size: 1.4rem; 
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Sinal de abre/fecha */
+.dz-box__chevron {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+/* Painel aberto */
+.dz-box__panel {
+  background: #fff;
+  padding: .85rem 1.1rem 1.1rem 1.1rem;
+}
+
+/* Mensagens de status (erros/“carregando…”) */
+.dz-box__status {
+  color: #666;
+  font-size: .95rem;
+  margin-bottom: .25rem;
+  min-height: 1.1em;
+}
+
+/* Lista empilhada: um link por linha, sem bullets */
+.dz-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+
+/* Link de arquivo */
+.dz-file-link {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  padding: .55rem .7rem;
+  background: #fcfcfc;
+}
+
+.dz-file-link:hover {
+  text-decoration: underline;
+  background: #f7f7f7;
+}
+
+
