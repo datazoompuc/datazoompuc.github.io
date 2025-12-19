@@ -80,7 +80,7 @@ This section provides support files that can assist in research using the survey
     </div>
   </div>
   
-  <div class="dz-box" data-folder="PNAD Contínua" data-title="Continuous National Household Sample Survey (PNAD-Contínua)">
+  <div class="dz-box" data-folder="PNAD Continua" data-title="Continuous National Household Sample Survey (PNAD-Contínua)">
     <button class="dz-box__header" type="button" aria-expanded="false">
       <span class="dz-box__title">Continuous National Household Sample Survey (PNAD-Contínua)</span>
       <span class="dz-box__chevron">+</span>
