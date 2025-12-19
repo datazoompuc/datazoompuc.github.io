@@ -79,7 +79,7 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
     </div>
   </div>
   
-  <div class="dz-box" data-folder="PNAD Contínua" data-title="Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua)">
+  <div class="dz-box" data-folder="PNAD Continua" data-title="Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua)">
     <button class="dz-box__header" type="button" aria-expanded="false">
       <span class="dz-box__title">Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua)</span>
       <span class="dz-box__chevron">+</span>
