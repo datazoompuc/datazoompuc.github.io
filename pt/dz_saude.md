@@ -6,7 +6,7 @@ lang: pt
 
 # Data Zoom Saúde
 
-<img src="{{ site.baseurl }}/assets/img/hex_dzsaude" alt="Data Zoom Saúde" class="logo-item">
+<img src="{{ site.baseurl }}/assets/img/hex_dzsaude.png" alt="Data Zoom Saúde" class="logo-item">
 
 O [pacote `datazoom.saude`](https://github.com/datazoompuc/datazoom.saude), disponível em **R**, facilita o acesso às principais bases públicas de saúde do DATASUS. 
 O pacote automatiza o download, a limpeza e a padronização dos dados, permitindo análises consistentes e reprodutíveis do sistema de saúde brasileiro.
