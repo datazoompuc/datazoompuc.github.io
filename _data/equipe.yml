@@ -50,7 +50,7 @@ pt:
   
   - nome: "Laura Gonzaga"
     cargo: "Assistente de Pesquisa"
-    formacao: "Pós-graduanda em Ciência de Dados, PUC-Rio"
+    formacao: "Pós-graduada em Ciência de Dados, PUC-Rio"
     inicio: "2025"
     photo: "/assets/img/team/laura_gonzaga.jpeg"
     site: "https://www.linkedin.com/in/laura-gonzaga/"
@@ -63,12 +63,12 @@ pt:
     site: "https://www.linkedin.com/in/vanndher-am%C3%B3s-08b500247/"
 
     
-  - nome: "Philippe Lebailly"
-    cargo: "Assistente de Pesquisa"
-    formacao: "Graduando em Economia, PUC-Rio"
-    inicio: "2025"
-    photo: "/assets/img/team/philippe.jpg"
-    site: "http://www.linkedin.com/in/philippe-bernardes-lebailly-976452263"
+  # - nome: "Philippe Lebailly"
+  #   cargo: "Assistente de Pesquisa"
+  #   formacao: "Graduando em Economia, PUC-Rio"
+  #   inicio: "2025"
+  #   photo: "/assets/img/team/philippe.jpg"
+  #   site: "http://www.linkedin.com/in/philippe-bernardes-lebailly-976452263"
     
 en:
   - nome: "Gustavo Gonzaga"
@@ -122,7 +122,7 @@ en:
   
   - nome: "Laura Gonzaga"
     cargo: "Research Assistant"
-    formacao: "Postgraduate Student in Data Science, PUC-Rio"
+    formacao: "Postgraduate in Data Science, PUC-Rio"
     inicio: "2025"
     photo: "/assets/img/team/laura_gonzaga.jpeg"
     site: "https://www.linkedin.com/in/laura-gonzaga/"
@@ -134,9 +134,9 @@ en:
     photo: "/assets/img/team/vanndher.jpg"
     site: "https://www.linkedin.com/in/vanndher-am%C3%B3s-08b500247/"
 
-  - nome: "Philippe Lebailly"
-    cargo: "Research Assistant"
-    formacao: "Economics Undergraduate, PUC-Rio"
-    inicio: "2025"
-    photo: "/assets/img/team/philippe.jpg"
-    site: "http://www.linkedin.com/in/philippe-bernardes-lebailly-976452263"
+  # - nome: "Philippe Lebailly"
+  #   cargo: "Research Assistant"
+  #   formacao: "Economics Undergraduate, PUC-Rio"
+  #   inicio: "2025"
+  #   photo: "/assets/img/team/philippe.jpg"
+  #   site: "http://www.linkedin.com/in/philippe-bernardes-lebailly-976452263"
