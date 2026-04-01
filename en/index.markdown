@@ -44,3 +44,16 @@ Our project includes statistical packages in *Stata* and *R* which ease the extr
 </div>
 
 In case Data Zoom has helped in a study you've written, please <a href="{{ site.baseurl }}/{{ page.lang }}/citacao"> cite us</a>.
+
+<div style="margin: 2rem 0; padding: 1.25rem 1.5rem; border: 1px solid #d9d9d9; border-radius: 8px; background: #f8f9fb;">
+    <h3 style="margin-top: 0;">DataZoom Laboratory</h3>
+    <p style="margin-bottom: 0.75rem;">
+        Data Zoom is linked to the <strong>DataZoom Laboratory at PUC-Rio</strong>, which brings together initiatives focused on access to and processing of public data, as well as research activities involving restricted-access data in a secure institutional environment.
+    </p>
+    <p style="margin-bottom: 0;">
+        <a href="https://pnipe.mcti.gov.br/laboratory/29481" target="_blank" rel="noopener noreferrer">
+            Laboratory’s official MCTI registration
+        </a>
+    </p>
+</div>
+
