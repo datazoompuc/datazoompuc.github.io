@@ -8,18 +8,6 @@ lang: pt
 
 O **Data Zoom** é um projeto desenvolvido pelo [Departamento de Economia da PUC-Rio](http://www.econ.puc-rio.br/). Seu objetivo é promover acesso, processamento e análise de microdados do Brasil para pesquisadores, estudantes, jornalistas, e todos aqueles que sejam interessados por questões econômicas, sociais e ambientais do país. O projeto também é um laboratório que forma capital humano, uma vez que estudantes do departamento são treinados para desenvolver produtos a partir da ideia de livre acesso aos dados.
 
-<div style="margin: 2rem 0; padding: 1.25rem 1.5rem; border: 1px solid #d9d9d9; border-radius: 8px; background: #f8f9fb;">
-    <h3 style="margin-top: 0;">Laboratório DataZoom</h3>
-    <p style="margin-bottom: 0.75rem;">
-        O Data Zoom está vinculado ao <strong>Laboratório DataZoom da PUC-Rio</strong>, que reúne iniciativas de acesso e tratamento de dados públicos e atividades de pesquisa com dados sigilosos em ambiente institucional seguro.
-    </p>
-    <p style="margin-bottom: 0;">
-        <a href="https://pnipe.mcti.gov.br/laboratory/29481" target="_blank" rel="noopener noreferrer">
-            Ver cadastro do laboratório no MCTI
-        </a>
-    </p>
-</div>
-
 <div class="logo-container">
     <div>
         <h3>Data Zoom Social Stata</h3>
@@ -56,3 +44,15 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
 </div>
 
 Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao"> nos cite</a>.
+
+<div style="margin: 2rem 0; padding: 1.25rem 1.5rem; border: 1px solid #d9d9d9; border-radius: 8px; background: #f8f9fb;">
+    <h3 style="margin-top: 0;">Laboratório DataZoom</h3>
+    <p style="margin-bottom: 0.75rem;">
+        O Data Zoom está vinculado ao <strong>Laboratório DataZoom da PUC-Rio</strong>, que reúne iniciativas de acesso e tratamento de dados públicos e atividades de pesquisa com dados sigilosos em ambiente institucional seguro.
+    </p>
+    <p style="margin-bottom: 0;">
+        <a href="https://pnipe.mcti.gov.br/laboratory/29481" target="_blank" rel="noopener noreferrer">
+            Cadastro do laboratório no MCTI
+        </a>
+    </p>
+</div>
