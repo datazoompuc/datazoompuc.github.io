@@ -222,6 +222,11 @@ This section provides support files that can assist in research using the survey
       .replace(/\bDom\b/gi, "(Households)")
       .replace(/\bPess\b/gi, "(Individuals)");
 
+    // Traduções de frases inteiras (mantêm a ordem natural em inglês)
+    title = title
+      .replace(/Manual do Recenseador/i, "Enumerator's Manual")
+      .replace(/Question[áa]rio da Amostra/i, "Sample Questionnaire");
+
     return title;
   }
 

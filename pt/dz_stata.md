@@ -170,7 +170,8 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
     ["compatibilizacao","Compatibilização"],["dicionario","Dicionário"],["introducao","Introdução"],["continua","Contínua"],
     ["documentacao","Documentação"],["informacao","Informação"],["apresentacao","Apresentação"],
     ["comparacao","Comparação"],["ocupacao","Ocupação"],["educacao","Educação"],["serie","Série"],
-    ["sumario","Sumário"],["municipios","Municípios"],["classificacoes","Classificações"],["tabulacao","Tabulação"]
+    ["sumario","Sumário"],["municipios","Municípios"],["classificacoes","Classificações"],["tabulacao","Tabulação"],
+    ["questionario","Questionário"]
   ]);
 
   const acronyms = new Map([
