@@ -8,6 +8,20 @@ lang: pt
 #output pre { display: none; }
 #output pre#bibtex { display: block; }
 
+.scroll-box h3 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.scroll-box h3:first-of-type {
+  margin-top: 0.5em;
+}
+
+.scroll-box p {
+  margin-bottom: 1.5em;
+}
+  
 pre {
   border: 2px solid #369; /* Blue border, change color as you like */
   border-radius: 6px;         /* Rounded corners */
