@@ -7,6 +7,19 @@ lang: pt
 <style>
 #output pre { display: none; }
 #output pre#bibtex { display: block; }
+  
+pre {
+  border: 2px solid #369; /* Blue border, change color as you like */
+  border-radius: 6px;         /* Rounded corners */
+  padding: 1em;               /* Space inside the border */
+  background-color: #ecf1f5; /* Light blue background */
+  font-family: monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap;  /* wraps long lines */
+  word-wrap: break-word;  /* breaks long words if needed */
+  cursor: pointer; /* Shows it's clickable */
+  user-select: all;
+}
 
 .scroll-box h3 {
   font-size: 1.4em;
@@ -22,18 +35,6 @@ lang: pt
   margin-bottom: 1.5em;
 }
   
-pre {
-  border: 2px solid #369; /* Blue border, change color as you like */
-  border-radius: 6px;         /* Rounded corners */
-  padding: 1em;               /* Space inside the border */
-  background-color: #ecf1f5; /* Light blue background */
-  font-family: monospace;
-  font-size: 0.9em;
-  white-space: pre-wrap;  /* wraps long lines */
-  word-wrap: break-word;  /* breaks long words if needed */
-  cursor: pointer; /* Shows it's clickable */
-  user-select: all;
-}
 </style>
 
 # Cite o Data Zoom em sua pesquisa
