@@ -1,4 +1,9 @@
 published:
+  - author_date: "Haanwinckel, D. (2025)."
+    link: "https://www.aeaweb.org/articles?id=10.1257/aer.20201293"
+    title: "Supply, Demand, Institutions, and Firms: A Theory of Labor Market Sorting and the Wage Distribution"
+    remainder: "<em>American Economic Review, 115</em>(12), 4137–4182. https://doi.org/10.1257/aer.20201293. Data and code: https://www.openicpsr.org/openicpsr/project/221321/version/V1/view (includes <code>code/dependencies/DataZoom</code>)."
+
   - author_date: "Muniz, J., Queiroz, B. L., & Saperstein, A. (2024)."
     link: "https://www.demographic-research.org/articles/volume/50/17"
     title: "Racial classification as a multistate process"
@@ -28,16 +33,21 @@ published:
     link: "https://www.aeaweb.org/articles?id=10.1257/app.20170080"
     title: "Economic shocks and crime: Evidence from the Brazilian trade liberalization"
     remainder: "<em>American Economic Journal: Applied Economics, 10</em>(4), 158–195. https://doi.org/10.1257/app.20170080"
-unpublished:   
-  - author_date: "Ruhe, A. P. (2025)."
-    link: "https://anapaularuhe.github.io/LatestVersions/Draft%20-%20Labor%20markets%20dynamics%20with%20an%20informal%20sector.pdf"
-    title: "Labor market dynamics with an informal sector"
-    remainder: "Unpublished manuscript."
+unpublished:
+  - author_date: "Ruhe, A. P. (2026)."
+    link: "https://anapaularuhe.github.io/LatestVersions/Draft%20-%20Informality,%20heterogeneity,%20and%20the%20business%20cycle.pdf"
+    title: "Informality, Heterogeneity, and the Business Cycle"
+    remainder: "Job Market Paper. Unpublished manuscript."
 
-  - author_date: "Corbellini, N. (2024)."
-    link: "https://nicolacorbellini.github.io/assets/Job_Market_Paper.pdf"
-    title: "The effects of tax enforcement on the firm size distribution and aggregate productivity"
-    remainder: "Unpublished manuscript."
+  - author_date: "Zarate, P. (2025)."
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5360652"
+    title: "Remote Work and Child Penalties"
+    remainder: "Working paper (Reject & Resubmit, <em>Journal of Human Resources</em>). https://doi.org/10.2139/ssrn.5360652"
+
+  - author_date: "Corbellini, N. (2025)."
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5436436"
+    title: "The Effects of Tax Enforcement on Average Firm Size and Aggregate Productivity"
+    remainder: "Working paper. https://doi.org/10.2139/ssrn.5436436"    
 
   - author_date: "Oviedo, A. F. P., & Araújo, V. S. (2022)."
     link: "https://www.socioambiental.org/sites/default/files/noticias-e-posts/2022-10/Garimpo_final_IPS_2021.pdf"
