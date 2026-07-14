@@ -20,6 +20,22 @@ pre {
   cursor: pointer; /* Shows it's clickable */
   user-select: all;
 }
+
+.scroll-box h3 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.scroll-box h3:first-of-type {
+  margin-top: 0.5em;
+}
+
+.scroll-box p {
+  margin-bottom: 1.5em;
+}
+  
+  
 </style>
 
 # Cite Data Zoom in your research
