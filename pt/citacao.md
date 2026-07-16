@@ -21,6 +21,12 @@ pre {
   user-select: all;
 }
 
+.scroll-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+  
 .scroll-box h3 {
   font-size: 1.4em;
   margin-top: 2em;
