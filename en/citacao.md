@@ -37,15 +37,15 @@ pre {
 <pre id="bibtex" style="display: block;">@Unpublished{DataZoom{2023}, 
     author = {Data Zoom},
     title = {Data Zoom: Simplifying Access To Brazilian Microdata},
-    url = {https://www.econ.puc-rio.br/datazoom/english/index.html},
+    url = {https://datazoom.com.br/en/},
     year = {2023}
 }</pre>
 
-<pre id="abnt">Data Zoom (2023). Data Zoom: Simplifying Access To Brazilian Microdata. https://www.econ.puc-rio.br/datazoom/index.html</pre>
+<pre id="abnt">Data Zoom (2023). Data Zoom: Simplifying Access To Brazilian Microdata. https://datazoom.com.br/en/</pre>
 
-<pre id="apa">Data Zoom. (2023). Data Zoom: Simplifying access to Brazilian microdata. Retrieved from https://www.econ.puc-rio.br/datazoom/english/index.html</pre>
+<pre id="apa">Data Zoom. (2023). Data Zoom: Simplifying access to Brazilian microdata. Retrieved from https://datazoom.com.br/en/</pre>
 
-<pre id="mla">Data Zoom. Data Zoom: Simplifying Access to Brazilian Microdata. 2023, https://www.econ.puc-rio.br/datazoom/english/index.html.</pre>
+<pre id="mla">Data Zoom. Data Zoom: Simplifying Access to Brazilian Microdata. 2023, https://datazoom.com.br/en/.</pre>
   </div>
 
 In case Data Zoom has helped in a study you've written, please send a copy to [datazoom@econ.puc-rio.br](mailto:datazoom@econ.puc-rio.br). We are always interested in learning about studies where our packages proved useful. Articles sent us will be added to the list below.
