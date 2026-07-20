@@ -20,6 +20,28 @@ pre {
   cursor: pointer; /* Shows it's clickable */
   user-select: all;
 }
+
+.scroll-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+  
+.scroll-box h3 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.scroll-box h3:first-of-type {
+  margin-top: 0.5em;
+}
+
+.scroll-box p {
+  margin-bottom: 1.5em;
+}
+  
+  
 </style>
 
 # Cite Data Zoom in your research
@@ -60,7 +82,7 @@ In case Data Zoom has helped in a study you've written, please send a copy to [d
       <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
         <em>{{ paper.title }}</em>
       </a>.
-    {{ paper.remainder }}
+    {{ paper.remainder | markdownify | remove: "<p>" | remove: "</p>" }}
     </p>
   {% endfor %}
   <h3> Working papers and other texts </h3>

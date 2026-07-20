@@ -7,7 +7,7 @@ lang: pt
 <style>
 #output pre { display: none; }
 #output pre#bibtex { display: block; }
-
+  
 pre {
   border: 2px solid #369; /* Blue border, change color as you like */
   border-radius: 6px;         /* Rounded corners */
@@ -20,6 +20,27 @@ pre {
   cursor: pointer; /* Shows it's clickable */
   user-select: all;
 }
+
+.scroll-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+  
+.scroll-box h3 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.scroll-box h3:first-of-type {
+  margin-top: 0.5em;
+}
+
+.scroll-box p {
+  margin-bottom: 1.5em;
+}
+  
 </style>
 
 # Cite o Data Zoom em sua pesquisa
@@ -60,7 +81,7 @@ Caso o Data Zoom tenha ajudado em algum estudo escrito por você, pedimos que en
       <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
         <em>{{ paper.title }}</em>
       </a>.
-    {{ paper.remainder }}
+    {{ paper.remainder | markdownify | remove: "<p>" | remove: "</p>" }}
     </p>
   {% endfor %}
   <h3> Working papers e outros textos </h3>
