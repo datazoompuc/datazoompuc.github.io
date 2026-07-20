@@ -81,7 +81,7 @@ Caso o Data Zoom tenha ajudado em algum estudo escrito por você, pedimos que en
       <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">
         <em>{{ paper.title }}</em>
       </a>.
-    {{ paper.remainder }}
+    {{ paper.remainder | markdownify | remove: "<p>" | remove: "</p>" }}
     </p>
   {% endfor %}
   <h3> Working papers e outros textos </h3>
