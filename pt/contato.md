@@ -39,8 +39,11 @@ Para requisitar alguma alteração ou tirar qualquer dúvida sobre os produtos d
     <a href="https://github.com/datazoompuc/datazoom_social_Stata/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo"> Data Zoom Social Stata
     </a>
-    <a href="https://github.com/datazoompuc/datazoom.social/issues" style="font-family:JetBrains Mono; font-weight:bold;" target="_blank">
+    <a href="https://github.com/datazoompuc/datazoom.social/issues" style="margin-right: 40px; font-family:JetBrains Mono; font-weight:bold;" target="_blank">
         <img src="{{ site.baseurl }}/assets/img/hex_dz.png" alt="DZ Logo"> Data Zoom Social R
+    </a>
+    <a href="https://github.com/datazoompuc/datazoom.saude/issues" style="font-family:JetBrains Mono; font-weight:bold;" target="_blank">
+        <img src="{{ site.baseurl }}/assets/img/hex_dzsaude.png" alt="DZSAUDE Logo"> Data Zoom Saúde
     </a>
 </div>
 
