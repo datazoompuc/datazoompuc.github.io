@@ -54,7 +54,21 @@ pt:
     inicio: "2026"
     photo: "/assets/img/team/luana.jpg"
     site: "https://www.linkedin.com/in/luana-laport-842723382"
-    
+
+  - nome: "Pedro Lucas" 
+    cargo: "Assistente de Pesquisa"
+    formacao: "Graduando em Economia, PUC-RIO"
+    inicio: "2026"
+    photo: "/assets/img/team/pedro_lucas.jpg"
+    site: "https://www.linkedin.com/in/pedro-silva-195586440"
+
+  - nome: "Thiago Catarino"
+    cargo: "Assistente de Pesquisa"
+    formacao: "Bacharel em Economia, PUC-RIO"
+    inicio: "2026"
+    photo: "/assets/img/team/thiago_catarino.jpg"
+    site: "https://www.linkedin.com/in/thiagojcatarino/" 
+      
 en:
   - nome: "Gustavo Gonzaga"
     cargo: "General Coordinator"
@@ -111,3 +125,19 @@ en:
     inicio: "2026"
     photo: "/assets/img/team/luana.jpg"
     site: "https://www.linkedin.com/in/luana-laport-842723382"
+
+  - nome: "Pedro Lucas" 
+    cargo: "Research Assistant"
+    formacao: "Economics Undergraduate, PUC-RIO"
+    inicio: "2026"
+    photo: "/assets/img/team/pedro_lucas.jpg"
+    site: "https://www.linkedin.com/in/pedro-silva-195586440"
+
+  - nome: "Thiago Catarino"
+    cargo: "Research Assistant"
+    formacao: "B.A. in Economics, PUC-RIO"
+    inicio: "2026"
+    photo: "/assets/img/team/thiago_catarino.jpg"
+    site: "https://www.linkedin.com/in/thiagojcatarino/" 
+   
+
