@@ -57,14 +57,14 @@ pt:
 
   - nome: "Pedro Lucas" 
     cargo: "Assistente de Pesquisa"
-    formacao: "Graduando em Economia, PUC-RIO"
+    formacao: "Graduando em Economia, PUC-Rio"
     inicio: "2026"
     photo: "/assets/img/team/pedro_lucas.jpg"
     site: "https://www.linkedin.com/in/pedro-silva-195586440"
 
   - nome: "Thiago Catarino"
     cargo: "Assistente de Pesquisa"
-    formacao: "Bacharel em Economia, PUC-RIO"
+    formacao: "Bacharel em Economia, PUC-Rio"
     inicio: "2026"
     photo: "/assets/img/team/thiago_catarino.jpg"
     site: "https://www.linkedin.com/in/thiagojcatarino/" 
@@ -128,14 +128,14 @@ en:
 
   - nome: "Pedro Lucas" 
     cargo: "Research Assistant"
-    formacao: "Economics Undergraduate, PUC-RIO"
+    formacao: "Economics Undergraduate, PUC-Rio"
     inicio: "2026"
     photo: "/assets/img/team/pedro_lucas.jpg"
     site: "https://www.linkedin.com/in/pedro-silva-195586440"
 
   - nome: "Thiago Catarino"
     cargo: "Research Assistant"
-    formacao: "B.A. in Economics, PUC-RIO"
+    formacao: "B.A. in Economics, PUC-Rio"
     inicio: "2026"
     photo: "/assets/img/team/thiago_catarino.jpg"
     site: "https://www.linkedin.com/in/thiagojcatarino/" 
