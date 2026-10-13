@@ -41,7 +41,12 @@ pt:
 
   - nome: Ricardo Dahis
     formacao: Ph.D, Northwestern University
-    site: https://www.ricardodahis.com/
+    site: https://www.ricardodahis.com/    
+
+  - nome: Fernada Franco
+    formacao: Mestre, FGV
+    site: https://www.linkedin.com/in/ferfrancodias/
+
 en:
   - nome: Juliano Assunção
     formacao: Ph.D, PUC-Rio
@@ -86,3 +91,7 @@ en:
   - nome: Ricardo Dahis
     formacao: Ph.D, Northwestern University
     site: https://www.ricardodahis.com/     
+
+  - nome: Fernada Franco
+    formacao: M.Sc., FGV
+    site: https://www.linkedin.com/in/ferfrancodias/
