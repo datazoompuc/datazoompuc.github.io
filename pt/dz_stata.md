@@ -114,7 +114,7 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
   
 </div>
 
-
+<script src="{{ site.baseurl }}/assets/js/xlsx.full.min.js"></script>
 
 <script>
 (function () {
@@ -132,15 +132,15 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
   const container = document.getElementById("dz-accordions");
   const LANG = (container?.dataset?.lang || "{{ page.lang | default: 'pt' }}").toLowerCase(); // 'pt' ou 'en'
 
-  /* Chave do cache no localStorage. O sufixo :v4 força “versão” do cache */
-  const CACHE_KEY = `dz_tree:${ORG}/${REPO}@${BRANCH}:${LANG}:v4`;
+  /* Chave do cache no localStorage. O sufixo :v6 força atualização limpa do cache */
+  const CACHE_KEY = `dz_tree:${ORG}/${REPO}@${BRANCH}:${LANG}:v6`;
 
   /* Quanto tempo o cache fica válido (24h). */
   const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 
   /* URLs usadas:
      - branchUrl: pega o SHA do último commit da branch (para ler a árvore)
-     - rawUrl: link direto para baixar/abrir o arquivo
+     - rawUrl: link direto para download do arquivo bruto
      - ghFolderUrl: fallback para abrir a pasta no site do GitHub
   */
   const branchUrl = `https://api.github.com/repos/${ORG}/${REPO}/branches/${encodeURIComponent(BRANCH)}`;
@@ -327,6 +327,211 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
     return files;
   }
 
+  /* ==========================
+     MODAL DE PREVIEW WEB (PDF + PLANILHA EXCEL)
+     ==========================
+  */
+  let activeModal = null;
+
+  function closeModal() {
+    if (activeModal) {
+      if (activeModal.blobUrl) URL.revokeObjectURL(activeModal.blobUrl);
+      activeModal.element.remove();
+      activeModal = null;
+      document.body.style.overflow = "";
+    }
+  }
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+  });
+
+  // Renderiza planilha Excel (.xlsx, .xls) com SheetJS em abas e tabela HTML
+  function renderSpreadsheet(bodyEl, arrayBuf) {
+    bodyEl.innerHTML = "";
+    const wb = XLSX.read(new Uint8Array(arrayBuf), { type: "array" });
+    if (!wb.SheetNames || wb.SheetNames.length === 0) {
+      bodyEl.innerHTML = '<div class="dz-modal-loading">Planilha vazia ou sem abas legíveis.</div>';
+      return;
+    }
+
+    const tabsContainer = document.createElement("div");
+    tabsContainer.className = "dz-sheet-tabs";
+
+    const tableContainer = document.createElement("div");
+    tableContainer.className = "dz-sheet-container";
+
+    function showSheet(sheetName, activeBtn) {
+      tabsContainer.querySelectorAll(".dz-sheet-tab").forEach(t => t.classList.remove("dz-sheet-tab--active"));
+      activeBtn.classList.add("dz-sheet-tab--active");
+
+      const ws = wb.Sheets[sheetName];
+      const htmlTable = XLSX.utils.sheet_to_html(ws, { id: "dz-active-sheet", editable: false });
+      tableContainer.innerHTML = htmlTable;
+      const table = tableContainer.querySelector("table");
+      if (table) {
+        table.className = "dz-sheet-table";
+      }
+    }
+
+    wb.SheetNames.forEach((sheetName, index) => {
+      const tabBtn = document.createElement("button");
+      tabBtn.type = "button";
+      tabBtn.className = "dz-sheet-tab" + (index === 0 ? " dz-sheet-tab--active" : "");
+      tabBtn.textContent = sheetName;
+      tabBtn.onclick = () => showSheet(sheetName, tabBtn);
+      tabsContainer.appendChild(tabBtn);
+    });
+
+    bodyEl.appendChild(tabsContainer);
+    bodyEl.appendChild(tableContainer);
+
+    // Carrega a primeira aba
+    const firstTabBtn = tabsContainer.querySelector(".dz-sheet-tab");
+    showSheet(wb.SheetNames[0], firstTabBtn);
+  }
+
+  async function openPreviewModal(title, path) {
+    closeModal();
+
+    const isPdf = /\.pdf$/i.test(path);
+    const isSpreadsheet = /\.(xlsx|xls)$/i.test(path);
+    const downloadLink = rawUrl(path);
+
+    const overlay = document.createElement("div");
+    overlay.className = "dz-modal-overlay";
+
+    const card = document.createElement("div");
+    card.className = "dz-modal-card";
+
+    const header = document.createElement("div");
+    header.className = "dz-modal-header";
+
+    const titleEl = document.createElement("h3");
+    titleEl.className = "dz-modal-title";
+    titleEl.textContent = title;
+
+    const controls = document.createElement("div");
+    controls.className = "dz-modal-controls";
+
+    const dlBtn = document.createElement("a");
+    dlBtn.className = "dz-file-btn dz-file-btn--download";
+    dlBtn.href = downloadLink;
+    dlBtn.textContent = "Baixar";
+    dlBtn.target = "_blank";
+    dlBtn.rel = "noopener";
+
+    const closeBtn = document.createElement("button");
+    closeBtn.className = "dz-modal-close-btn";
+    closeBtn.innerHTML = "&times;";
+    closeBtn.setAttribute("aria-label", "Fechar");
+    closeBtn.onclick = closeModal;
+
+    controls.appendChild(dlBtn);
+    controls.appendChild(closeBtn);
+    header.appendChild(titleEl);
+    header.appendChild(controls);
+
+    const body = document.createElement("div");
+    body.className = "dz-modal-body";
+
+    const loading = document.createElement("div");
+    loading.className = "dz-modal-loading";
+    loading.textContent = "Carregando documento…";
+    body.appendChild(loading);
+
+    card.appendChild(header);
+    card.appendChild(body);
+    overlay.appendChild(card);
+
+    overlay.onclick = (e) => {
+      if (e.target === overlay) closeModal();
+    };
+
+    document.body.appendChild(overlay);
+    document.body.style.overflow = "hidden";
+
+    activeModal = { element: overlay, blobUrl: null };
+
+    try {
+      const response = await fetch(downloadLink);
+      if (!response.ok) throw new Error("Erro na requisição: " + response.status);
+      const arrayBuf = await response.arrayBuffer();
+
+      if (isPdf) {
+        const blob = new Blob([arrayBuf], { type: "application/pdf" });
+        const localBlobUrl = URL.createObjectURL(blob);
+        activeModal.blobUrl = localBlobUrl;
+
+        const iframe = document.createElement("iframe");
+        iframe.className = "dz-modal-iframe";
+        iframe.src = localBlobUrl;
+        iframe.onload = () => { loading.remove(); };
+        body.appendChild(iframe);
+      } else if (isSpreadsheet) {
+        // Carrega via SheetJS
+        renderSpreadsheet(body, arrayBuf);
+      } else {
+        // Outros arquivos
+        body.innerHTML = `
+          <div class="dz-modal-loading" style="flex-direction:column; gap:1rem;">
+            <span>Pré-visualização direta não disponível para este formato.</span>
+            <a href="${downloadLink}" class="dz-file-btn dz-file-btn--view" style="font-size:1rem; padding:.5rem 1.2rem;">Baixar Arquivo</a>
+          </div>
+        `;
+      }
+    } catch (err) {
+      console.error(err);
+      loading.textContent = "Não foi possível carregar a visualização.";
+    }
+  }
+
+  /* Cria a lista de arquivos com botão de abrir/visualizar na hora e botão de download */
+  function renderFiles(listEl, files) {
+    const frag = document.createDocumentFragment();
+    files.forEach(f => {
+      const item = document.createElement("div");
+      item.className = "dz-file-item";
+
+      const title = prettyName(f.name);
+
+      const mainLink = document.createElement("a");
+      mainLink.className = "dz-file-main";
+      mainLink.href = "#";
+      mainLink.textContent = title;
+      mainLink.onclick = (e) => {
+        e.preventDefault();
+        openPreviewModal(title, f.path);
+      };
+
+      const actions = document.createElement("div");
+      actions.className = "dz-file-actions";
+
+      const viewBtn = document.createElement("button");
+      viewBtn.type = "button";
+      viewBtn.className = "dz-file-btn dz-file-btn--view";
+      viewBtn.textContent = "Abrir";
+      viewBtn.title = "Visualizar arquivo na hora";
+      viewBtn.onclick = () => openPreviewModal(title, f.path);
+
+      const dlBtn = document.createElement("a");
+      dlBtn.className = "dz-file-btn dz-file-btn--download";
+      dlBtn.href = rawUrl(f.path);
+      dlBtn.target = "_blank";
+      dlBtn.rel = "noopener";
+      dlBtn.textContent = "Baixar";
+      dlBtn.title = "Baixar arquivo diretamente";
+
+      actions.appendChild(viewBtn);
+      actions.appendChild(dlBtn);
+
+      item.appendChild(mainLink);
+      item.appendChild(actions);
+      frag.appendChild(item);
+    });
+    listEl.appendChild(frag);
+  }
+
   /* Se a API estiver indisponível ou rate-limited, ainda mostramos
      um link para a pasta no GitHub, para o usuário não ficar “preso”. */
   function renderFallbackLink(listEl, folder) {
@@ -373,19 +578,7 @@ Nesta seção, reunimos arquivos de apoio que podem auxiliar na leitura e no uso
       return;
     }
 
-    // Cria os links clicáveis para cada arquivo
-    const frag = document.createDocumentFragment();
-    files.forEach(f => {
-      const a = document.createElement("a");
-      a.className = "dz-file-link";
-      a.href = rawUrl(f.path);
-      a.target = "_blank";
-      a.rel = "noopener";
-      a.textContent = prettyName(f.name);
-      frag.appendChild(a);
-    });
-
-    listEl.appendChild(frag);
+    renderFiles(listEl, files);
     statusEl.textContent = "";           // limpa a mensagem de status
     boxEl.dataset.loaded = "true";       // marca como carregado
   }
