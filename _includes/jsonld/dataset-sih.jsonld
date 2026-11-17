@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-sih",
+  "name": "Sistema de Informações Hospitalares do SUS (SIH/SUS)",
+  "alternateName": [
+    "SIHSUS",
+    "SIH/DATASUS",
+    "Brazilian Hospital Information System"
+  ],
+  "description": "Internações hospitalares financiadas pelo SUS, registradas pelas Autorizações de Internação Hospitalar (AIH). Bases disponíveis: AIH reduzida (RD), serviços profissionais (SP), AIH rejeitada (RJ) e AIH rejeitada com código de erro (ER). O Data Zoom (PUC-Rio) não produz nem redistribui estes dados: o pacote R datazoom.saude baixa os arquivos públicos do DATASUS e os entrega limpos e padronizados por meio da função load_hospital_admissions().",
+  "url": "https://datasus.saude.gov.br/",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Ministério da Saúde",
+    "url": "https://www.gov.br/saude/pt-br"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "DATASUS",
+    "alternateName": "Departamento de Informática do Sistema Único de Saúde",
+    "url": "https://datasus.saude.gov.br/",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br"
+    }
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "internações hospitalares",
+    "AIH",
+    "SIH",
+    "SUS",
+    "DATASUS"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.saude"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom.amazonia"
+    }
+  ],
+  "conditionsOfAccess": "Dados públicos produzidos pelo Ministério da Saúde e disponibilizados pelo DATASUS; valem os termos de uso da fonte. A licença MIT do pacote datazoom.saude cobre apenas o software, não os dados."
+}

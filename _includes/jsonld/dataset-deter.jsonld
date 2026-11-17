@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-deter",
+  "name": "DETER – Detecção de desmatamento em tempo real (INPE)",
+  "alternateName": [
+    "DETER"
+  ],
+  "description": "Alertas de alteração da cobertura florestal produzidos pelo INPE para a Amazônia, o Cerrado e o Pantanal, publicados no portal TerraBrasilis. O pacote R datazoom.amazonia baixa e trata os alertas com load_deter(); o Data Zoom não produz os dados.",
+  "url": "https://terrabrasilis.dpi.inpe.br/",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Nacional de Pesquisas Espaciais",
+    "alternateName": "INPE",
+    "url": "https://www.gov.br/inpe/pt-br"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Nacional de Pesquisas Espaciais",
+    "alternateName": "INPE",
+    "url": "https://www.gov.br/inpe/pt-br"
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "DETER",
+    "alertas de desmatamento",
+    "Amazônia",
+    "Cerrado",
+    "Pantanal",
+    "INPE"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.amazonia"
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

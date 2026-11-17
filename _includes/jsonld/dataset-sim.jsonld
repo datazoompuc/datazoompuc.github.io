@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-sim",
+  "name": "Sistema de Informações sobre Mortalidade (SIM)",
+  "alternateName": [
+    "SIM/DATASUS",
+    "Brazilian Mortality Information System"
+  ],
+  "description": "Registros de óbitos do Brasil a partir das declarações de óbito, com causa, local, sexo, idade e outras características demográficas. Inclui as bases de óbitos gerais, fetais, por causas externas, infantis e maternos. O Data Zoom (PUC-Rio) não produz nem redistribui estes dados: o pacote R datazoom.saude baixa os arquivos públicos do DATASUS e os entrega limpos e padronizados por meio da função load_mortality().",
+  "url": "https://datasus.saude.gov.br/",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Ministério da Saúde",
+    "url": "https://www.gov.br/saude/pt-br"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "DATASUS",
+    "alternateName": "Departamento de Informática do Sistema Único de Saúde",
+    "url": "https://datasus.saude.gov.br/",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br"
+    }
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "mortalidade",
+    "óbitos",
+    "declaração de óbito",
+    "SIM",
+    "DATASUS"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.saude"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom.amazonia"
+    }
+  ],
+  "conditionsOfAccess": "Dados públicos produzidos pelo Ministério da Saúde e disponibilizados pelo DATASUS; valem os termos de uso da fonte. A licença MIT do pacote datazoom.saude cobre apenas o software, não os dados.",
+  "variableMeasured": [
+    "causa do óbito",
+    "local do óbito",
+    "sexo",
+    "idade"
+  ]
+}

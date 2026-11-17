@@ -2,6 +2,11 @@
 layout: default
 title: Contato
 lang: pt
+seo_title: "Contato do Data Zoom: Departamento de Economia da PUC-Rio"
+description: "Fale com a equipe do Data Zoom na PUC-Rio por e-mail, veja o endereço do Departamento de Economia e saiba como reportar problemas nos pacotes R e Stata."
+locale: "pt_BR"
+ref: "contato"
+permalink: "/pt/contato/"
 ---
 
 <style>

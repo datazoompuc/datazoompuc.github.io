@@ -125,18 +125,21 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="{{ site.baseurl }}/{{ page.lang }}/" class="menu-item">início</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata" class="menu-item">DZ Stata</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_r" class="menu-item">DZ R</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia" class="menu-item">DZ Amazônia</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_saude" class="menu-item">DZ Saúde</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/equipe" class="menu-item">equipe</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/citacao" class="menu-item">citação</a></li>
-          <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato" class="menu-item">contato</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata/" class="menu-item">DZ Stata</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_r/" class="menu-item">DZ R</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia/" class="menu-item">DZ Amazônia</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/dz_saude/" class="menu-item">DZ Saúde</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/equipe/" class="menu-item">equipe</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/citacao/" class="menu-item">citação</a></li>
+          <li><a href="{{ site.baseurl }}/{{ page.lang }}/contato/" class="menu-item">contato</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}"
+            {%- comment -%} twin page in the other language: same `ref` if set, else same slug {%- endcomment -%}
+            {%- assign twin_url = page.url | remove_first: '/pt' | prepend: '/en' -%}
+            {%- if page.ref -%}{%- assign twin_page = site.pages | where: 'ref', page.ref | where: 'lang', 'en' | first -%}{%- if twin_page -%}{%- assign twin_url = twin_page.url -%}{%- endif -%}{%- endif %}
+            <a href="{{ site.baseurl }}{{ twin_url }}"
                class="menu-item menu-item-english">english</a>
           </li>
         </ul>

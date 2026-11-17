@@ -2,6 +2,11 @@
 layout: default
 title: Início
 lang: pt
+seo_title: "Data Zoom PUC-Rio: microdados do Brasil em R e Stata"
+description: "Pacotes gratuitos em R e Stata da PUC-Rio para baixar e tratar microdados do IBGE, do DATASUS e da Amazônia Legal. Veja como instalar e citar."
+locale: "pt_BR"
+ref: "home"
+permalink: "/pt/"
 ---
 
 # Bem-vindo ao Data Zoom!
@@ -11,25 +16,25 @@ O **Data Zoom** é um projeto desenvolvido pelo [Departamento de Economia da PUC
 <div class="logo-container">
     <div>
         <h3>Data Zoom Social Stata</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_stata/">
             <img src="{{ site.baseurl }}/assets/img/hex_dzstata.png" alt="DZSTATA Logo">
         </a>
     </div>
     <div>
         <h3>Data Zoom Social R</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_r/">
             <img src="{{ site.baseurl }}/assets/img/hex_dz_outline.png" alt="DZ Logo">
         </a>
     </div>
     <div>
         <h3>Data Zoom Amazônia</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_amazonia/">
             <img src="{{ site.baseurl }}/assets/img/hex_dzam.png" alt="DZAM Logo">
         </a>
     </div>
     <div>
         <h3>Data Zoom Saúde</h3>
-        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_saude">
+        <a href="{{ site.baseurl }}/{{ page.lang }}/dz_saude/">
             <img src="{{ site.baseurl }}/assets/img/hex_dzsaude.png" alt="DZAM Logo">
         </a>
     </div>
@@ -43,7 +48,7 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
     <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>
 
-Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao"> nos cite</a>.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao/"> nos cite</a>. Veja também a <a href="{{ site.baseurl }}/pt/ecossistema/">visão geral do ecossistema Data Zoom</a>.
 
 <div style="margin: 2rem 0; padding: 1.25rem 1.5rem; border: 1px solid #d9d9d9; border-radius: 8px; background: #f8f9fb;">
     <h3 style="margin-top: 0;">Laboratório DataZoom</h3>

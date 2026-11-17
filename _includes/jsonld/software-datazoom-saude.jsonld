@@ -1,0 +1,127 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "SoftwareSourceCode",
+    "SoftwareApplication"
+  ],
+  "@id": "https://datazoom.com.br/#datazoom.saude",
+  "name": "datazoom.saude",
+  "description": "Pacote R que baixa, limpa e padroniza microdados públicos de saúde do DATASUS (Ministério da Saúde): mortalidade (SIM), nascidos vivos (SINASC), internações hospitalares (SIH/SUS), leitos (CNES-LT), procedimentos ambulatoriais (SIA/SUS), casos de oncologia (Painel de Oncologia, PO) e vacinação (SI-PNI), com rótulos de variáveis em inglês ou português.",
+  "url": "https://datazoom.com.br/pt/dz_saude/",
+  "codeRepository": "https://github.com/datazoompuc/datazoom.saude",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://www.r-project.org/"
+  },
+  "runtimePlatform": "R (>= 4.0)",
+  "applicationCategory": "DeveloperApplication",
+  "applicationSubCategory": "Data access / microdata",
+  "operatingSystem": "Windows, macOS, Linux",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "inLanguage": [
+    "en",
+    "pt-BR"
+  ],
+  "dateCreated": "2025-07-18",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Laura Tavares Regadas"
+    },
+    {
+      "@type": "Person",
+      "name": "Luana Laport Santos"
+    },
+    {
+      "@type": "Person",
+      "name": "João Paulo dos Santos P. Barbosa"
+    },
+    {
+      "@type": "Person",
+      "name": "Vanndher Amós B. A. de Souza"
+    }
+  ],
+  "sourceOrganization": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "publisher": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "featureList": [
+    "load_mortality(): SIM (óbitos gerais, fetais, por causas externas, infantis e maternos)",
+    "load_births(): SINASC (nascidos vivos)",
+    "load_hospital_admissions(): SIH/SUS (AIH reduzida, serviços profissionais, AIH rejeitada)",
+    "load_hospital_beds(): CNES-LT (leitos hospitalares, mensal)",
+    "load_outpatient_procedures(): SIA/SUS (produção ambulatorial e subsistemas)",
+    "load_oncology_case(): Painel de Oncologia (PO)",
+    "load_vaccines(): SI-PNI (doses aplicadas, 1994-2023 via portal legado)",
+    "dbc2dbf_wrapper(): descompacta arquivos .dbc do DATASUS para .dbf"
+  ],
+  "keywords": [
+    "DATASUS",
+    "SUS",
+    "microdados",
+    "saúde pública",
+    "epidemiologia",
+    "SIM",
+    "SINASC",
+    "SIH",
+    "SIA",
+    "CNES",
+    "SI-PNI",
+    "R",
+    "CRAN"
+  ],
+  "about": [
+    {
+      "@id": "https://datazoom.com.br/#dataset-sim"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-sinasc"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-sih"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-cnes-lt"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-sia"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-po"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-si-pni"
+    }
+  ],
+  "sameAs": [
+    "https://cran.r-project.org/package=datazoom.saude",
+    "https://github.com/datazoompuc/datazoom.saude"
+  ],
+  "downloadUrl": "https://cran.r-project.org/package=datazoom.saude",
+  "installUrl": "https://cran.r-project.org/package=datazoom.saude",
+  "softwareVersion": "0.1.1",
+  "datePublished": "2026-10-06",
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Daniela Petruzalek"
+    },
+    {
+      "@type": "Person",
+      "name": "Mark Adler"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "name": "Laura Tavares Regadas"
+  },
+  "license": "https://opensource.org/license/MIT"
+}

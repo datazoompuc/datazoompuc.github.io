@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Social Stata
 lang: en
+seo_title: "datazoom_social for Stata: IBGE microdata (Census, PNAD)"
+description: "Read and harmonize IBGE microdata in Stata: Census, PNAD, PNAD Contínua, PNS, POF, PME, ECINF and PNAD Covid. Install with a single net install command."
+locale: "en_US"
+ref: "dz_stata"
+permalink: "/en/dz_stata/"
+image: "/assets/img/hex_dzstata.png"
 ---
 
 # Data Zoom Social Stata

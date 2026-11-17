@@ -2,6 +2,11 @@
 layout: default
 title: Our team
 lang: en
+seo_title: "Data Zoom team: economics researchers at PUC-Rio"
+description: "Meet the coordinator, managers and research assistants behind Data Zoom at the PUC-Rio Department of Economics, plus alumni and acknowledgements."
+locale: "en_US"
+ref: "equipe"
+permalink: "/en/equipe/"
 ---
 
 {% assign current_lang = page.lang | default: 'en' %}

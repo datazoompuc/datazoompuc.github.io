@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-si-pni",
+  "name": "Sistema de Informação do Programa Nacional de Imunizações (SI-PNI)",
+  "alternateName": [
+    "SI-PNI",
+    "Programa Nacional de Imunizações"
+  ],
+  "description": "Doses de vacinas aplicadas por município, mês, estratégia, imunobiológico e tipo de dose. Para 1994-2023 a função consulta o portal legado do SI-PNI; para anos mais recentes o usuário fornece o arquivo baixado do painel oficial e a função só harmoniza os dados. O Data Zoom (PUC-Rio) não produz nem redistribui estes dados: o pacote R datazoom.saude baixa os arquivos públicos do DATASUS e os entrega limpos e padronizados por meio da função load_vaccines().",
+  "url": "https://datasus.saude.gov.br/",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Ministério da Saúde",
+    "url": "https://www.gov.br/saude/pt-br"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "DATASUS",
+    "alternateName": "Departamento de Informática do Sistema Único de Saúde",
+    "url": "https://datasus.saude.gov.br/",
+    "parentOrganization": {
+      "@type": "GovernmentOrganization",
+      "name": "Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br"
+    }
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "vacinação",
+    "imunização",
+    "SI-PNI",
+    "doses aplicadas",
+    "DATASUS"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.saude"
+    }
+  ],
+  "conditionsOfAccess": "Dados públicos produzidos pelo Ministério da Saúde e disponibilizados pelo DATASUS; valem os termos de uso da fonte. A licença MIT do pacote datazoom.saude cobre apenas o software, não os dados.",
+  "temporalCoverage": "1994/2023",
+  "variableMeasured": [
+    "doses aplicadas",
+    "imunobiológico",
+    "estratégia de vacinação",
+    "tipo de dose"
+  ]
+}

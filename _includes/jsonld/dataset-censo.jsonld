@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-censo",
+  "name": "Censo Demográfico (IBGE)",
+  "alternateName": [
+    "Censo Demográfico",
+    "Brazilian Demographic Census"
+  ],
+  "description": "Recenseamento decenal da população brasileira feito pelo IBGE, com questionário básico e amostra detalhada (escolaridade, renda, características do domicílio). O pacote Stata datazoom_social lê e compatibiliza as edições de 1970 a 2022 a partir dos microdados baixados pelo usuário; o Data Zoom não produz nem redistribui os dados.",
+  "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/22827-censo-demografico-2022.html?=&t=microdados",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Brasileiro de Geografia e Estatística",
+    "alternateName": "IBGE",
+    "url": "https://www.ibge.gov.br/"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Brasileiro de Geografia e Estatística",
+    "alternateName": "IBGE",
+    "url": "https://www.ibge.gov.br/"
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "Censo Demográfico",
+    "IBGE",
+    "população",
+    "microdados",
+    "compatibilização"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom_social_stata"
+    }
+  ],
+  "conditionsOfAccess": "Microdados públicos produzidos e distribuídos pelo IBGE; valem os termos de uso da fonte. O Data Zoom não redistribui os dados, só fornece software de acesso."
+}
