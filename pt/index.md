@@ -48,7 +48,7 @@ Nossos produtos incluem pacotes estatísticos no *Stata* e no *R* que facilitam 
     <a href="https://github.com/datazoompuc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;" target="_blank"></a>
 </div>
 
-Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao/"> nos cite</a>.
+Caso o Data Zoom tenha ajudado em algum estudo escrito por você, por favor <a href="{{ site.baseurl }}/{{ page.lang }}/citacao/"> nos cite</a>. Veja também a <a href="{{ site.baseurl }}/pt/ecossistema/">visão geral do ecossistema Data Zoom</a>.
 
 <div style="margin: 2rem 0; padding: 1.25rem 1.5rem; border: 1px solid #d9d9d9; border-radius: 8px; background: #f8f9fb;">
     <h3 style="margin-top: 0;">Laboratório DataZoom</h3>
