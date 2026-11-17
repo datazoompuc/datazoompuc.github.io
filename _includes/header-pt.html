@@ -136,7 +136,10 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="{{ site.baseurl }}/en{{ page.url | remove_first: '/pt' }}"
+            {%- comment -%} twin page in the other language: same `ref` if set, else same slug {%- endcomment -%}
+            {%- assign twin_url = page.url | remove_first: '/pt' | prepend: '/en' -%}
+            {%- if page.ref -%}{%- assign twin_page = site.pages | where: 'ref', page.ref | where: 'lang', 'en' | first -%}{%- if twin_page -%}{%- assign twin_url = twin_page.url -%}{%- endif -%}{%- endif %}
+            <a href="{{ site.baseurl }}{{ twin_url }}"
                class="menu-item menu-item-english">english</a>
           </li>
         </ul>
