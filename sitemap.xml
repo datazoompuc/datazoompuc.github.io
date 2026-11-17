@@ -682,7 +682,7 @@
   </url>
   <url>
     <loc>https://datazoom.com.br/en/dz_saude/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/dz_saude/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/dz_saude/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/dz_saude/"/>
@@ -738,7 +738,7 @@
   </url>
   <url>
     <loc>https://datazoom.com.br/pt/dz_saude/</loc>
-    <lastmod>2026-01-05</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/dz_saude/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/dz_saude/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/dz_saude/"/>
@@ -756,5 +756,33 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/equipe/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/equipe/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/equipe/"/>
+  </url>
+  <url>
+    <loc>https://datazoom.com.br/pt/dz_saude/guia/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/dz_saude/guia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/dz_saude/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/dz_saude/guia/"/>
+  </url>
+  <url>
+    <loc>https://datazoom.com.br/en/dz_saude/guide/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/dz_saude/guia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/dz_saude/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/dz_saude/guia/"/>
+  </url>
+  <url>
+    <loc>https://datazoom.com.br/pt/ecossistema/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/ecossistema/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/ecosystem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/ecossistema/"/>
+  </url>
+  <url>
+    <loc>https://datazoom.com.br/en/ecosystem/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/pt/ecossistema/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/en/ecosystem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/pt/ecossistema/"/>
   </url>
 </urlset>

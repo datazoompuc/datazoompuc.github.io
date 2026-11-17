@@ -41,6 +41,11 @@ Key facts:
 - `load_pnadc()`: downloads PNAD Contínua quarters (through PNADcIBGE) and applies panel identification. Main arguments: `save_to`, `years`, `quarters`, `panel` ("none", "basic" or an advanced algorithm; the development version on GitHub offers "advanced_1", "advanced_2" and "advanced_3", so check `?load_pnadc` for the options in your installed version), `raw_data`.
 - `build_pnadc_panel()`: identifies households and individuals across quarters, based on Ribas and Soares (2008).
 
+## Guides
+
+- [datazoom.saude guide (EN)](https://datazoom.com.br/en/dz_saude/guide/) / [guia (PT)](https://datazoom.com.br/pt/dz_saude/guia/): step-by-step download of SIM, SINASC, SIH, SIA, CNES-LT, Oncology Panel and SI-PNI data in R, with code and arguments.
+- [Data Zoom ecosystem (EN)](https://datazoom.com.br/en/ecosystem/) / [ecossistema (PT)](https://datazoom.com.br/pt/ecossistema/): overview of the four packages, data covered, installation and citation.
+
 ## Documentation and source code
 
 - [datazoom.saude on CRAN](https://cran.r-project.org/package=datazoom.saude): released version, reference manual and vignettes.
