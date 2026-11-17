@@ -1,0 +1,60 @@
+# robots.txt — https://datazoom.com.br
+# Data Zoom (PUC-Rio). Conteúdo público e aberto: todos os crawlers são bem-vindos.
+# Este arquivo deve ficar na raiz do repositório datazoompuc/datazoompuc.github.io.
+# Ele vale para todo o host, inclusive /amazonia/ e /datazoom.amazonia/.
+
+# --- Buscadores tradicionais ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- Busca e citação em assistentes de IA ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Treinamento de modelos (liberado por escolha: o projeto é de dados e código abertos) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# --- Demais crawlers ---
+User-agent: *
+Allow: /
+
+# --- Sitemaps ---
+Sitemap: https://datazoom.com.br/sitemap.xml
+# Provisório: o sitemap do pkgdown (/datazoom.amazonia/sitemap.xml) tem <loc> relativos e é
+# inválido até que `url:` seja definido no _pkgdown.yml. Quando isso for corrigido, troque a
+# linha abaixo por: Sitemap: https://datazoom.com.br/datazoom.amazonia/sitemap.xml
+Sitemap: https://datazoom.com.br/sitemap-datazoom-amazonia.xml
