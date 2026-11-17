@@ -2,6 +2,11 @@
 layout: default
 title: Home
 lang: en
+seo_title: "Data Zoom PUC-Rio: Brazilian microdata in R and Stata"
+description: "Free R and Stata packages from PUC-Rio to download and clean Brazilian microdata from IBGE, DATASUS and the Legal Amazon. Install, use and cite."
+locale: "en_US"
+ref: "home"
+permalink: "/en/"
 ---
 
 # Welcome to Data Zoom!

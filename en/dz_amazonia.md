@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Amazônia
 lang: en
+seo_title: "Data Zoom Amazônia: Brazilian Amazon data in R"
+description: "The datazoom.amazonia R package and interactive charts with deforestation (PRODES, DETER), MapBiomas, IBGE, trade and energy data for the Legal Amazon."
+locale: "en_US"
+ref: "dz_amazonia"
+permalink: "/en/dz_amazonia/"
+image: "/assets/img/hex_dzam.png"
 ---
 
 # Data Zoom Amazônia

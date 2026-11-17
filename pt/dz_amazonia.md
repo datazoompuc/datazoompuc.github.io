@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Amazônia
 lang: pt
+seo_title: "Data Zoom Amazônia: dados da Amazônia Legal no R"
+description: "Pacote R datazoom.amazonia e visualizações interativas com dados de desmatamento (PRODES, DETER), MapBiomas, IBGE, comércio e energia da Amazônia Legal."
+locale: "pt_BR"
+ref: "dz_amazonia"
+permalink: "/pt/dz_amazonia/"
+image: "/assets/img/hex_dzam.png"
 ---
 
 # Data Zoom Amazônia

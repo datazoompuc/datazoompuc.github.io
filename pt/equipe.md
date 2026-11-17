@@ -2,6 +2,11 @@
 layout: default
 title: Nossa equipe
 lang: pt
+seo_title: "Equipe do Data Zoom: pesquisadores de Economia da PUC-Rio"
+description: "Conheça a coordenação, as gerentes e os assistentes de pesquisa do Data Zoom no Departamento de Economia da PUC-Rio, além de ex-integrantes e apoiadores."
+locale: "pt_BR"
+ref: "equipe"
+permalink: "/pt/equipe/"
 ---
 
 {% assign current_lang = page.lang | default: 'en' %}

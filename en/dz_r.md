@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Social R
 lang: en
+seo_title: "datazoom.social: PNAD Contínua panel data in R (IBGE)"
+description: "R package that downloads IBGE's PNAD Contínua and links the same individuals across quarters to build panels. Install from CRAN and see examples."
+locale: "en_US"
+ref: "dz_r"
+permalink: "/en/dz_r/"
+image: "/assets/img/hex_dz_outline.png"
 ---
 
 # Data Zoom Social R

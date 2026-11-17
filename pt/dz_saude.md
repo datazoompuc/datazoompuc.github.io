@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Saúde
 lang: pt
+seo_title: "datazoom.saude: baixar microdados do DATASUS no R"
+description: "Pacote R que baixa e trata microdados do DATASUS: SIM, SINASC, SIH, SIA, CNES, oncologia e SI-PNI. Veja instalação, funções e exemplos de código."
+locale: "pt_BR"
+ref: "dz_saude"
+permalink: "/pt/dz_saude/"
+image: "/assets/img/hex_dzsaude.png"
 ---
 
 # Data Zoom Saúde

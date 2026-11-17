@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Saúde
 lang: en
+seo_title: "datazoom.saude: download DATASUS microdata in R"
+description: "R package that downloads and cleans Brazilian DATASUS microdata: SIM, SINASC, SIH, SIA, CNES, oncology and SI-PNI. Installation, functions, examples."
+locale: "en_US"
+ref: "dz_saude"
+permalink: "/en/dz_saude/"
+image: "/assets/img/hex_dzsaude.png"
 ---
 
 # Data Zoom Saúde

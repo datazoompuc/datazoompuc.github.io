@@ -2,6 +2,11 @@
 layout: default
 title: Início
 lang: pt
+seo_title: "Data Zoom PUC-Rio: microdados do Brasil em R e Stata"
+description: "Pacotes gratuitos em R e Stata da PUC-Rio para baixar e tratar microdados do IBGE, do DATASUS e da Amazônia Legal. Veja como instalar e citar."
+locale: "pt_BR"
+ref: "home"
+permalink: "/pt/"
 ---
 
 # Bem-vindo ao Data Zoom!
