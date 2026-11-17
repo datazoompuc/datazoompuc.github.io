@@ -1,0 +1,75 @@
+{%- comment -%}
+  _includes/seo-head.html — Data Zoom (datazoom.com.br)
+  Inclua dentro do <head> de _layouts/default.html:  {% include seo-head.html %}
+  Gera: meta description, canonical, hreflang (pt-BR / en / x-default), Open Graph,
+  Twitter Card e o JSON-LD (via _includes/jsonld.html).
+  Requisitos: _config.yml com  url: "https://datazoom.com.br"  e páginas com  lang: pt|en.
+  Funciona também no repositório "amazonia" (baseurl: /amazonia).
+  NÃO ative o plugin jekyll-seo-tag junto com este include (geraria tags duplicadas).
+  Integração (Subagente 6): hreflang por `ref` do front matter e og:title a partir de `seo_title`.
+{%- endcomment -%}
+{%- assign seo_lang = page.lang | default: site.lang | default: "pt" -%}
+{%- if seo_lang == "pt" -%}
+  {%- assign seo_locale = "pt_BR" -%}{%- assign seo_locale_alt = "en_US" -%}
+{%- else -%}
+  {%- assign seo_locale = "en_US" -%}{%- assign seo_locale_alt = "pt_BR" -%}
+{%- endif -%}
+{%- assign seo_root = site.url | append: site.baseurl -%}
+{%- assign seo_canonical = seo_root | append: page.url -%}
+
+{%- comment -%} chave sem o prefixo de idioma: /pt/dz_saude/ -> /dz_saude/ {%- endcomment -%}
+{%- assign seo_prefix = page.url | slice: 0, 4 -%}
+{%- if seo_prefix == "/pt/" or seo_prefix == "/en/" -%}
+  {%- assign seo_key = page.url | slice: 3, 500 -%}
+  {%- assign seo_bilingual = true -%}
+{%- else -%}
+  {%- assign seo_key = page.url -%}
+  {%- assign seo_bilingual = false -%}
+{%- endif -%}
+{%- assign seo_data = site.data.seo.pages[seo_key] -%}
+
+{%- assign seo_desc = page.description | default: seo_data.description[seo_lang] | default: site.description -%}
+{%- assign seo_desc = seo_desc | strip_html | strip_newlines | strip | truncate: 300 -%}
+{%- if page.seo_title -%}{%- assign seo_title = page.seo_title -%}
+{%- else -%}{%- assign seo_title = page.title | default: site.title | append: " - Data Zoom" -%}{%- endif -%}
+{%- assign seo_image = page.image | default: seo_data.image | default: site.data.seo.default_image | default: "/assets/img/hex_dz_outline.png" -%}
+{%- unless seo_image contains "://" -%}{%- assign seo_image = seo_root | append: seo_image -%}{%- endunless -%}
+
+<meta name="description" content="{{ seo_desc | escape }}">
+<link rel="canonical" href="{{ seo_canonical }}">
+{%- comment -%}
+  hreflang targets. Pages that share a `ref` in front matter are paired even when the
+  slugs differ (/pt/ecossistema/ <-> /en/ecosystem/); otherwise the twin is assumed to
+  have the same slug under the other language prefix.
+{%- endcomment -%}
+{%- assign seo_href_pt = seo_root | append: "/pt" | append: seo_key -%}
+{%- assign seo_href_en = seo_root | append: "/en" | append: seo_key -%}
+{%- if page.ref -%}
+  {%- assign seo_pair = site.pages | where: "ref", page.ref -%}
+  {%- assign seo_pair_pt = seo_pair | where: "lang", "pt" | first -%}
+  {%- assign seo_pair_en = seo_pair | where: "lang", "en" | first -%}
+  {%- if seo_pair_pt and seo_pair_en -%}
+    {%- assign seo_href_pt = seo_root | append: seo_pair_pt.url -%}
+    {%- assign seo_href_en = seo_root | append: seo_pair_en.url -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if seo_bilingual and page.hreflang != false %}
+<link rel="alternate" hreflang="pt-BR" href="{{ seo_href_pt }}">
+<link rel="alternate" hreflang="en" href="{{ seo_href_en }}">
+<link rel="alternate" hreflang="x-default" href="{{ seo_href_pt }}">
+{%- endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Data Zoom">
+<meta property="og:title" content="{{ seo_title | escape }}">
+<meta property="og:description" content="{{ seo_desc | escape }}">
+<meta property="og:url" content="{{ seo_canonical }}">
+<meta property="og:image" content="{{ seo_image }}">
+<meta property="og:locale" content="{{ seo_locale }}">
+{%- if seo_bilingual %}
+<meta property="og:locale:alternate" content="{{ seo_locale_alt }}">
+{%- endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ seo_title | escape }}">
+<meta name="twitter:description" content="{{ seo_desc | escape }}">
+<meta name="twitter:image" content="{{ seo_image }}">
+{% include jsonld.html seo_lang=seo_lang seo_key=seo_key %}

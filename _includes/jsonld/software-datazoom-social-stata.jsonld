@@ -1,0 +1,80 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "SoftwareSourceCode",
+    "SoftwareApplication"
+  ],
+  "@id": "https://datazoom.com.br/#datazoom_social_stata",
+  "name": "datazoom_social (Stata)",
+  "description": "Pacote Stata que lê microdados de pesquisas domiciliares do IBGE já baixados pelo usuário (Censo Demográfico 1970-2022, PNAD 1981-2015, PNAD Contínua, PME, PNAD Covid, PNS, POF e ECINF), compatibiliza edições do Censo e identifica indivíduos em painel na PME e na PNAD Contínua. Todas as rotinas têm caixas de diálogo (db datazoom_social).",
+  "url": "https://datazoom.com.br/pt/dz_stata/",
+  "codeRepository": "https://github.com/datazoompuc/datazoom_social_Stata",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Stata",
+    "url": "https://www.stata.com/"
+  },
+  "runtimePlatform": "Stata",
+  "applicationCategory": "DeveloperApplication",
+  "applicationSubCategory": "Data access / microdata",
+  "operatingSystem": "Windows, macOS, Linux",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "inLanguage": [
+    "en",
+    "pt-BR"
+  ],
+  "dateCreated": "2021-04-12",
+  "author": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "sourceOrganization": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "publisher": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "featureList": [
+    "datazoom_censo",
+    "datazoom_pnad",
+    "datazoom_pnadcontinua",
+    "datazoom_pnadcont_anual",
+    "datazoom_pmeantiga",
+    "datazoom_pmenova",
+    "datazoom_pnad_covid",
+    "datazoom_pns",
+    "datazoom_pof1995",
+    "datazoom_pof2002",
+    "datazoom_pof2008",
+    "datazoom_pof2017",
+    "datazoom_ecinf",
+    "read_compdct / write_compdct"
+  ],
+  "keywords": [
+    "Stata",
+    "IBGE",
+    "Censo Demográfico",
+    "PNAD",
+    "PNAD Contínua",
+    "POF",
+    "PNS",
+    "PME",
+    "microdados"
+  ],
+  "about": [
+    {
+      "@id": "https://datazoom.com.br/#dataset-pnadc"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-censo"
+    }
+  ],
+  "sameAs": [
+    "https://github.com/datazoompuc/datazoom_social_Stata"
+  ],
+  "installUrl": "https://raw.githubusercontent.com/datazoompuc/datazoom_social_stata/main/"
+}

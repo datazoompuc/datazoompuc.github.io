@@ -28,8 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Seguimos a filosofia de códigos abertos.
 # baseurl: nil # following jekyll/97 and jekyll/6137
 url: 'https://datazoom.com.br' # the base hostname & protocol for your site (custom domain, see CNAME)
-lang: pt-BR # default language; pages set `lang: pt` or `lang: en` in front matter
-logo: /assets/img/hex_dz.png # used by jekyll-seo-tag (Organization logo)
+lang: pt # default language code (pt|en); <html lang> maps pt -> pt-BR in _layouts/default.html
 
 permalink: pretty
 
@@ -37,10 +36,12 @@ permalink: pretty
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag # whitelisted by GitHub Pages; renders {% seo %} in _layouts/default.html
+# SEO tags (description, canonical, hreflang, OG/Twitter, JSON-LD) come from
+# _includes/seo-head.html. Do NOT enable jekyll-seo-tag or jekyll-sitemap here:
+# they would duplicate those tags and overwrite the static sitemap.xml.
 
 # Per-folder defaults. `lang` keeps the short codes (pt/en) that the layout
-# uses to pick the header include; `locale` feeds og:locale in jekyll-seo-tag.
+# and the menus use in links (do not change to pt-BR); `locale` is informative.
 defaults:
   - scope:
       path: "pt"

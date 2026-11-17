@@ -1,0 +1,183 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "SoftwareSourceCode",
+    "SoftwareApplication"
+  ],
+  "@id": "https://datazoom.com.br/#datazoom.amazonia",
+  "name": "datazoom.amazonia",
+  "description": "Pacote R que baixa e padroniza dados sobre a Amazônia brasileira de fontes oficiais: desmatamento (PRODES, DETER, DEGRAD/INPE), uso e cobertura da terra (MapBiomas), multas e embargos (IBAMA), emissões (SEEG), clima (TerraClimate), produção agrícola, pecuária e extrativa (IBGE: PAM, PPM, PEVS, Censo Agropecuário), PIB municipal, população, comércio exterior (COMEX, BACI), mineração (SIGMINE), energia (ANEEL, EPE) e saúde (DATASUS), em nível de município, estado e região.",
+  "url": "https://datazoom.com.br/pt/dz_amazonia/",
+  "codeRepository": "https://github.com/datazoompuc/datazoom.amazonia",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://www.r-project.org/"
+  },
+  "runtimePlatform": "R (>= 4.1.0)",
+  "applicationCategory": "DeveloperApplication",
+  "applicationSubCategory": "Data access / microdata",
+  "operatingSystem": "Windows, macOS, Linux",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "inLanguage": [
+    "en",
+    "pt-BR"
+  ],
+  "dateCreated": "2020-10-10",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Laura Tavares Regadas"
+    },
+    {
+      "@type": "Person",
+      "name": "Gustavo Gonzaga"
+    },
+    {
+      "@type": "Person",
+      "name": "Igor Rigolon Veiga"
+    },
+    {
+      "@type": "Person",
+      "name": "Guilherme Jardim"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniel AC Barbosa"
+    },
+    {
+      "@type": "Person",
+      "name": "Bruno Alcantara Duarte"
+    },
+    {
+      "@type": "Person",
+      "name": "Fredie Didier"
+    },
+    {
+      "@type": "Person",
+      "name": "Tito Bruni"
+    },
+    {
+      "@type": "Person",
+      "name": "Luiz Guilherme Lopes Moussatche"
+    },
+    {
+      "@type": "Person",
+      "name": "Victor Aliende da Matta"
+    },
+    {
+      "@type": "Person",
+      "name": "Anna Carolina Dutra Saraiva"
+    },
+    {
+      "@type": "Person",
+      "name": "Arthur Carvalho Brito"
+    },
+    {
+      "@type": "Person",
+      "name": "Francisco de Lima Cavalcanti"
+    },
+    {
+      "@type": "Person",
+      "name": "Maria Mittelbach"
+    },
+    {
+      "@type": "Person",
+      "name": "Felipe de Moraes Nunes"
+    },
+    {
+      "@type": "Person",
+      "name": "Joao Paulo Santos P. Barbosa"
+    },
+    {
+      "@type": "Person",
+      "name": "Bernardo Furlanetto Sieira"
+    }
+  ],
+  "sourceOrganization": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "publisher": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "featureList": [
+    "load_prodes()",
+    "load_deter()",
+    "load_degrad()",
+    "load_imazon()",
+    "load_ibama()",
+    "load_mapbiomas()",
+    "load_climate()",
+    "load_seeg()",
+    "load_censoagro()",
+    "load_ips()",
+    "load_iema()",
+    "load_population()",
+    "load_br_trade()",
+    "load_baci()",
+    "load_pibmunic()",
+    "load_cempre()",
+    "load_pam()",
+    "load_pevs()",
+    "load_ppm()",
+    "load_sigmine()",
+    "load_aneel()",
+    "load_epe()",
+    "load_datasus()",
+    "municipalities (base de municípios com indicador de Amazônia Legal)"
+  ],
+  "keywords": [
+    "Amazônia Legal",
+    "desmatamento",
+    "PRODES",
+    "DETER",
+    "MapBiomas",
+    "IBGE",
+    "INPE",
+    "meio ambiente",
+    "R",
+    "CRAN"
+  ],
+  "about": [
+    {
+      "@id": "https://datazoom.com.br/#dataset-prodes"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-deter"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-mapbiomas"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-sim"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-sih"
+    },
+    {
+      "@id": "https://datazoom.com.br/#dataset-cnes-lt"
+    }
+  ],
+  "sameAs": [
+    "https://cran.r-project.org/package=datazoom.amazonia",
+    "https://github.com/datazoompuc/datazoom.amazonia"
+  ],
+  "downloadUrl": "https://cran.r-project.org/package=datazoom.amazonia",
+  "installUrl": "https://cran.r-project.org/package=datazoom.amazonia",
+  "softwareVersion": "1.2.0",
+  "datePublished": "2026-07-03",
+  "maintainer": {
+    "@type": "Person",
+    "name": "Laura Tavares Regadas"
+  },
+  "license": "https://opensource.org/license/MIT",
+  "softwareHelp": {
+    "@type": "CreativeWork",
+    "url": "https://datazoom.com.br/datazoom.amazonia/"
+  }
+}

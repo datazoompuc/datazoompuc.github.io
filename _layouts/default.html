@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 {%- if page.lang == "pt" -%}{%- assign html_lang = "pt-BR" -%}
 {%- elsif page.lang == "en" -%}{%- assign html_lang = "en" -%}
-{%- else -%}{%- assign html_lang = page.lang | default: site.lang | default: "pt-BR" -%}{%- endif -%}
+{%- elsif site.lang == "en" -%}{%- assign html_lang = "en" -%}
+{%- else -%}{%- assign html_lang = "pt-BR" -%}{%- endif -%}
 <html lang="{{ html_lang }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - Data Zoom</title>
+    <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }} - Data Zoom{% endif %}</title>
+    {%- comment -%} description, canonical, hreflang, Open Graph, Twitter and JSON-LD {%- endcomment %}
+    {% include seo-head.html %}
     <link href="{{ site.baseurl }}/assets/css/bootstrap.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/lists.css" rel="stylesheet">
     <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.jpg" type="image/jpeg">
-    {%- comment -%} canonical, meta description, Open Graph, Twitter and JSON-LD (jekyll-seo-tag) {%- endcomment -%}
-    {% seo title=false %}
-    {%- comment -%} hreflang: every page under /pt/ has an /en/ twin with the same slug, and vice versa {%- endcomment -%}
-    {%- assign url_parts = page.url | split: "/" -%}
-    {%- assign section = url_parts[1] -%}
-    {%- if section == "pt" or section == "en" -%}
-      {%- assign rest = page.url | remove_first: "/pt/" | remove_first: "/en/" -%}
-    <link rel="alternate" hreflang="pt-BR" href="{{ '/pt/' | append: rest | absolute_url }}">
-    <link rel="alternate" hreflang="en" href="{{ '/en/' | append: rest | absolute_url }}">
-    <link rel="alternate" hreflang="x-default" href="{{ '/pt/' | append: rest | absolute_url }}">
-    {%- endif %}
   </head>
 <body>
   <div class="container">

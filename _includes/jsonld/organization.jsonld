@@ -1,0 +1,142 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "@id": "https://datazoom.com.br/#organization",
+  "name": "Data Zoom",
+  "alternateName": [
+    "Data Zoom PUC-Rio",
+    "DataZoom"
+  ],
+  "url": "https://datazoom.com.br/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://datazoom.com.br/assets/img/favicon.jpg"
+  },
+  "description": "O Data Zoom é um projeto do Departamento de Economia da PUC-Rio que promove o acesso, o processamento e a análise de microdados do Brasil para pesquisadores, estudantes e jornalistas. Desenvolve pacotes abertos em R (datazoom.saude, datazoom.amazonia, datazoom.social) e Stata (datazoom_social) para dados do DATASUS, IBGE, INPE, MapBiomas e outras fontes oficiais, e funciona como laboratório de formação de estudantes.",
+  "email": "datazoom@econ.puc-rio.br",
+  "telephone": "+55-21-3527-1078",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Marquês de São Vicente, 225, sala 210F - Gávea",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22451-900",
+    "addressCountry": "BR"
+  },
+  "parentOrganization": {
+    "@type": "EducationalOrganization",
+    "name": "Departamento de Economia da PUC-Rio",
+    "url": "https://www.econ.puc-rio.br/",
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "@id": "https://ror.org/01dg47b60",
+      "name": "Pontifícia Universidade Católica do Rio de Janeiro",
+      "alternateName": [
+        "PUC-Rio",
+        "Pontifical Catholic University of Rio de Janeiro"
+      ],
+      "url": "https://www.puc-rio.br/",
+      "sameAs": [
+        "https://ror.org/01dg47b60",
+        "https://www.wikidata.org/wiki/Q1857293",
+        "http://en.wikipedia.org/wiki/Pontifical_Catholic_University_of_Rio_de_Janeiro"
+      ]
+    }
+  },
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Gustavo Gonzaga",
+      "jobTitle": "Coordenador Geral",
+      "url": "https://sites.google.com/site/gmgonzaga2/home"
+    },
+    {
+      "@type": "Person",
+      "name": "Giovanna Ribeiro",
+      "jobTitle": "Gerente Operacional",
+      "url": "https://br.linkedin.com/in/giovannaribeirops"
+    },
+    {
+      "@type": "Person",
+      "name": "Laura Regadas",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://br.linkedin.com/in/laura-t-regadas"
+    },
+    {
+      "@type": "Person",
+      "name": "Antonio Bergallo",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://antoniobergallo.github.io/"
+    },
+    {
+      "@type": "Person",
+      "name": "Vanndher Amós",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://www.linkedin.com/in/vanndher-am%C3%B3s-08b500247/"
+    },
+    {
+      "@type": "Person",
+      "name": "Philippe Lebailly",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "http://www.linkedin.com/in/philippe-bernardes-lebailly-976452263"
+    },
+    {
+      "@type": "Person",
+      "name": "Daniel Adler",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://www.linkedin.com/in/daniel-adler-9a053b390"
+    },
+    {
+      "@type": "Person",
+      "name": "Luana Laport",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://www.linkedin.com/in/luana-laport-842723382"
+    },
+    {
+      "@type": "Person",
+      "name": "Pedro Lucas",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://www.linkedin.com/in/pedro-silva-195586440"
+    },
+    {
+      "@type": "Person",
+      "name": "Thiago Catarino",
+      "jobTitle": "Assistente de Pesquisa",
+      "url": "https://www.linkedin.com/in/thiagojcatarino/"
+    }
+  ],
+  "knowsAbout": [
+    "microdados brasileiros",
+    "DATASUS",
+    "saúde pública",
+    "PNAD Contínua",
+    "dados em painel",
+    "Amazônia Legal",
+    "desmatamento",
+    "R",
+    "Stata"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "sameAs": [
+    "https://github.com/datazoompuc",
+    "https://www.linkedin.com/company/data-zoom/",
+    "https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug"
+  ],
+  "owns": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.saude"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom.amazonia"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom.social"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom_social_stata"
+    }
+  ]
+}

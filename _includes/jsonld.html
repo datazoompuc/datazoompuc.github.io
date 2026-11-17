@@ -1,0 +1,30 @@
+{%- comment -%}
+  _includes/jsonld.html — insere blocos JSON-LD a partir de _includes/jsonld/<nome>.jsonld
+  Ordem de escolha da lista de arquivos:
+    1. page.jsonld no front matter (ex.: jsonld: [organization, software-datazoom-saude]);
+       use  jsonld: false  para não emitir nada;
+    2. site.data.seo.pages[<chave sem /pt|/en>].jsonld  (_data/seo.yml);
+    3. padrão: organization (todas as páginas com layout default).
+  O texto "LANG" no nome é trocado pelo idioma da página (pt|en), p.ex. faq-dz-saude-LANG.
+  Os arquivos .jsonld são copiados de seo-geo-deliverables/site-deploy/jsonld/ e já trazem
+  @context; cada um vira um <script type="application/ld+json"> próprio.
+{%- endcomment -%}
+{%- assign jl_lang = include.seo_lang | default: page.lang | default: "pt" -%}
+{%- assign jl_key = include.seo_key | default: page.url -%}
+{%- if page.jsonld == false -%}
+  {%- assign jl_list = "" | split: "," -%}
+{%- elsif page.jsonld -%}
+  {%- assign jl_list = page.jsonld -%}
+{%- elsif site.data.seo.pages[jl_key].jsonld -%}
+  {%- assign jl_list = site.data.seo.pages[jl_key].jsonld -%}
+{%- elsif page.layout == "default" -%}
+  {%- assign jl_list = "organization" | split: "," -%}
+{%- else -%}
+  {%- assign jl_list = "" | split: "," -%}
+{%- endif -%}
+{%- for jl_name in jl_list -%}
+{%- assign jl_file = jl_name | replace: "LANG", jl_lang | prepend: "jsonld/" | append: ".jsonld" %}
+<script type="application/ld+json">
+{% include {{ jl_file }} %}
+</script>
+{%- endfor -%}

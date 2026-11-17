@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-mapbiomas",
+  "name": "MapBiomas – Uso e cobertura da terra no Brasil",
+  "alternateName": [
+    "MapBiomas"
+  ],
+  "description": "Mapas anuais de uso e cobertura da terra, transições, mineração e cicatrizes de fogo no Brasil, produzidos pela rede MapBiomas. O pacote R datazoom.amazonia baixa e agrega os dados por município, estado e outras unidades com load_mapbiomas(); o Data Zoom não produz os dados.",
+  "url": "https://brasil.mapbiomas.org/",
+  "creator": {
+    "@type": "Organization",
+    "name": "MapBiomas",
+    "url": "https://brasil.mapbiomas.org/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MapBiomas",
+    "url": "https://brasil.mapbiomas.org/"
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "MapBiomas",
+    "uso da terra",
+    "cobertura da terra",
+    "fogo",
+    "mineração"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.amazonia"
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}

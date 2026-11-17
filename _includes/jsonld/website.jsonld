@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://datazoom.com.br/#website",
+  "url": "https://datazoom.com.br/",
+  "name": "Data Zoom",
+  "alternateName": "Data Zoom - PUC-Rio",
+  "description": "Acesso, processamento e análise de microdados do Brasil em R e Stata.",
+  "inLanguage": [
+    "pt-BR",
+    "en"
+  ],
+  "publisher": {
+    "@id": "https://datazoom.com.br/#organization"
+  }
+}
