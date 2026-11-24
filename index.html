@@ -1,0 +1,29 @@
+---
+# Root entry point. `layout: null` stops Jekyll from wrapping this page in
+# _layouts/default.html (which produced an empty "<title> - Data Zoom" and
+# printed this redirect markup as escaped text). The page sends visitors to
+# the Portuguese home and tells crawlers that /pt/ is the canonical URL.
+layout: null
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Zoom PUC-Rio: microdados do Brasil em R e Stata</title>
+    <meta name="description" content="Pacotes gratuitos em R e Stata da PUC-Rio para baixar e tratar microdados do IBGE, do DATASUS e da Amazônia Legal. Escolha português ou inglês.">
+    <link rel="canonical" href="{{ '/pt/' | absolute_url }}">
+    <link rel="alternate" hreflang="pt-BR" href="{{ '/pt/' | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/pt/' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/img/favicon.jpg' | relative_url }}" type="image/jpeg">
+    <meta http-equiv="refresh" content="0; url={{ '/pt/' | relative_url }}">
+    <script>window.location.replace("{{ '/pt/' | relative_url }}");</script>
+  </head>
+  <body>
+    <h1>Data Zoom - PUC-Rio</h1>
+    <p>Redirecionando para <a href="{{ '/pt/' | relative_url }}">a versão em português</a>.
+       English version: <a href="{{ '/en/' | relative_url }}">datazoom.com.br/en/</a>.</p>
+  </body>
+</html>

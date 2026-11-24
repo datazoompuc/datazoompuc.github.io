@@ -2,6 +2,11 @@
 layout: default
 title: Contact
 lang: en
+seo_title: "Contact Data Zoom: PUC-Rio Department of Economics"
+description: "Reach the Data Zoom team at PUC-Rio by e-mail, find the Department of Economics address and learn how to report issues with our R and Stata packages."
+locale: "en_US"
+ref: "contato"
+permalink: "/en/contato/"
 ---
 
 <style>

@@ -1,0 +1,82 @@
+# Data Zoom (PUC-Rio)
+
+> Data Zoom is a project of the Department of Economics at PUC-Rio (Pontifícia Universidade Católica do Rio de Janeiro, Brazil). It publishes free, open-source R and Stata packages for downloading, cleaning and standardizing Brazilian public microdata: health data from DATASUS (datazoom.saude), Amazon environmental and economic data (datazoom.amazonia), PNAD Contínua household survey panels (datazoom.social) and IBGE household surveys in Stata (datazoom_social). O Data Zoom é um projeto do Departamento de Economia da PUC-Rio que facilita o acesso a microdados brasileiros em R e Stata.
+
+Key facts:
+
+- The R packages are on CRAN under the MIT license: datazoom.saude 0.1.1 (2026-10-06), datazoom.amazonia 1.2.0 (2026-07-03) and datazoom.social 0.1.1 (2026-07-06). The Stata package is installed from GitHub with `net install`.
+- Data Zoom does not produce the data. The packages download public files from the official producers (Ministério da Saúde/DATASUS, IBGE, INPE, MapBiomas and others) and return tidy data frames, with variable labels in English (`language = "eng"`) or Portuguese (`language = "pt"`).
+- The site is bilingual: Portuguese pages live under `/pt/`, English pages under `/en/`.
+- Contact: datazoom@econ.puc-rio.br. Bugs and feature requests: GitHub issues of each package.
+
+## Which package to use
+
+- [datazoom.saude](https://datazoom.com.br/en/dz_saude/): use it for Brazilian health data from DATASUS in R: mortality (SIM), live births (SINASC), hospital admissions (SIH/SUS), hospital beds (CNES-LT), outpatient procedures (SIA/SUS), oncology cases (Painel de Oncologia, PO) and vaccination (SI-PNI). Install with `install.packages("datazoom.saude")`.
+- [datazoom.amazonia](https://datazoom.com.br/en/dz_amazonia/): use it for data on the Brazilian Amazon and Brazil in R: deforestation (PRODES, DETER, DEGRAD from INPE; Imazon), land use (MapBiomas), environmental fines (IBAMA), emissions (SEEG), climate (TerraClimate), agriculture (PAM, PPM, PEVS, Censo Agropecuário), GDP, population, trade (COMEX, BACI), mining (SIGMINE), energy (ANEEL, EPE). Install with `install.packages("datazoom.amazonia")`.
+- [datazoom.social](https://datazoom.com.br/en/dz_r/): use it for PNAD Contínua (IBGE) microdata in R and to build individual-level panels across quarters. Install with `install.packages("datazoom.social")`.
+- [datazoom_social for Stata](https://datazoom.com.br/en/dz_stata/): use it in Stata to read IBGE household survey microdata you have already downloaded (Censo Demográfico 1970–2022, PNAD 1981–2015, PNAD Contínua, PME 1990–2015, PNAD Covid 2020, PNS, POF 1995–2018, ECINF). It does not download data.
+
+## datazoom.saude (R): functions
+
+- [load_mortality()](https://datazoom.com.br/en/dz_saude/): SIM mortality records. `dataset` = "general", "fetal", "external_causes", "infant" or "maternal"; arguments `time_period`, `states` (default "all"), `raw_data`, `keep_all`, `language`.
+- [load_births()](https://datazoom.com.br/en/dz_saude/): SINASC live births. Arguments `time_period`, `states`, `raw_data`, `language`.
+- [load_hospital_admissions()](https://datazoom.com.br/en/dz_saude/): SIH/SUS. `dataset` = "reduced_aih" (RD), "professional_services" (SP), "rejected_aih" (RJ), "rejected_aih_error" (ER).
+- [load_hospital_beds()](https://datazoom.com.br/en/dz_saude/): CNES-LT monthly hospital beds by facility and bed type.
+- [load_outpatient_procedures()](https://datazoom.com.br/en/dz_saude/): SIA/SUS. `dataset` includes "ambulatory_production", "bariatric_surgery", "bariatric_surgery_follow_up", "diverse_reports", "medicines", "nephrology", "psychosocial", "fistula_confection", "dialytic_treatment", "home_care".
+- [load_oncology_case()](https://datazoom.com.br/en/dz_saude/): DATASUS Oncology Panel (PO), national coverage. Arguments `time_period`, `raw_data`, `language`.
+- [load_vaccines()](https://datazoom.com.br/en/dz_saude/): SI-PNI doses applied (1994–2023 from the legacy portal; for recent years pass a manually downloaded .xlsx via `data`). Arguments `year`, `state`, `strategy`, `product`, `dose`, `data`, `language`.
+- [dbc2dbf_wrapper()](https://datazoom.com.br/en/dz_saude/): converts a DATASUS `.dbc` file to `.dbf`.
+
+## datazoom.amazonia (R): functions
+
+- [Reference index (pkgdown)](https://datazoom.com.br/datazoom.amazonia/reference/index.html): full documentation of every function.
+- Environmental: `load_prodes()`, `load_deter()`, `load_degrad()`, `load_imazon()`, `load_ibama()`, `load_mapbiomas()`, `load_climate()`, `load_seeg()`, `load_censoagro()`.
+- Social: `load_ips()`, `load_iema()`, `load_population()`.
+- Economic: `load_br_trade()` (COMEX), `load_baci()`, `load_pibmunic()`, `load_cempre()`, `load_pam()`, `load_pevs()`, `load_ppm()`, `load_sigmine()`, `load_aneel()`, `load_epe()`.
+- Health: [load_datasus()](https://datazoom.com.br/datazoom.amazonia/reference/load_datasus.html) (SIM, SIH, CNES-LT; for full DATASUS coverage prefer datazoom.saude).
+- Data: `municipalities`, all Brazilian municipalities with a Legal Amazon flag.
+
+## datazoom.social (R): functions
+
+- `load_pnadc()`: downloads PNAD Contínua quarters (through PNADcIBGE) and applies panel identification. Main arguments: `save_to`, `years`, `quarters`, `panel` ("none", "basic" or an advanced algorithm; the development version on GitHub offers "advanced_1", "advanced_2" and "advanced_3", so check `?load_pnadc` for the options in your installed version), `raw_data`.
+- `build_pnadc_panel()`: identifies households and individuals across quarters, based on Ribas and Soares (2008).
+
+## Guides
+
+- [datazoom.saude guide (EN)](https://datazoom.com.br/en/dz_saude/guide/) / [guia (PT)](https://datazoom.com.br/pt/dz_saude/guia/): step-by-step download of SIM, SINASC, SIH, SIA, CNES-LT, Oncology Panel and SI-PNI data in R, with code and arguments.
+- [Data Zoom ecosystem (EN)](https://datazoom.com.br/en/ecosystem/) / [ecossistema (PT)](https://datazoom.com.br/pt/ecossistema/): overview of the four packages, data covered, installation and citation.
+
+## Documentation and source code
+
+- [datazoom.saude on CRAN](https://cran.r-project.org/package=datazoom.saude): released version, reference manual and vignettes.
+- [datazoom.saude on GitHub](https://github.com/datazoompuc/datazoom.saude): source code, README with examples for each database, issues.
+- [datazoom.amazonia documentation site](https://datazoom.com.br/datazoom.amazonia/): pkgdown site with one article per data source.
+- [datazoom.amazonia on CRAN](https://cran.r-project.org/package=datazoom.amazonia) and [GitHub](https://github.com/datazoompuc/datazoom.amazonia).
+- [datazoom.social on CRAN](https://cran.r-project.org/package=datazoom.social) and [GitHub](https://github.com/datazoompuc/datazoom.social).
+- [datazoom_social Stata on GitHub](https://github.com/datazoompuc/datazoom_social_Stata): README in Portuguese and English, dictionaries and documentation.
+- [Data Zoom GitHub organization](https://github.com/datazoompuc)
+
+## Data sources accessed (producers, not Data Zoom)
+
+- [DATASUS / Ministério da Saúde](https://datasus.saude.gov.br/): SIM, SINASC, SIH/SUS, SIA/SUS, CNES, Painel de Oncologia, SI-PNI.
+- [IBGE](https://www.ibge.gov.br/): PNAD Contínua, Censo Demográfico, PNAD, PME, PNS, POF, ECINF, PAM, PPM, PEVS, PIB dos Municípios, CEMPRE, Censo Agropecuário, population estimates.
+- [INPE TerraBrasilis](https://terrabrasilis.dpi.inpe.br/): PRODES and DETER (CC BY-SA 4.0 per the portal).
+- [MapBiomas](https://brasil.mapbiomas.org/): land use and land cover (CC BY 4.0).
+
+## Data Zoom Amazônia (visualizations)
+
+- [Data Zoom Amazônia (PT)](https://datazoom.com.br/amazonia/pt/) and [English](https://datazoom.com.br/amazonia/en/): interactive visualizations on deforestation, agriculture, foreign trade, labor market, energy, development and health in the Legal Amazon.
+- [Visualizations index](https://datazoom.com.br/amazonia/en/viz/)
+- [Codes and data](https://datazoom.com.br/amazonia/en/codigos-e-dados/)
+
+## Institutional pages
+
+- [Home (PT)](https://datazoom.com.br/pt/) / [Home (EN)](https://datazoom.com.br/en/)
+- [Team](https://datazoom.com.br/en/equipe/): coordinated by Prof. Gustavo Gonzaga (PUC-Rio).
+- [How to cite](https://datazoom.com.br/en/citacao/): citation in BibTeX, ABNT, APA and MLA, and published articles that used Data Zoom.
+- [Contact](https://datazoom.com.br/en/contato/)
+
+## Optional
+
+- [llms-full.txt](https://datazoom.com.br/llms-full.txt): expanded version with installation steps and code examples for every package.
+- [Sitemap](https://datazoom.com.br/sitemap.xml)

@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://datazoom.com.br/#dataset-pnadc",
+  "name": "Pesquisa Nacional por Amostra de Domicílios Contínua (PNAD Contínua)",
+  "alternateName": [
+    "PNADC",
+    "PNAD Contínua",
+    "Continuous National Household Sample Survey"
+  ],
+  "description": "Pesquisa domiciliar trimestral do IBGE sobre mercado de trabalho, rendimento e características demográficas e educacionais, com painel rotativo (cada domicílio é entrevistado em cinco trimestres consecutivos). O Data Zoom (PUC-Rio) não produz estes dados: o pacote R datazoom.social baixa os microdados (via PNADcIBGE) e monta painéis de indivíduos; o pacote Stata datazoom_social lê os arquivos baixados pelo usuário.",
+  "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9173-pesquisa-nacional-por-amostra-de-domicilios-continua-trimestral.html",
+  "creator": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Brasileiro de Geografia e Estatística",
+    "alternateName": "IBGE",
+    "url": "https://www.ibge.gov.br/"
+  },
+  "publisher": {
+    "@type": "GovernmentOrganization",
+    "name": "Instituto Brasileiro de Geografia e Estatística",
+    "alternateName": "IBGE",
+    "url": "https://www.ibge.gov.br/"
+  },
+  "provider": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "isAccessibleForFree": true,
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "inLanguage": "pt-BR",
+  "keywords": [
+    "PNAD Contínua",
+    "IBGE",
+    "mercado de trabalho",
+    "desemprego",
+    "rendimento",
+    "painel"
+  ],
+  "subjectOf": [
+    {
+      "@id": "https://datazoom.com.br/#datazoom.social"
+    },
+    {
+      "@id": "https://datazoom.com.br/#datazoom_social_stata"
+    }
+  ],
+  "conditionsOfAccess": "Microdados públicos produzidos e distribuídos pelo IBGE; valem os termos de uso da fonte. O Data Zoom não redistribui os dados, só fornece software de acesso.",
+  "temporalCoverage": "2012/.."
+}

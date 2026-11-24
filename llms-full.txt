@@ -1,0 +1,322 @@
+# Data Zoom (PUC-Rio): full reference for language models
+
+> Data Zoom is a project of the Department of Economics at PUC-Rio (Pontifícia Universidade Católica do Rio de Janeiro, Brazil) that publishes free, open-source R and Stata packages for Brazilian public microdata. This file expands https://datazoom.com.br/llms.txt with installation steps, function arguments and code examples copied from the packages' own documentation (CRAN releases and GitHub READMEs, checked on 2026-11-16). Data Zoom does not produce the data: the packages fetch public files from the official producers (Ministério da Saúde/DATASUS, IBGE, INPE, MapBiomas and others) and return tidy, standardized data frames.
+
+## 1. Overview
+
+| Package | Language | Data | Current release | Install |
+|---|---|---|---|---|
+| datazoom.saude | R | DATASUS health microdata (SIM, SINASC, SIH, CNES-LT, SIA, PO, SI-PNI) | CRAN 0.1.1 (2026-10-06) | `install.packages("datazoom.saude")` |
+| datazoom.amazonia | R | Amazon and Brazil: deforestation, land use, emissions, climate, agriculture, GDP, trade, mining, energy | CRAN 1.2.0 (2026-07-03) | `install.packages("datazoom.amazonia")` |
+| datazoom.social | R | PNAD Contínua microdata and panels | CRAN 0.1.1 (2026-07-06) | `install.packages("datazoom.social")` |
+| datazoom_social | Stata | Reads IBGE household surveys (Censo, PNAD, PNAD Contínua, PME, PNAD Covid, PNS, POF, ECINF) | GitHub | `net install` (see section 5) |
+
+- R packages: MIT license, maintained by Laura Tavares Regadas, funded by Data Zoom (PUC-Rio). Data Zoom is coordinated by Prof. Gustavo Gonzaga (PUC-Rio).
+- All R loader functions share the same design: `raw_data = FALSE` (default) returns cleaned, standardized data; `raw_data = TRUE` returns the files as published by the source. `language = "eng"` (default) or `"pt"` sets variable names and labels.
+- Website: https://datazoom.com.br/pt/ (Portuguese) and https://datazoom.com.br/en/ (English). Contact: datazoom@econ.puc-rio.br.
+
+## 2. datazoom.saude: Brazilian health data from DATASUS (R)
+
+Page: https://datazoom.com.br/en/dz_saude/ · CRAN: https://cran.r-project.org/package=datazoom.saude · GitHub: https://github.com/datazoompuc/datazoom.saude
+
+datazoom.saude is an R package that downloads, cleans and standardizes public health microdata from DATASUS, the IT department of the Brazilian Unified Health System (SUS, Ministry of Health). It handles DATASUS's compressed `.dbc` files internally.
+
+### Installation
+
+```r
+# From CRAN:
+install.packages("datazoom.saude")
+
+# Or the development version from GitHub:
+install.packages("remotes")
+remotes::install_github("datazoompuc/datazoom.saude")
+```
+
+### Supported databases
+
+| Database (Portuguese name) | Function | Sub-datasets (`dataset` argument) |
+|---|---|---|
+| SIM – Sistema de Informações sobre Mortalidade (mortality) | `load_mortality()` | "general", "fetal", "external_causes", "infant", "maternal" |
+| SINASC – Sistema de Informações sobre Nascidos Vivos (live births) | `load_births()` | — |
+| SIH/SUS – Sistema de Informações Hospitalares (hospital admissions) | `load_hospital_admissions()` | "reduced_aih" (RD), "professional_services" (SP), "rejected_aih" (RJ), "rejected_aih_error" (ER) |
+| CNES-LT – Cadastro Nacional de Estabelecimentos de Saúde, Leitos (hospital beds, monthly) | `load_hospital_beds()` | — |
+| SIA/SUS – Sistema de Informações Ambulatoriais (outpatient procedures) | `load_outpatient_procedures()` | "ambulatory_production", "bariatric_surgery", "bariatric_surgery_follow_up", "diverse_reports", "medicines", "nephrology", "psychosocial", "fistula_confection", "dialytic_treatment", "home_care", among others |
+| PO – Painel de Oncologia (oncology cases, national) | `load_oncology_case()` | — |
+| SI-PNI – Programa Nacional de Imunizações (vaccination) | `load_vaccines()` | — |
+| Utility: `.dbc` to `.dbf` | `dbc2dbf_wrapper()` | — |
+
+### Function signatures (CRAN 0.1.1)
+
+```r
+load_mortality(dataset, time_period, states = "all", raw_data = FALSE,
+               keep_all = FALSE, language = "eng")
+load_births(time_period, states = "all", raw_data = FALSE, language = "eng")
+load_hospital_admissions(dataset, time_period, states = "all",
+                         raw_data = FALSE, language = "eng")
+load_hospital_beds(time_period, states = "all", raw_data = FALSE, language = "eng")
+load_outpatient_procedures(dataset, time_period, states = "all",
+                           raw_data = FALSE, language = "eng")
+load_oncology_case(time_period, raw_data = FALSE, language = "eng")
+load_vaccines(year, state, strategy = NULL, product = NULL, dose = NULL,
+              data = NULL, language = "eng")
+dbc2dbf_wrapper(input.file, output.file)
+```
+
+- `time_period`: a year or vector of years, e.g. `2020` or `2015:2020`.
+- `states`: `"all"` for Brazil, or state abbreviations such as `"SP"` or `c("SP", "RJ")`.
+- `keep_all` (mortality): `FALSE` aggregates the cleaned data by municipality; `TRUE` keeps all individual-level variables.
+- `load_vaccines()`: for 1994–2023 it queries the legacy SI-PNI web portal; for more recent years pass the `.xlsx` file downloaded from the official DATASUS vaccination dashboard through `data`. If `strategy` or `product` is `NULL` in an interactive session, a menu appears.
+
+### Examples (from the package documentation)
+
+```r
+library(datazoom.saude)
+
+# Mortality (SIM): general deaths, Rio de Janeiro, 2022
+load_mortality(dataset = "general", time_period = 2022, states = "RJ")
+
+# Maternal deaths, Brazil, 2020, Portuguese labels
+load_mortality(dataset = "maternal", time_period = 2020,
+               raw_data = FALSE, language = "pt")
+
+# Live births (SINASC), Rio de Janeiro, 2023
+load_births(time_period = 2023, states = "RJ", raw_data = FALSE)
+
+# Hospital admissions (SIH/SUS): professional services, Acre, 2020
+load_hospital_admissions(dataset = "professional_services",
+                         time_period = 2020, states = "AC")
+
+# Hospital beds (CNES-LT): Amazonas and Pará, 2010
+beds <- load_hospital_beds(time_period = 2010, states = c("AM", "PA"),
+                           raw_data = FALSE, language = "eng")
+
+# Outpatient procedures (SIA/SUS): diverse reports, Piauí, 2016
+load_outpatient_procedures(dataset = "diverse_reports", time_period = 2016,
+                           states = "PI", language = "pt")
+
+# Oncology Panel: all states, 2023
+oncology <- load_oncology_case(time_period = 2023, raw_data = FALSE,
+                               language = "eng")
+
+# Vaccination (SI-PNI): yellow fever, routine strategy, Acre, 2020
+vac <- load_vaccines(year = 2020, state = "AC", strategy = "Rotina",
+                     product = "Febre amarela - FA", language = "eng")
+```
+
+### When to use
+
+Use datazoom.saude when you need DATASUS microdata in R as a tidy data frame, with consistent English or Portuguese labels across systems, including oncology (PO) and vaccination (SI-PNI). For health indicators already joined with Amazon environmental data, see `load_datasus()` in datazoom.amazonia.
+
+### Citation
+
+Run `citation("datazoom.saude")` in R. Institutional citation (https://datazoom.com.br/en/citacao/): Data Zoom (2023). Data Zoom: Simplifying Access To Brazilian Microdata. https://datazoom.com.br/en/
+
+## 3. datazoom.amazonia: data on the Brazilian Amazon (R)
+
+Page: https://datazoom.com.br/en/dz_amazonia/ · Documentation: https://datazoom.com.br/datazoom.amazonia/ · CRAN: https://cran.r-project.org/package=datazoom.amazonia · GitHub: https://github.com/datazoompuc/datazoom.amazonia
+
+datazoom.amazonia downloads and processes data on the Brazilian Amazon region from official sources (IBGE, INPE, MapBiomas and others), cleaned for analysis at municipality, state and regional levels.
+
+### Installation
+
+```r
+install.packages("datazoom.amazonia")
+
+# Development version:
+# install.packages("remotes")
+remotes::install_github("datazoompuc/datazoom.amazonia")
+```
+
+### Functions by theme (exported in release 1.2.0)
+
+| Theme | Source | Function |
+|---|---|---|
+| Yearly deforestation | PRODES (INPE) | `load_prodes()` |
+| Deforestation alerts | DETER (INPE) | `load_deter()` |
+| Forest degradation | DEGRAD (INPE) | `load_degrad()` |
+| Deforestation pressure | Imazon | `load_imazon()` |
+| Environmental fines and embargoes | IBAMA | `load_ibama()` |
+| Land cover and land use | MapBiomas | `load_mapbiomas()` |
+| Climate | TerraClimate | `load_climate()` |
+| Greenhouse gas emissions | SEEG | `load_seeg()` |
+| Agricultural census | IBGE Censo Agropecuário | `load_censoagro()` |
+| Social Progress Index | IPS Amazônia | `load_ips()` |
+| Access to electricity | IEMA | `load_iema()` |
+| Population | IBGE | `load_population()` |
+| Brazilian foreign trade | COMEX | `load_br_trade()` |
+| Global trade | BACI | `load_baci()` |
+| Municipal GDP | IBGE PIB-Munic | `load_pibmunic()` |
+| Central register of companies | IBGE CEMPRE | `load_cempre()` |
+| Agricultural production | IBGE PAM | `load_pam()` |
+| Forestry and extraction | IBGE PEVS | `load_pevs()` |
+| Livestock | IBGE PPM | `load_ppm()` |
+| Mining | SIGMINE (ANM) | `load_sigmine()` |
+| Energy | ANEEL | `load_aneel()` |
+| Energy consumption | EPE | `load_epe()` |
+| Health (SIM, SIH, CNES-LT) | DATASUS | `load_datasus()` |
+| Reference data | IBGE municipalities + Legal Amazon flag | `municipalities` |
+
+### Examples (from the GitHub README; years and options follow the provider's current coverage)
+
+```r
+library(datazoom.amazonia)
+
+# PRODES: treated deforestation data, 2008 to 2025
+deforestation_series <- load_prodes(dataset = "deforestation", raw_data = FALSE,
+                                    time_period = 2008:2025, language = "eng")
+
+# DETER: alerts for the Amazon
+deter_amz <- load_deter(dataset = "deter_amz", raw_data = FALSE, language = "eng")
+
+# MapBiomas: land cover by municipality
+cover <- load_mapbiomas(dataset = "mapbiomas_cover", raw_data = FALSE,
+                        geo_level = "municipality", language = "eng")
+
+# IBAMA: embargoed areas
+embargoes <- load_ibama(dataset = "embargoed_areas", raw_data = FALSE, language = "eng")
+
+# TerraClimate: precipitation in the Legal Amazon, 2020
+precip <- load_climate(dataset = "precipitation", time_period = 2020,
+                       legal_amazon_only = TRUE, language = "eng")
+
+# SEEG: farming emissions by state
+farming <- load_seeg(dataset = "seeg_farming", raw_data = FALSE,
+                     geo_level = "state", language = "eng")
+
+# PAM: all crops by state, 2010-2011
+crops <- load_pam(dataset = "all_crops", raw_data = FALSE, geo_level = "state",
+                  time_period = 2010:2011, language = "eng")
+
+# Municipal GDP, 2020
+pib_munic <- load_pibmunic(dataset = "pibmunic", raw_data = FALSE,
+                           geo_level = "municipality", time_period = 2020,
+                           language = "eng")
+
+# COMEX: exports by municipality, 2020-2021
+exports <- load_br_trade(dataset = "export_mun", raw_data = FALSE,
+                         time_period = 2020:2021, language = "eng")
+
+# Legal Amazon municipalities
+library(dplyr)
+amazon_municipalities <- municipalities %>% filter(legal_amazon == TRUE)
+```
+
+### When to use
+
+Use datazoom.amazonia for environmental, agricultural, economic and social indicators about the Legal Amazon or Brazil as a whole, especially deforestation (PRODES/DETER), land use (MapBiomas) and IBGE municipal statistics. Each data source has an article on the documentation site (for example https://datazoom.com.br/datazoom.amazonia/articles/PRODES.html).
+
+## 4. datazoom.social: PNAD Contínua microdata and panels (R)
+
+Page: https://datazoom.com.br/en/dz_r/ · CRAN: https://cran.r-project.org/package=datazoom.social · GitHub: https://github.com/datazoompuc/datazoom.social
+
+datazoom.social downloads and processes microdata from PNAD Contínua (PNADC), IBGE's quarterly rotating-panel household survey (2012 onwards), and identifies households and individuals across waves. It builds on the PNADcIBGE package.
+
+### Installation
+
+```r
+install.packages("datazoom.social")
+
+# Development version:
+install.packages("remotes")
+remotes::install_github("datazoompuc/datazoom.social")
+```
+
+### Functions
+
+- `load_pnadc()`: downloads a range of quarters (wrapper around `PNADcIBGE::get_pnadc()`), splits the data by rotation panel and applies the identification algorithm. Main arguments: `save_to`, `years`, `quarters`, `panel`, `raw_data`.
+- `build_pnadc_panel()`: identifies individuals over time. The basic method uses household ID, sex and date of birth; the advanced methods add birth-date imputation and relaxed matching, based on Ribas and Soares (2008), "Sobre o painel da Pesquisa Mensal de Emprego (PME) do IBGE".
+- Panel option names differ between the CRAN release and the GitHub development version (which offers "none", "basic", "advanced_1", "advanced_2" and "advanced_3"). Check `?load_pnadc` in your installed version.
+
+### Examples (from the GitHub README, development version)
+
+```r
+library(datazoom.social)
+
+# All quarters of 2022 and 2023, with panel identification
+load_pnadc(save_to = "Directory/You/Would/like/to/save/the/files",
+           years = 2022:2023, panel = "advanced_3")
+
+# All of 2022, but only the first quarter of 2023
+load_pnadc(save_to = "Directory/You/Would/like/to/save/the/files",
+           years = 2022:2023, quarters = list(1:4, 1))
+
+# Raw data, no identification, 2021
+load_pnadc(save_to = "Directory/You/Would/like/to/save/the/files",
+           years = 2021, panel = "none", raw_data = TRUE)
+
+# Panel identification on data already in memory
+panel_data <- build_pnadc_panel(dat = pnad_sample, panel = "basic")
+```
+
+### When to use
+
+Use datazoom.social when you need PNAD Contínua in R with individuals followed across quarters (labor market transitions, income dynamics, attrition analysis).
+
+## 5. datazoom_social: IBGE household surveys in Stata
+
+Page: https://datazoom.com.br/en/dz_stata/ · GitHub: https://github.com/datazoompuc/datazoom_social_Stata
+
+The Stata package reads and processes IBGE survey microdata into Stata format, makes different Census editions compatible and identifies individuals in the PME and PNAD Contínua panels. It does not download data: download the microdata from IBGE first.
+
+### Installation
+
+```stata
+net install datazoom_social, from("https://raw.githubusercontent.com/datazoompuc/datazoom_social_stata/main/") force
+```
+
+### Usage
+
+All routines have dialog boxes:
+
+```stata
+db datazoom_social
+```
+
+### Surveys and commands
+
+| Survey | Coverage | Command(s) |
+|---|---|---|
+| Censo Demográfico (Demographic Census) | 1970 to 2022 | `datazoom_censo` |
+| ECINF (Urban Informal Economy) | 1997 and 2003 | `datazoom_ecinf` |
+| PME (Monthly Employment Survey) | 1990 to 2015 | `datazoom_pmeantiga`, `datazoom_pmenova` |
+| PNAD (old annual PNAD) | 1981 to 2015 | `datazoom_pnad` |
+| PNAD Contínua | 2012 to present | `datazoom_pnadcontinua` (quarterly), `datazoom_pnadcont_anual` (annual) |
+| PNAD Covid | 2020 | `datazoom_pnad_covid` |
+| PNS (National Health Survey) | 2013 and 2019 | `datazoom_pns` |
+| POF (Consumer Expenditure Survey) | 1995 to 2018 | `datazoom_pof1995`, `datazoom_pof2002`, `datazoom_pof2008`, `datazoom_pof2017` |
+
+Tutorials: https://www.youtube.com/@datazoom9654/videos
+
+### When to use
+
+Use the Stata package if you work in Stata and already have IBGE microdata files; use datazoom.social if you work in R and want the PNAD Contínua download done for you.
+
+## 6. Data producers (Data Zoom only provides access software)
+
+- DATASUS / Ministério da Saúde (https://datasus.saude.gov.br/): SIM, SINASC, SIH/SUS, SIA/SUS, CNES, Painel de Oncologia, SI-PNI. Public data; the source's terms of use apply.
+- IBGE (https://www.ibge.gov.br/): PNAD Contínua, Censo Demográfico, PNAD, PME, PNS, POF, ECINF, PAM, PPM, PEVS, PIB-Munic, CEMPRE, Censo Agropecuário.
+- INPE TerraBrasilis (https://terrabrasilis.dpi.inpe.br/): PRODES and DETER, licensed CC BY-SA 4.0 according to the portal.
+- MapBiomas (https://brasil.mapbiomas.org/): land use and land cover, CC BY 4.0.
+
+The MIT license of the R packages covers the software only, not the data.
+
+## 7. How to cite Data Zoom
+
+From https://datazoom.com.br/en/citacao/:
+
+```
+@Unpublished{DataZoom2023,
+    author = {Data Zoom},
+    title = {Data Zoom: Simplifying Access To Brazilian Microdata},
+    url = {https://datazoom.com.br/en/},
+    year = {2023}
+}
+```
+
+ABNT: Data Zoom (2023). Data Zoom: Simplifying Access To Brazilian Microdata. https://datazoom.com.br/en/
+
+For a specific R package, also run `citation("<package>")` in R. Published articles that used Data Zoom data include Engbom, Gonzaga, Moser and Olivieri (2022), "Earnings inequality and dynamics in the presence of informality: The case of Brazil", Quantitative Economics 13(4), https://doi.org/10.3982/QE1855.
+
+## 8. Institution
+
+Data Zoom, Departamento de Economia, Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio, ROR https://ror.org/01dg47b60). Rua Marquês de São Vicente, 225, sala 210F, Gávea, 22451-900, Rio de Janeiro, RJ, Brazil. Phone +55 21 3527-1078. Email datazoom@econ.puc-rio.br. GitHub https://github.com/datazoompuc · LinkedIn https://www.linkedin.com/company/data-zoom/ · YouTube https://www.youtube.com/channel/UC1kYkpfiYSvL2-oTYPMMkug

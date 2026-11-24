@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Social R
 lang: pt
+seo_title: "datazoom.social: painel da PNAD Contínua no R (IBGE)"
+description: "Pacote R que baixa a PNAD Contínua do IBGE e identifica os mesmos indivíduos entre trimestres para montar painéis. Instale pelo CRAN e veja exemplos."
+locale: "pt_BR"
+ref: "dz_r"
+permalink: "/pt/dz_r/"
+image: "/assets/img/hex_dz_outline.png"
 ---
 
 # Data Zoom Social R

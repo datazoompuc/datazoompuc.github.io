@@ -1,0 +1,97 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://datazoom.com.br/en/dz_saude/#faq",
+  "inLanguage": "en",
+  "about": {"@id": "https://datazoom.com.br/#datazoom.saude"},
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is datazoom.saude?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "datazoom.saude is a free R package (MIT license) on CRAN, maintained by Data Zoom at the PUC-Rio Department of Economics. It downloads, cleans and standardizes Brazilian public health microdata from DATASUS (Ministry of Health): mortality (SIM), live births (SINASC), hospital admissions (SIH/SUS), hospital beds (CNES-LT), outpatient procedures (SIA/SUS), oncology cases (Oncology Panel) and vaccination (SI-PNI)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download Brazilian health microdata (DATASUS) in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Install the package with install.packages(\"datazoom.saude\") and call the function for the system you need. Each function takes the period (time_period), the states (states, \"all\" for the whole country), raw_data (TRUE for raw files, FALSE for cleaned data) and language (\"eng\" or \"pt\"). Example: library(datazoom.saude); load_births(time_period = 2023, states = \"RJ\")."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download SIM mortality data in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use load_mortality(). The dataset argument selects the file: \"general\", \"fetal\", \"external_causes\", \"infant\" or \"maternal\". Example: load_mortality(dataset = \"general\", time_period = 2022, states = \"RJ\"). With keep_all = FALSE (default) the cleaned data are aggregated by municipality; keep_all = TRUE keeps all individual-level variables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download SIH/SUS hospital admissions in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use load_hospital_admissions() with dataset = \"reduced_aih\" (RD), \"professional_services\" (SP), \"rejected_aih\" (RJ) or \"rejected_aih_error\" (ER). Example: load_hospital_admissions(dataset = \"professional_services\", time_period = 2020, states = \"AC\")."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download SINASC live birth data in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use load_births(). Example: load_births(time_period = 2023, states = \"RJ\", raw_data = FALSE). For several years, pass a vector such as time_period = 2015:2020."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get CNES hospital bed data in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use load_hospital_beds(), which reads the CNES beds subsystem (CNES-LT) with monthly data by facility and bed type. Example: load_hospital_beds(time_period = \"2020\", states = \"RO\", language = \"eng\")."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download SIA/SUS outpatient procedures in R?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use load_outpatient_procedures(). The dataset argument accepts, among others, \"ambulatory_production\", \"bariatric_surgery\", \"diverse_reports\", \"medicines\", \"nephrology\", \"psychosocial\", \"dialytic_treatment\" and \"home_care\". Example: load_outpatient_procedures(dataset = \"diverse_reports\", time_period = 2016, states = \"PI\", language = \"pt\")."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the package include vaccination and cancer data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. load_vaccines() returns SI-PNI doses applied by municipality, month, strategy, vaccine and dose; for 1994–2023 it queries the legacy SI-PNI portal, and for more recent years you pass the .xlsx file downloaded from the official dashboard through the data argument. load_oncology_case() returns DATASUS Oncology Panel cases for all of Brazil, e.g. load_oncology_case(time_period = 2023)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I open DATASUS .dbc files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The load_* functions download and decompress .dbc files automatically. To convert a .dbc file you already have, use dbc2dbf_wrapper(input.file, output.file), which writes the corresponding .dbf file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get variable names in Portuguese?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every function accepts language = \"pt\" for Portuguese names and labels; the default is \"eng\" (English)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I cite datazoom.saude?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In R, run citation(\"datazoom.saude\") to get the package reference. The page https://datazoom.com.br/en/citacao/ provides the Data Zoom citation in BibTeX, ABNT, APA and MLA."
+      }
+    }
+  ]
+}

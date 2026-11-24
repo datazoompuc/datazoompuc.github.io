@@ -2,6 +2,12 @@
 layout: default
 title: Data Zoom Social Stata
 lang: pt
+seo_title: "datazoom_social no Stata: microdados do IBGE (Censo, PNAD)"
+description: "Leia e compatibilize no Stata microdados do IBGE: Censo, PNAD, PNAD Contínua, PNS, POF, PME, ECINF e PNAD Covid. Instale com um comando net install."
+locale: "pt_BR"
+ref: "dz_stata"
+permalink: "/pt/dz_stata/"
+image: "/assets/img/hex_dzstata.png"
 ---
 
 # Data Zoom Social Stata

@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "SoftwareSourceCode",
+    "SoftwareApplication"
+  ],
+  "@id": "https://datazoom.com.br/#datazoom.social",
+  "name": "datazoom.social",
+  "description": "Pacote R que baixa e processa microdados da PNAD Contínua (IBGE) e identifica domicílios e indivíduos entre trimestres para montar painéis longitudinais (algoritmos básico e avançados, baseados em Ribas e Soares, 2008).",
+  "url": "https://datazoom.com.br/pt/dz_r/",
+  "codeRepository": "https://github.com/datazoompuc/datazoom.social",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "url": "https://www.r-project.org/"
+  },
+  "runtimePlatform": "R (>= 4.1.0)",
+  "applicationCategory": "DeveloperApplication",
+  "applicationSubCategory": "Data access / microdata",
+  "operatingSystem": "Windows, macOS, Linux",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "inLanguage": [
+    "en",
+    "pt-BR"
+  ],
+  "dateCreated": "2020-03-18",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Laura Tavares Regadas"
+    },
+    {
+      "@type": "Person",
+      "name": "Igor Rigolon Veiga"
+    },
+    {
+      "@type": "Person",
+      "name": "Arthur Lins de Vasconcellos"
+    },
+    {
+      "@type": "Person",
+      "name": "Giulia Toscano Imbuzeiro"
+    },
+    {
+      "@type": "Person",
+      "name": "Guilherme Jardim"
+    },
+    {
+      "@type": "Person",
+      "name": "Pablo Chaves"
+    },
+    {
+      "@type": "Person",
+      "name": "Breno Avidos"
+    },
+    {
+      "@type": "Person",
+      "name": "Bernardo Sieira"
+    }
+  ],
+  "sourceOrganization": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "publisher": {
+    "@id": "https://datazoom.com.br/#organization"
+  },
+  "featureList": [
+    "load_pnadc(): baixa trimestres da PNAD Contínua e aplica a identificação de painel",
+    "build_pnadc_panel(): identifica indivíduos ao longo do tempo"
+  ],
+  "keywords": [
+    "PNAD Contínua",
+    "PNADC",
+    "IBGE",
+    "dados em painel",
+    "mercado de trabalho",
+    "microdados",
+    "R",
+    "CRAN"
+  ],
+  "about": [
+    {
+      "@id": "https://datazoom.com.br/#dataset-pnadc"
+    }
+  ],
+  "sameAs": [
+    "https://cran.r-project.org/package=datazoom.social",
+    "https://github.com/datazoompuc/datazoom.social"
+  ],
+  "downloadUrl": "https://cran.r-project.org/package=datazoom.social",
+  "installUrl": "https://cran.r-project.org/package=datazoom.social",
+  "softwareVersion": "0.1.1",
+  "datePublished": "2026-07-06",
+  "maintainer": {
+    "@type": "Person",
+    "name": "Laura Tavares Regadas"
+  },
+  "license": "https://opensource.org/license/MIT"
+}

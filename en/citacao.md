@@ -2,6 +2,11 @@
 layout: default
 title: Citation
 lang: en
+seo_title: "How to cite Data Zoom and the datazoom R and Stata packages"
+description: "Ready-to-copy BibTeX, ABNT, APA and MLA references for Data Zoom (PUC-Rio), plus published articles, working papers and theses that used our packages."
+locale: "en_US"
+ref: "citacao"
+permalink: "/en/citacao/"
 ---
 
 <style>

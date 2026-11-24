@@ -1,0 +1,52 @@
+# _data/seo.yml — metadados de SEO por página do site datazoom.com.br
+# Chave = page.url sem o prefixo de idioma (/pt ou /en). Ex.: /pt/dz_saude/ -> "/dz_saude/".
+# Prioridade em _includes/seo-head.html: page.description (front matter) > este arquivo > site.description.
+# jsonld: nomes dos arquivos em _includes/jsonld/ (sem extensão). "LANG" é trocado por pt/en.
+
+default_image: /assets/img/hex_dz_outline.png
+
+pages:
+  "/":
+    description:
+      pt: "Data Zoom (PUC-Rio): pacotes gratuitos em R e Stata para baixar e tratar microdados do Brasil — DATASUS, PNAD Contínua, Censo, Amazônia Legal."
+      en: "Data Zoom (PUC-Rio): free R and Stata packages to download and clean Brazilian microdata — DATASUS, PNAD Contínua, Census, Legal Amazon."
+    jsonld: [organization, website]
+  "/dz_saude/":
+    description:
+      pt: "datazoom.saude: pacote R para baixar microdados do DATASUS — SIM, SINASC, SIH, CNES, SIA, Painel de Oncologia e SI-PNI — limpos e padronizados."
+      en: "datazoom.saude: R package to download DATASUS microdata — SIM, SINASC, SIH, CNES, SIA, Oncology Panel and SI-PNI — clean and standardized."
+    image: /assets/img/hex_dzsaude.png
+    jsonld: [organization, software-datazoom-saude, dataset-sim, dataset-sinasc, dataset-sih, dataset-cnes-lt, dataset-sia, dataset-po, dataset-si-pni, faq-dz-saude-LANG]
+  "/dz_amazonia/":
+    description:
+      pt: "datazoom.amazonia: pacote R com dados da Amazônia Legal — desmatamento (PRODES, DETER), MapBiomas, IBAMA, SEEG, clima, agropecuária, PIB e comércio."
+      en: "datazoom.amazonia: R package for Legal Amazon data — deforestation (PRODES, DETER), MapBiomas, IBAMA, SEEG, climate, agriculture, GDP and trade."
+    image: /assets/img/hex_dzam.png
+    jsonld: [organization, software-datazoom-amazonia, dataset-prodes, dataset-deter, dataset-mapbiomas]
+  "/dz_r/":
+    description:
+      pt: "datazoom.social: pacote R para baixar microdados da PNAD Contínua (IBGE) e montar painéis de indivíduos entre trimestres."
+      en: "datazoom.social: R package to download PNAD Contínua (IBGE) microdata and build individual-level panels across quarters."
+    image: /assets/img/hex_dz_outline.png
+    jsonld: [organization, software-datazoom-social, dataset-pnadc]
+  "/dz_stata/":
+    description:
+      pt: "datazoom_social para Stata: lê microdados do IBGE — Censo 1970–2022, PNAD, PNAD Contínua, PME, PNS, POF — com compatibilização e painéis."
+      en: "datazoom_social for Stata: reads IBGE microdata — Census 1970–2022, PNAD, PNAD Contínua, PME, PNS, POF — with harmonization and panels."
+    image: /assets/img/hex_dzstata.png
+    jsonld: [organization, software-datazoom-social-stata, dataset-pnadc, dataset-censo]
+  "/equipe/":
+    description:
+      pt: "Equipe do Data Zoom, projeto do Departamento de Economia da PUC-Rio coordenado pelo Prof. Gustavo Gonzaga, com ex-gerentes e agradecimentos."
+      en: "The Data Zoom team at the PUC-Rio Department of Economics, coordinated by Prof. Gustavo Gonzaga, plus alumni and acknowledgements."
+    jsonld: [organization]
+  "/citacao/":
+    description:
+      pt: "Como citar o Data Zoom (BibTeX, ABNT, APA, MLA) e artigos publicados que usaram dados e pacotes do Data Zoom."
+      en: "How to cite Data Zoom (BibTeX, ABNT, APA, MLA) and published articles that used Data Zoom data and packages."
+    jsonld: [organization]
+  "/contato/":
+    description:
+      pt: "Fale com o Data Zoom (PUC-Rio): issues no GitHub de cada pacote, e-mail datazoom@econ.puc-rio.br e telefone +55 21 3527-1078."
+      en: "Contact Data Zoom (PUC-Rio): GitHub issues for each package, email datazoom@econ.puc-rio.br and phone +55 21 3527-1078."
+    jsonld: [organization]
