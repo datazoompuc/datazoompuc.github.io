@@ -48,10 +48,12 @@ Key facts:
 
 ## Documentation and source code
 
+- [datazoom.saude documentation site](https://datazoom.com.br/datazoom.saude/): function reference and articles by DATASUS system.
 - [datazoom.saude on CRAN](https://cran.r-project.org/package=datazoom.saude): released version, reference manual and vignettes.
 - [datazoom.saude on GitHub](https://github.com/datazoompuc/datazoom.saude): source code, README with examples for each database, issues.
 - [datazoom.amazonia documentation site](https://datazoom.com.br/datazoom.amazonia/): pkgdown site with one article per data source.
 - [datazoom.amazonia on CRAN](https://cran.r-project.org/package=datazoom.amazonia) and [GitHub](https://github.com/datazoompuc/datazoom.amazonia).
+- [datazoom.social documentation site](https://datazoom.com.br/datazoom.social/): function reference and articles on downloading PNAD Contínua and building panels.
 - [datazoom.social on CRAN](https://cran.r-project.org/package=datazoom.social) and [GitHub](https://github.com/datazoompuc/datazoom.social).
 - [datazoom_social Stata on GitHub](https://github.com/datazoompuc/datazoom_social_Stata): README in Portuguese and English, dictionaries and documentation.
 - [Data Zoom GitHub organization](https://github.com/datazoompuc)

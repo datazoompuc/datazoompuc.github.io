@@ -55,3 +55,5 @@ Allow: /
 # --- Sitemaps ---
 Sitemap: https://datazoom.com.br/sitemap.xml
 Sitemap: https://datazoom.com.br/datazoom.amazonia/sitemap.xml
+Sitemap: https://datazoom.com.br/datazoom.saude/sitemap.xml
+Sitemap: https://datazoom.com.br/datazoom.social/sitemap.xml
