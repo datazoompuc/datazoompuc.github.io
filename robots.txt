@@ -54,7 +54,4 @@ Allow: /
 
 # --- Sitemaps ---
 Sitemap: https://datazoom.com.br/sitemap.xml
-# Provisório: o sitemap do pkgdown (/datazoom.amazonia/sitemap.xml) tem <loc> relativos e é
-# inválido até que `url:` seja definido no _pkgdown.yml. Quando isso for corrigido, troque a
-# linha abaixo por: Sitemap: https://datazoom.com.br/datazoom.amazonia/sitemap.xml
-Sitemap: https://datazoom.com.br/sitemap-datazoom-amazonia.xml
+Sitemap: https://datazoom.com.br/datazoom.amazonia/sitemap.xml
