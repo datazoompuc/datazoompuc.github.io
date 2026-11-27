@@ -128,13 +128,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/mapa-gado-pastagem/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/mapa-principais-produtos-exportados/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/mapa-principais-produtos-exportados/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/mapa-principais-produtos-exportados/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/mapa-principais-produtos-exportados/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/en/viz/mercado-de-trabalho/</loc>
     <lastmod>2026-06-10</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/mercado-de-trabalho/"/>
@@ -147,20 +140,6 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-atividades-economicas-ocupacoes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-atividades-economicas-ocupacoes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-atividades-economicas-ocupacoes/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-exportacao/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-exportacao/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-exportacao/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-exportacao/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-importacao/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-importacao/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-importacao/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-importacao/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/amazonia/en/viz/ranking-cobertura-terra/</loc>
@@ -184,13 +163,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-de-campeoes-de-desmatamento/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/ranking-prop-exportacoes-mundiais-amazonia/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/en/viz/ranking-transicao-cobertura-terra/</loc>
     <lastmod>2026-08-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-transicao-cobertura-terra/"/>
@@ -210,13 +182,6 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/relacao-variaveis-saude/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/relacao-variaveis-saude/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/relacao-variaveis-saude/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/amazonia/en/viz/sankey-transicao-cobertura-terra/</loc>
@@ -296,32 +261,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-dos-sistemas-isolados/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-municipio/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-municipio/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-municipio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-municipio/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-pais/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-pais/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-pais/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-pais/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/en/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/</loc>
     <lastmod>2026-06-10</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/en/viz/series-temporais-valores-exportacao-destino/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-valores-exportacao-destino/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-valores-exportacao-destino/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-valores-exportacao-destino/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/amazonia/pt/</loc>
@@ -450,13 +394,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/mapa-gado-pastagem/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/mapa-principais-produtos-exportados/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/mapa-principais-produtos-exportados/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/mapa-principais-produtos-exportados/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/mapa-principais-produtos-exportados/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/pt/viz/mercado-de-trabalho/</loc>
     <lastmod>2026-06-10</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/mercado-de-trabalho/"/>
@@ -469,20 +406,6 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-atividades-economicas-ocupacoes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-atividades-economicas-ocupacoes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-atividades-economicas-ocupacoes/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-exportacao/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-exportacao/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-exportacao/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-exportacao/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-importacao/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-importacao/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-campeoes-de-importacao/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-campeoes-de-importacao/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/amazonia/pt/viz/ranking-cobertura-terra/</loc>
@@ -506,13 +429,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-de-campeoes-de-desmatamento/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/ranking-prop-exportacoes-mundiais-amazonia/</loc>
-    <lastmod>2025-12-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/ranking-prop-exportacoes-mundiais-amazonia/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/pt/viz/ranking-transicao-cobertura-terra/</loc>
     <lastmod>2026-08-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/ranking-transicao-cobertura-terra/"/>
@@ -532,13 +448,6 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/relacao-variaveis-saude/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/relacao-variaveis-saude/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/relacao-variaveis-saude/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/sankey-do-volume-de-exportacao-da-amazonia-por-pais-de-destino/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/amazonia/pt/viz/sankey-transicao-cobertura-terra/</loc>
@@ -618,32 +527,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-dos-sistemas-isolados/"/>
   </url>
   <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-municipio/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-municipio/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-municipio/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-municipio/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-pais/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-pais/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-exportacao-pais/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-exportacao-pais/"/>
-  </url>
-  <url>
     <loc>https://datazoom.com.br/amazonia/pt/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/</loc>
     <lastmod>2026-06-10</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-sobre-o-mercado-de-trabalho-comparativa-com-o-resto-do-brasil/"/>
-  </url>
-  <url>
-    <loc>https://datazoom.com.br/amazonia/pt/viz/series-temporais-valores-exportacao-destino/</loc>
-    <lastmod>2025-09-22</lastmod>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-valores-exportacao-destino/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://datazoom.com.br/amazonia/en/viz/series-temporais-valores-exportacao-destino/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datazoom.com.br/amazonia/pt/viz/series-temporais-valores-exportacao-destino/"/>
   </url>
   <url>
     <loc>https://datazoom.com.br/en/</loc>

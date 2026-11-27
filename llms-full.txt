@@ -17,7 +17,7 @@
 
 ## 2. datazoom.saude: Brazilian health data from DATASUS (R)
 
-Page: https://datazoom.com.br/en/dz_saude/ · CRAN: https://cran.r-project.org/package=datazoom.saude · GitHub: https://github.com/datazoompuc/datazoom.saude
+Page: https://datazoom.com.br/en/dz_saude/ · Documentation: https://datazoom.com.br/datazoom.saude/ · CRAN: https://cran.r-project.org/package=datazoom.saude · GitHub: https://github.com/datazoompuc/datazoom.saude
 
 datazoom.saude is an R package that downloads, cleans and standardizes public health microdata from DATASUS, the IT department of the Brazilian Unified Health System (SUS, Ministry of Health). It handles DATASUS's compressed `.dbc` files internally.
 
@@ -207,7 +207,7 @@ Use datazoom.amazonia for environmental, agricultural, economic and social indic
 
 ## 4. datazoom.social: PNAD Contínua microdata and panels (R)
 
-Page: https://datazoom.com.br/en/dz_r/ · CRAN: https://cran.r-project.org/package=datazoom.social · GitHub: https://github.com/datazoompuc/datazoom.social
+Page: https://datazoom.com.br/en/dz_r/ · Documentation: https://datazoom.com.br/datazoom.social/ · CRAN: https://cran.r-project.org/package=datazoom.social · GitHub: https://github.com/datazoompuc/datazoom.social
 
 datazoom.social downloads and processes microdata from PNAD Contínua (PNADC), IBGE's quarterly rotating-panel household survey (2012 onwards), and identifies households and individuals across waves. It builds on the PNADcIBGE package.
 
