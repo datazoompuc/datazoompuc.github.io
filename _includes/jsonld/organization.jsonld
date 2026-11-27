@@ -59,12 +59,14 @@
     {
       "@type": "Person",
       "name": "Laura Regadas",
+      "sameAs": "https://orcid.org/0009-0002-8107-1806",
       "jobTitle": "Assistente de Pesquisa",
       "url": "https://br.linkedin.com/in/laura-t-regadas"
     },
     {
       "@type": "Person",
       "name": "Antonio Bergallo",
+      "sameAs": "https://orcid.org/0009-0004-6132-3070",
       "jobTitle": "Assistente de Pesquisa",
       "url": "https://antoniobergallo.github.io/"
     },

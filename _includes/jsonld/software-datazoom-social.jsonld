@@ -32,7 +32,8 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Laura Tavares Regadas"
+      "name": "Laura Tavares Regadas",
+      "sameAs": "https://orcid.org/0009-0002-8107-1806"
     },
     {
       "@type": "Person",
@@ -98,7 +99,8 @@
   "datePublished": "2026-07-06",
   "maintainer": {
     "@type": "Person",
-    "name": "Laura Tavares Regadas"
+    "name": "Laura Tavares Regadas",
+    "sameAs": "https://orcid.org/0009-0002-8107-1806"
   },
   "license": "https://opensource.org/license/MIT"
 }
